@@ -85,7 +85,7 @@ func(a); // arguments, actual parameter, 인자, 실인자
         ```
 
 ### Reference
-- https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference/
-- http://milooy.github.io/TIL/JavaScript/call-by-sharing.html#%E1%84%80%E1%85%A7%E1%86%AF%E1%84%85%E1%85%A9%E1%86%AB
+- https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference
+- http://milooy.github.io/TIL/JavaScript/call-by-sharing.html
 
 [뒤로](https://github.com/SeongYongLee/TIL)/[위로](#javascript)
