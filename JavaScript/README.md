@@ -2,7 +2,6 @@
 
 * [Parameter vs Arguments](#parameter-vs-arguments)
 * [Evaluation Strategy](#evaluation-strategy)
-* [Cross Browsing](#cross-browsing)
 
 [뒤로](https://github.com/SeongYongLee/TIL)
 

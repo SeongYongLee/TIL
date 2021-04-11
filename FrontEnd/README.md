@@ -46,27 +46,27 @@ Cross Browsing이란 적어도 표준 웹기술을 채용하여 다른 기종 �
 
 #### 툴 사용
 
-**Cross-Browser Compatibility**
+- Cross-Browser Compatibility
 
-각 브라우저 들이 웹표준을 지키고 있는지 툴들을 사용하여 확인하자.
+    각 브라우저 들이 웹표준을 지키고 있는지 툴들을 사용하여 확인하자.
 
-**reset, css**
+- reset, css
 
-CSS의 경우 browser 기본 스타일이 제각각인 경우가 있다. 동일한 스타일을 적용하기 위해 defalut 값을 초기화 시킬 필요가 있다.
+    CSS의 경우 browser 기본 스타일이 제각각인 경우가 있다. 동일한 스타일을 적용하기 위해 defalut 값을 초기화 시킬 필요가 있다.
+    
+    - [normalize vs reset]()
 
-- [normalize vs reset]()
+- css prefix
 
-**css prefix**
+    모든 브라우저에서 지원하는 호환 프로퍼티를 먼저 정의하고 css3에서 지원하는 프로퍼티를 나중에 정의해서 사용한다.
 
-모든 브라우저에서 지원하는 호환 프로퍼티를 먼저 정의하고 css3에서 지원하는 프로퍼티를 나중에 정의해서 사용한다.
-
-```css
-#menu {
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-}
-```
+    ```css
+    #menu {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+    }
+    ```
 
 ### Reference
 - https://asfirstalways.tistory.com/237
