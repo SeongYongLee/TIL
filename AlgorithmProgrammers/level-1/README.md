@@ -79,10 +79,28 @@ function solution(new_id) {
     answer = answer.slice(0, 15); // 6
     if (answer[answer.length - 1] === '.') answer = answer.slice(0, answer.length - 1); // 4, 6
     if (!answer) answer = 'a'; // 5
-    while (answer.length < 3) answer += answer[answer.length - 1]; // 7
 
-    return answer;
+    const len = answer.length;
+
+    return len > 2 ? answer : answer + answer.charAt(len - 1).repeat(3 - len);
 }
+
+// 정규 표현식 풀이
+// function solution(new_id) {
+//     const answer = new_id
+//         .toLowerCase() // 1
+//         .replace(/[^\w-.]/g, '') // 2
+//         .replace(/\.+/g, '.') // 3
+//         .replace(/^\./g, '') // 4
+//         .slice(0, 15) // 6
+//         .replace(/\.$/g, '') // 4
+//         .replace(/^$/, 'a'); // 5
+
+//     const len = answer.length;
+
+//     return len > 2 ? answer : answer + answer.charAt(len - 1).repeat(3 - len); // 7
+// }
+
 console.log(solution('...!@BaT#*..y.abcdefghijklm'));
 console.log(solution('z-+.^.'));
 console.log(solution());
