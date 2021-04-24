@@ -11,6 +11,51 @@
 
 
 ``` js
+// 1
+// function solution(board, moves) {
+//     let answer = 0;
+//     const result = [];
+
+//     for (let x = 0; x < moves.length; x++) {
+//         const temp = moves[x] - 1;
+//         for (let y = 0; y < board.length; y++) {
+//             if (board[y][temp]) {
+//                 if (result && result[result.length - 1] === board[y][temp]) {
+//                     result.pop();
+//                     answer += 2;
+//                 } else {
+//                     result.push(board[y][temp]);
+//                 }
+//                 board[y][temp] = 0;
+//                 break;
+//             }
+//         }
+//     }
+//     return answer;
+// }
+
+// 2 - Refactoring
+// function solution(board, moves) {
+//     let answer = 0;
+//     const result = [];
+
+//     let fitstFilter = board.reduce((result, x, i) => x.map((i, y) => [...(result[y] || []), i]), []);
+//     let secondFilter = fitstFilter.map((x, i) => x.filter((x) => x !== 0).reverse());
+
+//     for (let x = 0; x < moves.length; x++) {
+//         const temp = secondFilter[moves[x] - 1].pop();
+//         if (!temp) continue;
+//         if (temp === result[result.length - 1]) {
+//             result.pop();
+//             answer += 2;
+//             continue;
+//         }
+//         result.push(temp);
+//     }
+//     return answer;
+// }
+
+// 3 - Refactoring
 function solution(board, moves) {
     let answer = 0;
     const result = [];
@@ -33,6 +78,7 @@ function solution(board, moves) {
 
     return answer;
 }
+
 console.log(
     solution(
         [
