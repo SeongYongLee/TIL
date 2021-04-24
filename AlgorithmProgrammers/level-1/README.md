@@ -1,6 +1,7 @@
 # AlgorithmProgrammers - Level 1
 
 * [크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
+* [신규 아이디 추천](#신규-아이디-추천)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
@@ -44,6 +45,47 @@ console.log(
         [1, 5, 3, 5, 1, 2, 1, 4],
     ),
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## 신규 아이디 추천
+
+[2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
+
+
+``` js
+function solution(new_id) {
+    const low_new_id = new_id.toLowerCase(); // 1
+
+    let answer = '';
+    let history = '';
+
+    for (let i = 0; i < low_new_id.length; i++) {
+        const charCode = low_new_id[i].charCodeAt();
+
+        if (
+            Number.isInteger(+low_new_id[i]) ||
+            (charCode >= 97 && charCode <= 122) ||
+            [45, 95].includes(charCode) ||
+            (charCode === 46 && history !== low_new_id[i]) // 2, 3
+        ) {
+            answer += low_new_id[i];
+            history = low_new_id[i];
+        }
+    }
+
+    if (answer[0] === '.') answer = answer.slice(1); // 4
+    answer = answer.slice(0, 15); // 6
+    if (answer[answer.length - 1] === '.') answer = answer.slice(0, answer.length - 1); // 4, 6
+    if (!answer) answer = 'a'; // 5
+    while (answer.length < 3) answer += answer[answer.length - 1]; // 7
+
+    return answer;
+}
+console.log(solution('...!@BaT#*..y.abcdefghijklm'));
+console.log(solution('z-+.^.'));
+console.log(solution());
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
