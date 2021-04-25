@@ -19,6 +19,8 @@
 
 * [연습문제 > 2016년](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#2016년)
 
+* [연습문제 > 가운데 글자 가져오기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#가운데-글자-가져오기)
+
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
