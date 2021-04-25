@@ -1,9 +1,14 @@
 # AlgorithmProgrammers - Level 1
 
-* [크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
-* [신규 아이디 추천](#신규-아이디-추천)
-* [완주하지 못한 선수](#완주하지-못한-선수)
-* [모의고사](#모의고사)
+* [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
+
+* [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](#신규-아이디-추천)
+
+* [해시 > 완주하지 못한 선수](#완주하지-못한-선수)
+
+* [완전탐색 > 모의고사](#모의고사)
+
+* [탐욕법(Greedy) > 체육복](#체육복)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
@@ -276,6 +281,40 @@ function solution(answers) {
 console.log(solution([1, 2, 3, 4, 5]));
 console.log(solution([1, 3, 2, 4, 2]));
 console.log(solution([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## 체육복
+
+[탐욕법(Greedy) > 체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+
+``` js
+function solution(n, lost, reserve) {
+    return lost.reduce((r, c) => {
+        let a = reserve.indexOf(c);
+        if (a !== -1) {
+            reserve.splice(a, 1);
+            return r;
+        }
+        a = reserve.indexOf(c - 1);
+        if (a !== -1) {
+            reserve.splice(a, 1);
+            return r;
+        }
+        a = reserve.indexOf(c + 1);
+        if (a !== -1 && lost.indexOf(c + 1) === -1) {
+            reserve.splice(a, 1);
+            return r;
+        }
+        return --r;
+    }, n);
+}
+
+console.log(solution(5, [2, 4], [1, 3, 5]));
+console.log(solution(5, [2, 4], [3]));
+console.log(solution(3, [3], [1]));
+console.log(solution(4, [4, 2], [1, 3]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
