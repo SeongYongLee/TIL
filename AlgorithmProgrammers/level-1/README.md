@@ -10,6 +10,8 @@
 
 * [탐욕법(Greedy) > 체육복](#체육복)
 
+* [정렬 > K번째 수](#K번째-수)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -315,6 +317,32 @@ console.log(solution(5, [2, 4], [1, 3, 5]));
 console.log(solution(5, [2, 4], [3]));
 console.log(solution(3, [3], [1]));
 console.log(solution(4, [4, 2], [1, 3]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## K번째 수
+
+[정렬 > K번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+
+``` js
+function solution(array, commands) {
+    return commands.reduce(
+        (answer, c) => [...answer, array.slice(c[0] - 1, c[1]).sort((x, y) => x - y)[c[2] - 1]],
+        [],
+    );
+}
+
+console.log(
+    solution(
+        [1, 5, 2, 6, 3, 7, 4],
+        [
+            [2, 5, 3],
+            [4, 4, 1],
+            [1, 7, 3],
+        ],
+    ),
+);
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

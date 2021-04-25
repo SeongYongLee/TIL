@@ -15,6 +15,8 @@
 
 * [탐욕법(Greedy) > 체육복](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#체육복)
 
+* [정렬 > K번째 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#K번째-수)
+
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
