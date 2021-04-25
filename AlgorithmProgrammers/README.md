@@ -11,6 +11,8 @@
 
 * [해시 > 완주하지 못한 선수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#완주하지-못한-선수)
 
+* [완전탐색 > 모의고사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#모의고사)
+
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)

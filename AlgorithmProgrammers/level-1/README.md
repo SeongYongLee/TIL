@@ -3,13 +3,13 @@
 * [크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 * [신규 아이디 추천](#신규-아이디-추천)
 * [완주하지 못한 선수](#완주하지-못한-선수)
+* [모의고사](#모의고사)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
 
 [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
-
 
 ``` js
 // 1
@@ -62,7 +62,7 @@ function solution(board, moves) {
     const result = [];
 
     const filter = board.reduce(
-        (result, x) => x.map((y, i) => y !== 0 ? [...(result[i] || []), y] : result[i] || []),
+        (result, x) => x.map((y, i) => y !== 0 ? [...(result[i] || []), y] : result[i]),
         [],
     );
 
@@ -99,7 +99,6 @@ console.log(
 ## 신규 아이디 추천
 
 [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
-
 
 ``` js
 // 1
@@ -189,7 +188,7 @@ console.log(solution());
 //     }
 // }
 
-// 2 - 해시 (Key-value pair), 
+// 2 - 해시 (Key-value pair)
 /* 
     프로그래머스 - 다른 사람의 풀이 참고
     var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
@@ -220,6 +219,63 @@ console.log(
         ['stanko', 'ana', 'mislav', 'mislav'],
     ),
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## 모의고사
+
+[완전탐색 > 모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
+
+``` js
+// 1
+// function solution(answers) {
+//     const supos = [
+//         [1, 2, 3, 4, 5],
+//         [2, 1, 2, 3, 2, 4, 2, 5],
+//         [3, 3, 1, 1, 2, 2, 4, 4, 5, 5],
+//     ];
+
+//     const result = supos.reduce((result, supo) => {
+//         result.push(answers.filter((answer, j) => supo[j % supo.length] === answer).length);
+//         return result;
+//     }, []);
+
+//     const max = Math.max.apply(null, result);
+
+//     const answer = result.reduce((result, current, i) => {
+//         if (current === max) result.push(i + 1);
+//         return result;
+//     }, []);
+
+//     return answer;
+// }
+
+// 2 - Refactoring
+function solution(answers) {
+    const supos = [
+        [1, 2, 3, 4, 5],
+        [2, 1, 2, 3, 2, 4, 2, 5],
+        [3, 3, 1, 1, 2, 2, 4, 4, 5, 5],
+    ];
+    const suposLength = supos.map((s) => s.length);
+
+    const result = supos.reduce(
+        (result, supo, i) => [
+            ...result,
+            answers.filter((answer, j) => supo[j % suposLength[i]] === answer).length,
+        ],
+        [],
+    );
+
+    const max = Math.max.apply(null, result);
+
+    return result.reduce((result, c, i) => (c === max ? [...result, i + 1] : result), []);
+}
+
+console.log(solution([1, 2, 3, 4, 5]));
+console.log(solution([1, 3, 2, 4, 2]));
+console.log(solution([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
