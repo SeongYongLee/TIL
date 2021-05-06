@@ -109,6 +109,50 @@ console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
 //     return answer;
 // }
 
+// 2 - 효율성 테스트 탈락
+// function solution(info, query) {
+//     const infoLength = info.length;
+//     const infoObject = {};
+//     const queryLength = query.length;
+//     const answer = [];
+//     const condition = 4;
+
+//     const sets = 1 << condition;
+
+//     for (let i = 0; i < sets; i++) {
+//         for (let j = 0; j < infoLength; j++) {
+//             const infoSplit = info[j].split(' ');
+//             let string = '';
+//             for (let col = 0; col < condition; col++) {
+//                 if (i & (1 << col)) string += infoSplit[col];
+//                 else string += '-';
+//             }
+//             infoObject[string] = infoObject[string]
+//                 ? [...infoObject[string], +infoSplit[4]]
+//                 : [+infoSplit[4]];
+//         }
+//     }
+
+//     for (const key in infoObject) {
+//         infoObject[key] = infoObject[key].sort((a, b) => b - a);
+//     }
+
+//     for (let i = 0; i < queryLength; i++) {
+//         const querySplit = query[i].split(' ');
+//         const queryString = `${querySplit[0]}${querySplit[2]}${querySplit[4]}${querySplit[6]}`;
+//         const queryNum = +querySplit[7];
+//         let count = 0;
+
+//         if (infoObject[queryString]) {
+//             count = infoObject[queryString].findIndex((j) => j < queryNum);
+//             if (count === -1) count = infoObject[queryString].length;
+//         }
+//         answer.push(count);
+//     }
+
+//     return answer;
+// }
+
 console.log(
     solution(
         [
