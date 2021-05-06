@@ -152,6 +152,75 @@ console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
 
 //     return answer;
 // }
+// 3 - binary search
+/* 
+    카카오 문제해설 참고
+    https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1
+*/
+function solution(info, query) {
+    const infoLength = info.length;
+    const queryLength = query.length;
+    const infoObject = {};
+    const answer = [];
+
+    function getInfoObject(infoArray, infoNum, start) {
+        const key = infoArray.join('');
+
+        // 효율성 테스트 오답의 주요 원인 1
+        // infoObject[key] = infoObject[key] ? [...infoObject[key], infoNum] : [infoNum];
+        if (infoObject[key]) {
+            infoObject[key].push(infoNum);
+        } else {
+            infoObject[key] = [infoNum];
+        }
+
+        for (let i = start; i < infoArray.length; i++) {
+            const temp = [...infoArray];
+            temp[i] = '-';
+            getInfoObject(temp, infoNum, i + 1);
+        }
+    }
+
+    for (let i = 0; i < infoLength; i++) {
+        const infoSplit = info[i].split(' ');
+        const infoNum = +infoSplit.pop();
+        getInfoObject(infoSplit, infoNum, 0);
+    }
+
+    for (const key in infoObject) {
+        infoObject[key].sort((a, b) => a - b);
+    }
+
+    for (let i = 0; i < queryLength; i++) {
+        const querySplit = query[i].split(' ');
+        const queryString = `${querySplit[0]}${querySplit[2]}${querySplit[4]}${querySplit[6]}`;
+        const queryNum = +querySplit[7];
+        const resultArray = infoObject[queryString];
+        let count = 0;
+
+        if (resultArray) {
+            // 효율성 테스트 오답의 주요 원인 2
+            // resultArray.sort((a, b) => a - b);
+            let start = 0;
+            let end = resultArray.length;
+            while (start < end) {
+                const mid = Math.floor((start + end) / 2);
+
+                if (resultArray[mid] >= queryNum) {
+                    end = mid;
+                } else if (resultArray[mid] < queryNum) {
+                    start = mid + 1;
+                }
+            }
+
+            count = resultArray.length - start;
+        }
+
+        answer.push(count);
+    }
+
+    return answer;
+}
 
 console.log(
     solution(
