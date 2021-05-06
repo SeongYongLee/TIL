@@ -25,6 +25,8 @@
 
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
 
+* [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
+
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
 
 [뒤로](https://github.com/SeongYongLee/TIL)
