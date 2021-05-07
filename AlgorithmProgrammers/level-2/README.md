@@ -78,6 +78,8 @@ console.log(solution([93, 30, 55], [1, 30, 5]));
 console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
 ```
 
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
 ## 순위 검색
 
 [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412)
@@ -152,6 +154,7 @@ console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
 
 //     return answer;
 // }
+
 // 3 - binary search
 /* 
     카카오 문제해설 참고
@@ -243,6 +246,5 @@ console.log(
     )
 );
 ```
-
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
