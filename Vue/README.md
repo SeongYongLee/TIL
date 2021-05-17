@@ -20,7 +20,11 @@ Vue는 1명의 개발자 Evan You(에번 유)에 의해서 제작되었다. Even
 
 ### MVVM 패턴과 비슷하다.
 
-MVVM은 단방향 데이터 플로우로 동작하는데, Vue.js는 MVVM처럼 사용자가 인터페이스를 다루는 위치인 Layout 까지 모델, 뷰모델을 거쳐 단방향으로 동작하지만, Layout Component에서 데이터를 받을때는 emit, on 등의 메서드를 통해서 부모로 데이터를 전달하기 때문에 부분적 양방향 통신이 이루어진다. 그래서 Vue.js는 MVVM의 개념과 비슷하지만 다른 프레임워크라고 표현할 수 있다.
+Vue.js의 Component간 통신의 기본 골격은 React의 1 way data flow(부모 -> 자식)와 유사하다. MVVM처럼 사용자가 인터페이스를 다루는 위치인 Layout 까지 모델, 뷰모델을 거쳐 단방향으로 동작한다.
+
+Angular에서 지원하는 2 way data bindings도 동일하게 제공한다.
+
+MVVM의 개념과 비슷하다고 표현 할 수 있다. MVVM는 1way data flow로 동작하는데 Vue.js는 2 way data bindings도 지원한다. Vue.js 공식 문서에는 `MVVM 패턴과 엄격하게 연관되지는 않지만, Vue의 디자인은 부분적으로 영감을 받았습니다`라고 적혀있다.
 
 ### Single File Component
 
@@ -56,7 +60,7 @@ Vue는 기본적으로 렌더링 된 DOM을 기본 Vue 인스턴스의 데이터
 - Anguler는 Typescript를 사용하며, 컴포넌트, 모듈, 구문이 Javascript와는 많이 다르다.  Angular는 강력한 기능들이 많이 내장되어 있어 이 기능들을 사용하려면 Angular에 맞는 특정 패턴으로 코딩해야 한다.
 
 장점
-- Template에 기반한 앱은 가독성이 더 좋고 입문 개발자가 이해하기 쉽다. 심지어 숙련된 개발자분들께도 Functionality 동작과 태그 Layout 을 분리할 수 있어 선호되는 방식이다. Pug와 같은 전처리기를 추가할 수 있는 옵션도 생긴다.
+- Template에 기반한 앱은 가독성이 더 좋고 입문 개발자가 이해하기 쉽다. 심지어 숙련된 개발자분들께도 Functionality 동작과 태그 Layout을 분리할 수 있어 선호되는 방식이다. Pug와 같은 전처리기를 추가할 수 있는 옵션도 생긴다.
 
 - 간편한 Syntax로 Learning Curve가 낮다.
 
@@ -68,11 +72,9 @@ Vue는 기본적으로 렌더링 된 DOM을 기본 Vue 인스턴스의 데이터
 
 - React의 렌더링 시스템이 더 정밀한 구성이 가능하고, shallow 렌더링 과 같은 기능들을 갖고있다. 테스팅 도구와도 결합할 수 있어, 테스트하기 수월하고 더 유지보수 가능한 코드를 만들 수 있다.
 
-### 빠른 렌더링과 더 작은 용량
+### State 차이 (React, Vue)
 
-두 라이브러리 React, Vue가 어떻게 application data(state)를 처리하는지 살펴보면
-
-React 에서 state 는 불변(immutable) 의 속성을 가진다. 그래서 직접적으로 변경할 수 없고 만약 상태를 변경하고 싶다면 아래처럼 setState()를 사용해야 한다.
+두 라이브러리 React, Vue가 어떻게 application data(state)를 처리하는지 살펴보면 React에서 state는 불변(immutable)의 속성을 가진다. 그래서 직접적으로 변경할 수 없고 만약 상태를 변경하고 싶다면 아래처럼 setState()를 사용해야 한다.
 
 ```
 this.setState({
@@ -90,9 +92,27 @@ this.message = this.message.split('').reverse().join('');
 
 state에 새로운 객체를 추가했을 때, Vue가 해당 객체의 모든 속성을 확인하고나서 getter, setter로 변환한다. Vue의 reacivity system이 모든 상태를 모니터링하여 변경이 일어날 때마다 자동으로 DOM을 다시 렌더링 한다.
 
-더 인상적인 부분은 Vue에서 state를 간단하게 변경할 수 있을 뿐만 아니라, Vue의 렌더링 시스템이 React보다 빠르고 더 효율적이다.
+더 인상적인 부분은 Vue에서 state를 간단하게 변경할 수 있을 뿐만 아니라, Vue의 렌더링 시스템이 React보다 더 효율적이다.
 
-Vue 의 reactivity system 에도 몇가지 주의할 점이 있다. 예를 들어, 속성 추가 및 삭제 그리고 특정 배열에 대한 변경을 감지하지 못한다. 물론 이러한 부분들을 React 처럼 Vue set() API 로 해결할 수 있다.
+Vue의 reactivity system에도 몇가지 주의할 점이 있다. 예를 들어, 속성 추가 및 삭제 그리고 특정 배열에 대한 변경을 감지하지 못한다. 물론 이러한 부분들을 React 처럼 Vue set() API로 해결할 수 있다.
+
+### 빠른 렌더링과 더 작은 용량
+
+Vue 의 핵심 엔지니어들이 진행한 테스트에서 Vue 의 렌더링 시스템이 React 보다 빠르다는 걸 아래와 같이 증명했다.
+
+10,000 개의 목록 항목을 100 번 렌더링하는 간단한 벤치 마크 프로젝트이며 2014 년 MacBook Air의 Chrome 52에서 실행 된 숫자이다. 체리 피킹을 피하기 위해 두 벤치 마크는 실제로 20번의 별도 시간에 실행되었으며 아래는 최상의 실행 결과가 적혀 있다.
+
+![Benchmark](./Benchmark.png)
+
+실용적인 관점에서 봤을 때, 이 테스트 결과는 몇몇의 특정 케이스에만 해당이 될 것이다. 대부분의 앱에서는 이러한 동작이 필요가 없을 테니 여기에 너무 치우쳐서 두 라이브러리를 비교하면 안 된다.
+
+하지만 웹 페이지의 용량은 모든 프로젝트에 상관이 있다.
+
+현재 릴리즈된 Vue 의 라이브러리 크기가 25.6KB 인 반면, 이 Vue 라이브러리와 동일한 기능을 하도록 React 의 부가 라이브러리로 구성한 React 라이브러리 (React DOM 37.4KB + React Addons Library 11.4KB) 의 크기는 48.8KB 으로 거의 2배에 육박한다.
+
+React가 더 많은 API를 제공한다 하더라도, 그 양만큼 Vue 보다 더 기능성을 비례해서 제공하진 않는다.
+
+Angular는 최신 AOT compilation과 tree-shaking을 포함되어 크기가 매우 작아졌다. 그럼에도 불구하고 모든 기능을 갖춘 Vue 2 프로젝트(30kb gzipped)는 angular-cli(130kb gzipped)보다 훨씬 작다.
 
 ### React와 Angular에 비해 아직 생태계 구축이 많이 되지 않았다.
 
@@ -108,9 +128,11 @@ Vue 의 reactivity system 에도 몇가지 주의할 점이 있다. 예를 들�
 상대적으로 프론트엔드에 익숙하지 않은 팀원이 많이 참여하거나 소규모의 오래 유지보수하지 않을 프로젝트라면 Vue가 좋은 선택이 될 것이다.
 
 ### Reference
+- [https://kr.vuejs.org/v2/guide/comparison.html](https://kr.vuejs.org/v2/guide/comparison.html)
 - [https://joshua1988.github.io/web_dev/vue-or-react](https://joshua1988.github.io/web_dev/vue-or-react)
 - [https://velog.io/@poburi/Vue-장단점-feat.-리액트](https://velog.io/@poburi/Vue-%EC%9E%A5%EB%8B%A8%EC%A0%90-feat.-%EB%A6%AC%EC%95%A1%ED%8A%B8)
 - [https://coding-start.tistory.com/213](https://coding-start.tistory.com/213)
+- [https://ict-nroo.tistory.com/85](https://ict-nroo.tistory.com/85)
 
 
 [뒤로](https://github.com/SeongYongLee/TIL)/[위로](#vue)
