@@ -22,6 +22,12 @@
 
 * [연습문제 > 가운데 글자 가져오기](#가운데-글자-가져오기)
 
+* [연습문제 > 두 정수 사이의 합](#두-정수-사이의-합)
+
+* [연습문제 > 제일 작은 수 제거하기](#제일-작은-수-제거하기)
+
+* [연습문제 > 하샤드 수](#하샤드-수)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -451,6 +457,63 @@ console.log(solution("abcde"));
 console.log(solution("qwer"));
 console.log(solution("abcdef"));
 console.log(solution("a"));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## 두 정수 사이의 합
+
+[연습문제 > 두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
+
+``` js
+function solution(a, b) {
+    const calc = (min, max) => {
+        let answer = 0;
+        
+        for (let i = min; i <= max; i++) {
+            answer += i;
+        }
+        
+        return answer;
+    }
+    
+    return a > b ? calc(b, a) : calc(a, b);
+}
+
+console.log(solution(3, 5));
+console.log(solution(3, 3));
+console.log(solution(5, 3));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+## 제일 작은 수 제거하기
+
+[연습문제 > 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
+
+``` js
+function solution(arr) {
+    arr.splice(arr.indexOf(Math.min(...arr)), 1);
+    return arr.length ? arr : [-1];
+}
+
+console.log(solution([4, 3, 2, 1]));
+console.log(solution([10]));
+```
+
+## 하샤드 수
+
+[연습문제 > 하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
+
+``` js
+function solution(x) {
+    return !(x % (x + '').split('').reduce((i, j) => +i + +j));
+}
+
+console.log(solution(10));
+console.log(solution(12));
+console.log(solution(11));
+console.log(solution(13));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

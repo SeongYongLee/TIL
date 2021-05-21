@@ -27,6 +27,12 @@
 
 * [연습문제 > 가운데 글자 가져오기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#가운데-글자-가져오기)
 
+* [연습문제 > 두 정수 사이의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#두-정수-사이의-합)
+
+* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#제일-작은-수-제거하기)
+
+* [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
+
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
