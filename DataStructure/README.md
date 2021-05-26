@@ -1,3 +1,3 @@
 # DataStructure
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#dataStructure)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#dataStructure)

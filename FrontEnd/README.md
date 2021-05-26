@@ -5,7 +5,7 @@
 * [Feature detection, Feature inference, UA String](#feature-detection-feature-inference-ua-string)
 
 
-[뒤로](https://github.com/SeongYongLee/TIL)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)
 
 ## Cross Browsing
 
@@ -74,7 +74,7 @@
 - https://asfirstalways.tistory.com/237
 - https://mulder21c.github.io/2019/01/30/what-is-cross-browsing
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#frontend)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
 
 ## Normalize vs Reset
 
@@ -97,7 +97,7 @@
 ### Reference
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/FrontEnd
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#frontend)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
 
 ## Feature detection, Feature inference, UA String
 
@@ -142,4 +142,4 @@ Feature detection이 더 확실한 방법이기에 이 방법은 권장하지 �
 - https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/kr/javascript-questions.md
 - https://rlynjb.medium.com/js-interview-question-what-s-the-difference-between-feature-detection-feature-inference-and-76d2e4956a9b
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#frontend)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)

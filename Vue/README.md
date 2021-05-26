@@ -2,7 +2,7 @@
 
 * [Vue.js?](#vuejs)
 
-[뒤로](https://github.com/SeongYongLee/TIL)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)
 
 ## Vue.js?
 
@@ -135,4 +135,4 @@ Angular는 최신 AOT compilation과 tree-shaking을 포함되어 크기가 매�
 - [https://ict-nroo.tistory.com/85](https://ict-nroo.tistory.com/85)
 
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#vue)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#vue)

@@ -3,12 +3,13 @@
 * [Parameter vs Arguments](#parameter-vs-arguments)
 * [Evaluation Strategy](#evaluation-strategy)
 * [Scope](#scope)
+* [Hoisting](#hoisting)
 
-[뒤로](https://github.com/SeongYongLee/TIL)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)
 
 ## Parameter vs Arguments
 
-parameter(매개변수)와 arguments(인자)의 차이
+**parameter(매개변수)와 arguments(인자)의 차이**
 
 parameter는 formal parameter(형식 매개변수)로 인식하면 되고, arguments는 actual parameter(실인자)로 받아들이면 된다.
 
@@ -26,7 +27,7 @@ func(a); // arguments, actual parameter, 인자, 실인자
 ### Reference
 - https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference/
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#javascript)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
 ## Evaluation Strategy
 
@@ -103,9 +104,11 @@ console.log(obj2.item); // unchanged, call by Reference라면 바뀌어야 한�
 - https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference
 - http://milooy.github.io/TIL/JavaScript/call-by-sharing.html
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#javascript)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
-## 스코프
+## Scope
+
+**스코프**
 
 함수를 작성할 때 중괄호'{ }'를 이용하여 함수의 범위를 작성한다.
 
@@ -119,7 +122,7 @@ console.log(obj2.item); // unchanged, call by Reference라면 바뀌어야 한�
 
 ### 스코프의 종류
 
-### 동작 - 정적 스코프 (렉시컬 스코프, Lexical scope)
+#### 동작 - 정적 스코프 (렉시컬 스코프, Lexical scope)
 
 렉시컬 스코프는 호출 스택과 관계없이 소스코드가 작성된 문맥, 소스 코드 내에 변수가 선언된 시점에서 스코프가 결정된다.
 
@@ -143,7 +146,7 @@ function second() {
 second();
 ```
 
-### 동작 - 동적 스코프 (다이나믹 스코프, Dynamic scope)
+#### 동작 - 동적 스코프 (다이나믹 스코프, Dynamic scope)
 
 동적 스코프는 런타임 도중에 실행 콘텍스트나 호출 콘텍스트에 의해 스코프가 결정된다.
 
@@ -164,9 +167,7 @@ function second() {
 second();
 ```
 
-## 레벨
-
-### 레벨 - 함수 스코프
+#### 레벨 - 함수 스코프
 
 - 함수가 유효 범위이다.
 - var
@@ -182,7 +183,7 @@ function hello(name){
 hello('LSY');
 ```
 
-### 레벨 - 블록 스코프
+#### 레벨 - 블록 스코프
 
 블록이 유효 범위이다.
 
@@ -203,7 +204,7 @@ let, const - JS는 ES2015(ES6)부터 블록 레벨 스코프를 지원하기 시
     hello('LSY');
     ```
 
-### 전역 스코프
+#### 레벨 - 전역 스코프
 
 전체가 범위며 전역 스코프에서 변수를 선언하게 되면 어디서든지 참조할 수 있는 전역 변수가 된다.
 하나의 html에서 두 개의 js파일을 로드해서 사용할 때에도 전역 변수는 사용이 가능하다.
@@ -229,13 +230,13 @@ let, const - JS는 ES2015(ES6)부터 블록 레벨 스코프를 지원하기 시
 console.log(APP.info.name); // APP is not defined
 ```
 
-### 지역 스코프
+#### 레벨 - 지역 스코프
 
 함수 코드 블록이 만든 스코프로 함수 내부와 하위 함수의 변수와 함수만 참조가 가능하다.
 
 지역에서 선언한 건 같은 지역에서만 참조가 된다
 
-## 스코프 체인 (Scope Chain)
+### 스코프 체인 (Scope Chain)
 
 스코프 간에 상하 관계를 의미한다.
 
@@ -245,9 +246,200 @@ console.log(APP.info.name); // APP is not defined
 
 이 과정은 해당 선언을 찾거나 null이 될 때 (더 이상의 참조가 불가능할 때) 탐색을 멈춘다.
 
-## Reference
+### Reference
 
 - [https://meetup.toast.com/posts/86](https://meetup.toast.com/posts/86)
 - [https://okayoon.tistory.com/entry/스코프Scope란](https://okayoon.tistory.com/entry/%EC%8A%A4%EC%BD%94%ED%94%84Scope%EB%9E%80)
 
-[뒤로](https://github.com/SeongYongLee/TIL)/[위로](#javascript)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+## Hoisting
+
+**호이스팅**
+
+var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상
+
+실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상
+
+유효범위의 코드가 실행되기 전 메모리에 먼저 저장했던 선언문을 사용할 수 있다.
+
+### 선언, 할당
+
+#### 선언 (Declaration)
+
+말 그대로 선언하는 것이다. 값을 할당하지 않는다.
+
+자바스크립트 엔진은 코드를 인터프리팅 하기 전에 그 코드를 먼저 컴파일한다.
+
+`var a = 2;`를 하나의 구문으로 생각할 수도 있지만, 자바스크립트는 다음 두 개의 구문으로 분리하여 본다.
+
+1. `var a;`
+2. a = 2;
+
+변수 선언(생성) 단계와 할당(초기화) 단계를 나누고, 선언 단계에서는 그 선언이 소스코드의 어디에 위치하든 해당 스코프의 컴파일단계에서 처리해버리는 것이다.
+
+선언 단계가 스코프의 꼭대기로 호이스팅(끌어올림)되는 작업이라고 볼 수 있다.
+
+#### 할당 (Assignment, 초기화)
+
+특정 변수에 값을 할당하는 과정이다. 할당 구문은 런타임 과정에서 이루어진다.
+
+### 호이스팅 대상 - 변수
+
+호이스팅 현상이 발생한다.
+
+#### var
+
+선언만 끌어 올려지며 할당은 끌어 올려지지 않는다. 
+
+#### let & const
+
+호이스팅은 현상은 발생하지만 할당까지는 TDZ에 빠지기 때문에 선언 전에 참조할 경우 undefined를 반환하지 않고 ReferenceError를 발생시키는 특징이 있다.
+
+가상의 개념 '끌어올려지는 현상'의 모습을 찾아볼 수 없기 때문에 let과 const에서는 호이스팅이 발생하지 않는다고 라고 말하기도 한다.
+
+#### TDZ (일시적 사각지대, Temporal Dead Zone)
+
+초기화되지 않은 변수가 있는 곳을 Temporal Dead Zone이라고 한다.
+
+변수가 초기화되는 순간 TDZ에서 나오게 되며 사용할 수 있다.
+
+TODO : [ES6 - let & const](ES6-let-&-const)
+
+```jsx
+console.log(i); // undefined
+console.log(j); // Uncaught ReferenceError
+var i = "var"; // var 변수 
+let j = "let"; // let 변수
+
+var a = '외부 a';
+const b = '외부 b';
+(function() {
+	console.log(a); // undefined
+	var a = '내부 a';
+}());
+(function() {
+	console.log(b); // ReferenceError
+	const b = '내부 b';
+}());
+```
+
+### 호이스팅 대상 - 함수
+
+#### 함수선언문
+
+함수 선언문의 경우 함수 자체를 끌어올린다.
+
+#### 함수표현식
+
+호이스팅은 발동하지만 할당까지는 TDZ에 빠지기 때문에 참조 할 수가 없다.
+
+TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
+
+```jsx
+foo(); // hello
+foo2(); // TypeError: foo2 is not a function
+
+function foo() { // 함수선언문
+        console.log("hello");
+}
+
+var foo2 = function() { // 함수표현식
+        console.log("hello2");
+}
+```
+
+### 호이스팅 순서
+
+같은 이름의 var 변수 선언과 함수 선언에서의 호이스팅의 경우 변수 선언이 함수 선언보다 위로 끌어올려진다.
+
+```jsx
+console.log(typeof myName);
+console.log(typeof yourName);
+
+var myName = "hi";
+
+function myName() {
+    console.log("yuddomack");
+}
+function yourName() {
+    console.log("everyone");
+}
+
+var yourName = "bye";
+
+console.log(typeof myName);
+console.log(typeof yourName);
+
+/** --- JS Parser 내부의 호이스팅(Hoisting)의 결과 --- */
+
+// 1. [Hoisting] 변수값 선언 
+var myName; 
+var yourName; 
+
+// 2. [Hoisting] 함수선언문
+function myName() {
+    console.log("yuddomack");
+}
+function yourName() {
+    console.log("everyone");
+}
+
+// 3. 변수값 할당 전
+
+console.log(typeof myName);  // > "function"
+console.log(typeof yourName); // > "function"
+
+// 4. 변수값 할당 후
+
+myName = "hi";
+yourName = "bye";
+
+console.log(typeof myName); // > "string"
+console.log(typeof yourName); // > "string"
+```
+
+따라서 값이 할당되어 있지 않은 변수의 경우는 다음과 같다.
+
+```jsx
+var myName = "Heee"; // 값 할당 
+var yourName; // 값 할당 X
+
+function myName() { // 같은 이름의 함수 선언
+    console.log("myName Function");
+}
+function yourName() { // 같은 이름의 함수 선언
+    console.log("yourName Function");
+}
+
+console.log(typeof myName); // > "string"
+console.log(typeof yourName); // > "functio
+```
+
+### 주의점
+
+코드의 가독성과 유지보수를 위해 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅 현상 및 스코프 꼬임을 방지할 수 있다.  
+
+호이스팅 때문에 의도한 결과가 나오지 않을 수도 있으니 개발 시 호이스팅을 이해하는 것이 중요하다.
+
+### Reference
+
+[https://meetup.toast.com/posts/86](https://meetup.toast.com/posts/86)
+
+[https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
+
+[https://okayoon.tistory.com/entry/호이스팅Hoisting?category=835832](https://okayoon.tistory.com/entry/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85Hoisting?category=835832)
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+## ES6 - let & const
+
+### Reference
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+## 함수선언문과 함수표현식
+
+### Reference
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
