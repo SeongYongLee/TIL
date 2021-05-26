@@ -33,11 +33,15 @@
 
 * [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
 
+</br></br>
+
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
+
+</br></br>
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
 

@@ -119,6 +119,8 @@ console.log(
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 신규 아이디 추천
 
 [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
@@ -194,6 +196,8 @@ console.log(solution());
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 내적
 
 [월간 코드 첼린지 시즌1 > 내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
@@ -209,6 +213,8 @@ console.log(solution([-1, 0, 1], [1, 0, -1]));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 3진법 뒤집기
 
 [월간 코드 첼린지 시즌1 > 3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
@@ -223,6 +229,8 @@ console.log(solution(125));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 폰켓몬
 
@@ -242,6 +250,8 @@ console.log(solution([3, 3, 3, 2, 2, 2]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 완주하지 못한 선수
 
@@ -294,6 +304,8 @@ console.log(
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 모의고사
 
@@ -352,6 +364,8 @@ console.log(solution([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 체육복
 
 [탐욕법(Greedy) > 체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
@@ -386,6 +400,8 @@ console.log(solution(4, [4, 2], [1, 3]));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## K번째 수
 
 [정렬 > K번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748)
@@ -411,6 +427,8 @@ console.log(
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 2016년
 
@@ -441,6 +459,8 @@ console.log(solution(1, 1));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 가운데 글자 가져오기
 
 [연습문제 > 가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
@@ -460,6 +480,8 @@ console.log(solution("a"));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 두 정수 사이의 합
 
@@ -487,6 +509,8 @@ console.log(solution(5, 3));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
 
+</br></br>
+
 ## 제일 작은 수 제거하기
 
 [연습문제 > 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
@@ -500,6 +524,8 @@ function solution(arr) {
 console.log(solution([4, 3, 2, 1]));
 console.log(solution([10]));
 ```
+
+</br></br>
 
 ## 하샤드 수
 
@@ -517,3 +543,5 @@ console.log(solution(13));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>

@@ -80,6 +80,8 @@ console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
 
+</br></br>
+
 ## 순위 검색
 
 [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412)
@@ -248,3 +250,5 @@ console.log(
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>

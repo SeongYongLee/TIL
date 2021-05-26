@@ -110,6 +110,8 @@ console.log(
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-3)
 
+</br></br>
+
 ## 합승 택시 요금
 
 [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413)
@@ -180,3 +182,5 @@ console.log(
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-3)
+
+</br></br>

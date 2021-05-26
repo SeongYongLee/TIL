@@ -4,6 +4,8 @@
 * [Evaluation Strategy](#evaluation-strategy)
 * [Scope](#scope)
 * [Hoisting](#hoisting)
+* TODO : [ES6 - let & const](#es6---let--const)
+* TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
 
@@ -106,9 +108,11 @@ console.log(obj2.item); // unchanged, call by Reference라면 바뀌어야 한�
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
+</br></br>
+
 ## Scope
 
-**스코프**
+### 스코프
 
 함수를 작성할 때 중괄호'{ }'를 이용하여 함수의 범위를 작성한다.
 
@@ -253,9 +257,11 @@ console.log(APP.info.name); // APP is not defined
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
+</br></br>
+
 ## Hoisting
 
-**호이스팅**
+### 호이스팅
 
 var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상
 
@@ -273,8 +279,9 @@ var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 �
 
 `var a = 2;`를 하나의 구문으로 생각할 수도 있지만, 자바스크립트는 다음 두 개의 구문으로 분리하여 본다.
 
-1. `var a;`
-2. a = 2;
+`var a;`
+
+`a = 2;`
 
 변수 선언(생성) 단계와 할당(초기화) 단계를 나누고, 선언 단계에서는 그 선언이 소스코드의 어디에 위치하든 해당 스코프의 컴파일단계에서 처리해버리는 것이다.
 
@@ -304,7 +311,7 @@ var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 �
 
 변수가 초기화되는 순간 TDZ에서 나오게 되며 사용할 수 있다.
 
-TODO : [ES6 - let & const](ES6-let-&-const)
+TODO : [ES6 - let & const](#es6---let--const)
 
 ```jsx
 console.log(i); // undefined
@@ -432,14 +439,24 @@ console.log(typeof yourName); // > "functio
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
-## ES6 - let & const
-
-### Reference
-
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+</br></br>
 
 ## 함수선언문과 함수표현식
 
+TODO : 
+
 ### Reference
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>
+
+## ES6 - let & const
+
+TODO : 
+
+### Reference
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>

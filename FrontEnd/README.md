@@ -76,6 +76,8 @@
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
 
+</br></br>
+
 ## Normalize vs Reset
 
 브라우저마다 기본적으로 제공하는 element 의 style 을 통일시키기 위해 사용한다.
@@ -98,6 +100,8 @@
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/FrontEnd
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
+
+</br></br>
 
 ## Feature detection, Feature inference, UA String
 
@@ -143,3 +147,5 @@ Feature detection이 더 확실한 방법이기에 이 방법은 권장하지 �
 - https://rlynjb.medium.com/js-interview-question-what-s-the-difference-between-feature-detection-feature-inference-and-76d2e4956a9b
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
+
+</br></br>
