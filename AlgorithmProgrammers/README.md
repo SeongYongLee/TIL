@@ -33,6 +33,12 @@
 
 * [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
 
+* [연습문제 > 같은 숫자는 싫어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#같은-숫자는-싫어)
+
+* [연습문제 > 나누어 떨어지는 숫자 배열](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#나누어-떨어지는-숫자-배열)
+
+* [연습문제 > 문자열 내 마음대로 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-내-마음대로-정렬하기)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)

@@ -28,6 +28,8 @@
 
 * [연습문제 > 하샤드 수](#하샤드-수)
 
+* [연습문제 > 같은 숫자는 싫어](#같은-숫자는-싫어)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -540,6 +542,92 @@ console.log(solution(10));
 console.log(solution(12));
 console.log(solution(11));
 console.log(solution(13));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 같은 숫자는 싫어
+
+[연습문제 > 같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
+
+``` js
+function solution(arr) {
+    const answer = [];
+    const aLength = arr.length;
+    
+    for (let x = 0; x < aLength; x++) {
+        if (arr[x] !== arr[x+1]) answer.push(arr[x]);
+    }
+    
+    return answer;
+}
+
+console.log(solution([1, 1, 3, 3, 0, 1, 1]));
+console.log(solution([4, 4, 4, 3, 3]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 같은 숫자는 싫어
+
+[연습문제 > 같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
+
+``` js
+function solution(arr) {
+    const answer = [];
+    const aLength = arr.length;
+    
+    for (let x = 0; x < aLength; x++) {
+        if (arr[x] !== arr[x+1]) answer.push(arr[x]);
+    }
+    
+    return answer;
+}
+
+console.log(solution([1, 1, 3, 3, 0, 1, 1]));
+console.log(solution([4, 4, 4, 3, 3]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 나누어 떨어지는 숫자 배열
+
+[연습문제 > 나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+
+``` js
+function solution(arr, divisor) {
+    const answer = arr.filter(x => x % divisor === 0).sort((a, b) => a - b);
+    
+    return answer.length ? answer : [-1];
+}
+
+console.log(solution([5, 9, 7, 10], 5));
+console.log(solution([2, 36, 1, 3], 1));
+console.log(solution([3, 2, 6], 10));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 문자열 내 마음대로 정렬하기
+
+[연습문제 > 문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
+
+``` js
+function solution(strings, n) {
+    return strings.sort((a, b) => 
+                        a[n] === b[n] ? (a > b ? 1 : -1) : (a[n] > b[n] ? 1 : -1));
+}
+
+console.log(solution(["sun", "bed", "car"], 1));
+console.log(solution(["abce", "abcd", "cdx"], 2));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
