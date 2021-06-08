@@ -39,6 +39,8 @@
 
 * [연습문제 > 문자열 내 마음대로 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-내-마음대로-정렬하기)
 
+* [연습문제 > 문자열 내 p와 y의 개수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1##문자열-내-p와-y의-개수)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
@@ -46,6 +48,8 @@
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
+
+* [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#다음-큰-숫자)
 
 </br></br>
 

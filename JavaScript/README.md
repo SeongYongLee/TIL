@@ -263,9 +263,11 @@ console.log(APP.info.name); // APP is not defined
 
 ### 호이스팅
 
+hoist 라는 단어의 사전적 정의는 끌어올리기 라는 뜻이다.
+
 var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상
 
-실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상
+실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상을 말한다.
 
 유효범위의 코드가 실행되기 전 메모리에 먼저 저장했던 선언문을 사용할 수 있다.
 
@@ -427,7 +429,9 @@ console.log(typeof yourName); // > "functio
 
 코드의 가독성과 유지보수를 위해 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅 현상 및 스코프 꼬임을 방지할 수 있다.  
 
-호이스팅 때문에 의도한 결과가 나오지 않을 수도 있으니 개발 시 호이스팅을 이해하는 것이 중요하다.
+호이스팅을 이해하지 못하면 의도한 결과가 나오지 않을 수도 있다.
+
+최근에는 ES6 문법이 표준화가 되면서 크게 신경쓰지 않아도 되는 부분이 되었지만, JavaScript 라는 언어의 특성을 가장 잘 보여주는 특성 중 하나이기에 호이스팅을 이해하는 것이 중요하다.
 
 ### Reference
 
@@ -436,6 +440,8 @@ console.log(typeof yourName); // > "functio
 [https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
 
 [https://okayoon.tistory.com/entry/호이스팅Hoisting?category=835832](https://okayoon.tistory.com/entry/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85Hoisting?category=835832)
+
+[https://github.com/JaeYeopHan/Interview_Question_for_Beginner/blob/master/JavaScript/README.md#hoisting](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/blob/master/JavaScript/README.md#hoisting)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 

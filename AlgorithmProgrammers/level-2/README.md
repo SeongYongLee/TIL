@@ -4,6 +4,8 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](#순위-검색)
 
+* [연습문제 > 다음 큰 숫자](#다음-큰-숫자)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 기능개발
@@ -247,6 +249,31 @@ console.log(
         ]
     )
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 다음 큰 숫자
+
+[연습문제 > 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
+
+``` js
+function solution(n) {
+  const count = (n) =>
+    n
+      .toString(2)
+      .split('')
+      .filter((x) => x === '1').length;
+
+  const nLength = count(n);
+
+  while (n++) if (nLength === count(n)) return n;
+}
+
+console.log(solution(78));
+console.log(solution(15));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
