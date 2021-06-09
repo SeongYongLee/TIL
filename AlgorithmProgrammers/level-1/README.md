@@ -36,6 +36,12 @@
 
 * [연습문제 > 문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수)
 
+* [연습문제 > 문자열 내림차순으로 배치하기](#문자열-내림차순으로-배치하기)
+
+* [연습문제 > 문자열 다루기 기본](#문자열-다루기-기본)
+
+* [연습문제 > 서울에서 김서방 찾기](#서울에서-김서방-찾기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -642,6 +648,60 @@ function solution(s) {
 
 console.log(solution("pPoooyY"));
 console.log(solution("Pyy"));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 문자열 내림차순으로 배치하기
+
+[연습문제 > 문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
+
+``` js
+function solution(s) {
+    return s.split('').sort().reverse().join('');
+}
+
+console.log(solution("Zbcdefg"));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 문자열 다루기 기본
+
+[연습문제 > 문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
+
+``` js
+function solution(s) {
+    return [4, 6].includes(s.length) && +s + '' === s ? true : false;
+}
+
+console.log(solution("a234"));
+console.log(solution("1234"));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 서울에서 김서방 찾기
+
+[연습문제 > 서울에서 김서방 찾기](https://programmers.co.kr/learn/courses/30/lessons/12919)
+
+``` js
+// 1
+// function solution(seoul) {
+//     return `김서방은 ${seoul.indexof('kim')}에 있다`;
+// }
+// 2 - 프로그래머스에서 템플릿 문자열 지원 X
+function solution(seoul) {
+    return '김서방은 ' + seoul.indexOf('Kim') + '에 있다';
+}
+
+console.log(solution(['Jane', 'Kim']));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
