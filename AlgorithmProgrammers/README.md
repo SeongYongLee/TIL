@@ -55,6 +55,8 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
 
+* [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#메뉴-리뉴얼)
+
 * [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#다음-큰-숫자)
 
 </br></br>

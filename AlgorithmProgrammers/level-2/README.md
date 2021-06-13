@@ -4,6 +4,8 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](#순위-검색)
 
+* [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
+
 * [연습문제 > 다음 큰 숫자](#다음-큰-숫자)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
@@ -274,6 +276,71 @@ function solution(n) {
 
 console.log(solution(78));
 console.log(solution(15));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 메뉴 리뉴얼
+
+[2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
+
+``` js
+function solution(orders, course) {
+    const answer = [];
+    const orderList = [];
+
+    function getOrderList(list, order, i) {
+        if (order.length > i) {
+            getOrderList(list, order, i + 1);
+            getOrderList([...list, order[i]], order, i + 1);
+        } else {
+            if (list.length > 1) orderList[orderList.length - 1].push(list.sort().join(''));
+        }
+    }
+
+    for (let i = 0; i < orders.length; i++) {
+        orderList.push([]);
+        getOrderList([], orders[i], 0);
+    }
+
+    for (let i = 0; i < course.length; i++) {
+        const tempObject = {};
+
+        for (let j = 0; j < orderList.length; j++) {
+            for (let k = 0; k < orderList[j].length; k++) {
+                if (orderList[j][k].length !== course[i]) continue;
+
+                if (tempObject[orderList[j][k]]) {
+                    tempObject[orderList[j][k]] += 1;
+                } else {
+                    tempObject[orderList[j][k]] = 1;
+                }
+            }
+        }
+
+        let tempArray = [];
+        let maxNum = 0;
+
+        for (const [key, value] of Object.entries(tempObject)) {
+            if (maxNum === value) {
+                tempArray.push(key);
+            } else if (maxNum < value) {
+                maxNum = value;
+                tempArray = [key];
+            }
+        }
+
+        if (maxNum >= 2) answer.push(...tempArray);
+    }
+
+    return answer.sort();
+}
+
+console.log(solution(['ABCFG', 'AC', 'CDE', 'ACDE', 'BCFG', 'ACDEH'], [2, 3, 4]));
+console.log(solution(['ABCDE', 'AB', 'CD', 'ADE', 'XYZ', 'XYZ', 'ACD'], [2, 3, 5]));
+console.log(solution(['XYZ', 'XWY', 'WXA'], [2, 3, 4]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
