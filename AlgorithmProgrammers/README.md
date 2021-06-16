@@ -47,6 +47,8 @@
 
 * [연습문제 > 서울에서 김서방 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#서울에서-김서방-찾기)
 
+* [연습문제 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#소수-찾기)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)

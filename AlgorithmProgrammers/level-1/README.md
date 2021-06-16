@@ -42,6 +42,8 @@
 
 * [연습문제 > 서울에서 김서방 찾기](#서울에서-김서방-찾기)
 
+* [연습문제 > 소수 찾기](#소수-찾기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -696,12 +698,76 @@ console.log(solution("1234"));
 // function solution(seoul) {
 //     return `김서방은 ${seoul.indexof('kim')}에 있다`;
 // }
+
 // 2 - 프로그래머스에서 템플릿 문자열 지원 X
 function solution(seoul) {
     return '김서방은 ' + seoul.indexOf('Kim') + '에 있다';
 }
 
 console.log(solution(['Jane', 'Kim']));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 소수 찾기
+
+[연습문제 > 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
+
+``` js
+// 1 - 효율성 테스트 탈락
+function solution(n) {
+    const sosu = [];
+
+    for (let x = 2; x < n + 1; x++) {
+        let thisSosu = true;
+
+        for (let y = 0; y < sosu.length; y++) {
+            if (x % sosu[y] === 0) {
+                thisSosu = false;
+                break;
+            }
+        }
+
+        if (thisSosu) sosu.push(x);
+    }
+
+    return sosu.length;
+}
+
+// 2 - sqrt를 사용하여 효율성 증가
+function solution(n) {
+    const sosu = [];
+    const sqrt = Math.sqrt(n);
+    let sqrtsosu = 0;
+    let sqrtlength = 0;
+
+    for (let x = 2; x < n + 1; x++) {
+        let thisSosu = true;
+
+        for (let y = 0; y < sqrtlength; y++) {
+            if (x % sosu[y] === 0) {
+                thisSosu = false;
+                break;
+            }
+        }
+
+        if (thisSosu) {
+            sosu.push(x);
+            if (sqrtsosu === 0) {
+                sqrtlength = sosu.length;
+                if (x > sqrt) sqrtsosu = x;
+            }
+        }
+    }
+
+    return sosu.length;
+}
+
+console.log(solution(10));
+console.log(solution(5));
+console.log(solution(100));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
