@@ -765,6 +765,24 @@ function solution(n) {
     return sosu.length;
 }
 
+// 3 - 에라토스테네스의 체
+function solution(nums) {
+    const sqrt = Math.sqrt(nums);
+    const arr = Array(nums + 1)
+        .fill(true)
+        .fill(false, 0, 2);
+
+    for (let i = 2; i <= sqrt; i++) {
+        if (!arr[i]) continue;
+
+        for (let j = i * i; j <= nums; j += i) {
+            arr[j] = false;
+        }
+    }
+
+    return arr.filter((e) => e).length;
+}
+
 console.log(solution(10));
 console.log(solution(5));
 console.log(solution(100));
