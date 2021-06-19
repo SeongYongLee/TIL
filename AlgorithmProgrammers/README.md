@@ -49,6 +49,12 @@
 
 * [연습문제 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#소수-찾기)
 
+* [연습문제 > 수박수박수박수박수박수?](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#수박수박수박수박수박수?)
+
+* [연습문제 > 문자열을 정수로 바꾸기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열을-정수로-바꾸기)
+
+* [연습문제 > 시저 암호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#시저-암호)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)

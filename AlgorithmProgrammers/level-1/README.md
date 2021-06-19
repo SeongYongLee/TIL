@@ -44,6 +44,12 @@
 
 * [연습문제 > 소수 찾기](#소수-찾기)
 
+* [연습문제 > 수박수박수박수박수박수?](#수박수박수박수박수박수?)
+
+* [연습문제 > 문자열을 정수로 바꾸기](#문자열을-정수로-바꾸기)
+
+* [연습문제 > 시저 암호](#시저-암호)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -641,7 +647,7 @@ console.log(solution(["abce", "abcd", "cdx"], 2));
 //     return answer === 0;
 // }
 
-// 2
+// 2 - Refactoring 
 function solution(s) {
     return (
         s.toUpperCase().split('P').length === s.toUpperCase().split('Y').length
@@ -786,6 +792,118 @@ function solution(nums) {
 console.log(solution(10));
 console.log(solution(5));
 console.log(solution(100));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 수박수박수박수박수박수?
+
+[연습문제 > 수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)
+
+``` js
+// 1
+// function solution(n) {
+//     let answer = '';
+
+//     for (let x = 0; x < n; x++) {
+//         answer += x % 2 === 0 ? '수' : '박';
+//     }
+
+//     return answer;
+// }
+
+// 2 - repeat 사용
+function solution(n) {
+    return '수박'.repeat(n / 2) + (n % 2 ? '수' : '');
+}
+
+console.log(solution(1));
+console.log(solution(3));
+console.log(solution(4));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 문자열을 정수로 바꾸기
+
+[연습문제 > 문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)
+
+``` js
+function solution(s) {
+    return +s;
+}
+
+console.log(solution("1234"));
+console.log(solution("-1234"));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 시저 암호
+
+[연습문제 > 시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+
+``` js
+// 1
+function solution(s, n) {
+    let answer = '';
+
+    const lowerCase = ['a'.charCodeAt(),'z'.charCodeAt()];
+    const upperCase = ['A'.charCodeAt(),'Z'.charCodeAt()];
+
+    for (let x = 0; x < s.length; x++) {
+       let temp = s[x].charCodeAt();
+
+       if (lowerCase[0] <= temp && temp <= lowerCase[1]) {
+           temp += n;
+           if (temp > lowerCase[1]) temp -= (lowerCase[1] - lowerCase[0] + 1);
+           answer += String.fromCharCode(temp);
+       } else if (upperCase[0] <= temp && temp <= upperCase[1]) {
+           temp += n;
+           if (temp > upperCase[1]) temp -= (upperCase[1] - upperCase[0] + 1);
+           answer += String.fromCharCode(temp);
+       } else answer += ' ';
+    }
+
+    return answer;
+}
+
+// 2 - Refactoring
+function solution(s, n) {
+    let answer = '';
+
+    const lowerCase = ['a'.charCodeAt(), 'z'.charCodeAt()];
+    const upperCase = ['A'.charCodeAt(), 'Z'.charCodeAt()];
+
+    for (let x = 0; x < s.length; x++) {
+        let temp = s[x].charCodeAt();
+
+        if (temp === 32) {
+            answer += ' ';
+            continue;
+        }
+
+        if (temp >= lowerCase[0]) {
+            temp += n;
+            answer += String.fromCharCode(temp > lowerCase[1] ? temp - 26 : temp);
+        } else {
+            temp += n;
+            answer += String.fromCharCode(temp > upperCase[1] ? temp - 26 : temp);
+        }
+    }
+
+    return answer;
+}
+
+console.log(solution('AB', 1));
+console.log(solution('z', 1));
+console.log(solution('a B z', 4));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
