@@ -44,7 +44,7 @@
 
 * [연습문제 > 소수 찾기](#소수-찾기)
 
-* [연습문제 > 수박수박수박수박수박수?](#수박수박수박수박수박수?)
+* [연습문제 > 수박수박수박수박수박수?](#수박수박수박수박수박수)
 
 * [연습문제 > 문자열을 정수로 바꾸기](#문자열을-정수로-바꾸기)
 
@@ -723,53 +723,53 @@ console.log(solution(['Jane', 'Kim']));
 
 ``` js
 // 1 - 효율성 테스트 탈락
-function solution(n) {
-    const sosu = [];
+// function solution(n) {
+//     const sosu = [];
 
-    for (let x = 2; x < n + 1; x++) {
-        let thisSosu = true;
+//     for (let x = 2; x < n + 1; x++) {
+//         let thisSosu = true;
 
-        for (let y = 0; y < sosu.length; y++) {
-            if (x % sosu[y] === 0) {
-                thisSosu = false;
-                break;
-            }
-        }
+//         for (let y = 0; y < sosu.length; y++) {
+//             if (x % sosu[y] === 0) {
+//                 thisSosu = false;
+//                 break;
+//             }
+//         }
 
-        if (thisSosu) sosu.push(x);
-    }
+//         if (thisSosu) sosu.push(x);
+//     }
 
-    return sosu.length;
-}
+//     return sosu.length;
+// }
 
 // 2 - sqrt를 사용하여 효율성 증가
-function solution(n) {
-    const sosu = [];
-    const sqrt = Math.sqrt(n);
-    let sqrtsosu = 0;
-    let sqrtlength = 0;
+// function solution(n) {
+//     const sosu = [];
+//     const sqrt = Math.sqrt(n);
+//     let sqrtsosu = 0;
+//     let sqrtlength = 0;
 
-    for (let x = 2; x < n + 1; x++) {
-        let thisSosu = true;
+//     for (let x = 2; x < n + 1; x++) {
+//         let thisSosu = true;
 
-        for (let y = 0; y < sqrtlength; y++) {
-            if (x % sosu[y] === 0) {
-                thisSosu = false;
-                break;
-            }
-        }
+//         for (let y = 0; y < sqrtlength; y++) {
+//             if (x % sosu[y] === 0) {
+//                 thisSosu = false;
+//                 break;
+//             }
+//         }
 
-        if (thisSosu) {
-            sosu.push(x);
-            if (sqrtsosu === 0) {
-                sqrtlength = sosu.length;
-                if (x > sqrt) sqrtsosu = x;
-            }
-        }
-    }
+//         if (thisSosu) {
+//             sosu.push(x);
+//             if (sqrtsosu === 0) {
+//                 sqrtlength = sosu.length;
+//                 if (x > sqrt) sqrtsosu = x;
+//             }
+//         }
+//     }
 
-    return sosu.length;
-}
+//     return sosu.length;
+// }
 
 // 3 - 에라토스테네스의 체
 function solution(nums) {
@@ -851,54 +851,88 @@ console.log(solution("-1234"));
 
 ``` js
 // 1
+// function solution(s, n) {
+//     let answer = '';
+
+//     const lowerCase = ['a'.charCodeAt(),'z'.charCodeAt()];
+//     const upperCase = ['A'.charCodeAt(),'Z'.charCodeAt()];
+
+//     for (let x = 0; x < s.length; x++) {
+//        let temp = s[x].charCodeAt();
+
+//        if (lowerCase[0] <= temp && temp <= lowerCase[1]) {
+//            temp += n;
+//            if (temp > lowerCase[1]) temp -= (lowerCase[1] - lowerCase[0] + 1);
+//            answer += String.fromCharCode(temp);
+//        } else if (upperCase[0] <= temp && temp <= upperCase[1]) {
+//            temp += n;
+//            if (temp > upperCase[1]) temp -= (upperCase[1] - upperCase[0] + 1);
+//            answer += String.fromCharCode(temp);
+//        } else answer += ' ';
+//     }
+
+//     return answer;
+// }
+
+// 2 - Refactoring
+// function solution(s, n) {
+//     let answer = '';
+
+//     const lowerCase = ['a'.charCodeAt(), 'z'.charCodeAt()];
+//     const upperCase = ['A'.charCodeAt(), 'Z'.charCodeAt()];
+
+//     for (let x = 0; x < s.length; x++) {
+//         let temp = s[x].charCodeAt();
+
+//         if (temp === 32) {
+//             answer += ' ';
+//             continue;
+//         }
+
+//         if (temp >= lowerCase[0]) {
+//             temp += n;
+//             answer += String.fromCharCode(temp > lowerCase[1] ? temp - 26 : temp);
+//         } else {
+//             temp += n;
+//             answer += String.fromCharCode(temp > upperCase[1] ? temp - 26 : temp);
+//         }
+//     }
+
+//     return answer;
+// }
+
+// 3 - Refactoring
+/* 
+    프로그래머스 - 다른 사람의 풀이 참고
+*/
 function solution(s, n) {
     let answer = '';
+    const sLength = s.length;
 
-    const lowerCase = ['a'.charCodeAt(),'z'.charCodeAt()];
-    const upperCase = ['A'.charCodeAt(),'Z'.charCodeAt()];
+    for (let x = 0; x < sLength; x++) {
+        const temp = s[x].charCodeAt();
 
-    for (let x = 0; x < s.length; x++) {
-       let temp = s[x].charCodeAt();
-
-       if (lowerCase[0] <= temp && temp <= lowerCase[1]) {
-           temp += n;
-           if (temp > lowerCase[1]) temp -= (lowerCase[1] - lowerCase[0] + 1);
-           answer += String.fromCharCode(temp);
-       } else if (upperCase[0] <= temp && temp <= upperCase[1]) {
-           temp += n;
-           if (temp > upperCase[1]) temp -= (upperCase[1] - upperCase[0] + 1);
-           answer += String.fromCharCode(temp);
-       } else answer += ' ';
+        answer +=
+            temp === 32 ? ' ' : String.fromCharCode((temp & 96) + (((temp % 32) - 1 + n) % 26) + 1);
     }
 
     return answer;
 }
 
-// 2 - Refactoring
+// 4 - 정규 표현식 + replace
+/* 
+    프로그래머스 - 다른 사람의 풀이 참고
+    replace의 성능이 너무 좋다.
+*/
 function solution(s, n) {
-    let answer = '';
-
-    const lowerCase = ['a'.charCodeAt(), 'z'.charCodeAt()];
-    const upperCase = ['A'.charCodeAt(), 'Z'.charCodeAt()];
-
-    for (let x = 0; x < s.length; x++) {
-        let temp = s[x].charCodeAt();
-
-        if (temp === 32) {
-            answer += ' ';
-            continue;
-        }
-
-        if (temp >= lowerCase[0]) {
-            temp += n;
-            answer += String.fromCharCode(temp > lowerCase[1] ? temp - 26 : temp);
-        } else {
-            temp += n;
-            answer += String.fromCharCode(temp > upperCase[1] ? temp - 26 : temp);
-        }
-    }
-
-    return answer;
+    return s.replace(
+        /[a-z]/gi,
+        (c) =>
+            [
+                (c = c.charCodeAt(0)),
+                String.fromCharCode((c & 96) + (((c % 32) + n - 1) % 26) + 1),
+            ][1],
+    );
 }
 
 console.log(solution('AB', 1));
