@@ -55,6 +55,10 @@
 
 * [연습문제 > 시저 암호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#시저-암호)
 
+* [연습문제 > 약수의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#약수의-합)
+
+* [연습문제 > 이상한 문자 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#이상한-문자-만들기)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)

@@ -50,6 +50,10 @@
 
 * [연습문제 > 시저 암호](#시저-암호)
 
+* [연습문제 > 약수의 합](#약수의-합)
+
+* [연습문제 > 이상한 문자 만들기](#이상한-문자-만들기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -905,19 +909,19 @@ console.log(solution("-1234"));
 /* 
     프로그래머스 - 다른 사람의 풀이 참고
 */
-function solution(s, n) {
-    let answer = '';
-    const sLength = s.length;
+// function solution(s, n) {
+//     let answer = '';
+//     const sLength = s.length;
 
-    for (let x = 0; x < sLength; x++) {
-        const temp = s[x].charCodeAt();
+//     for (let x = 0; x < sLength; x++) {
+//         const temp = s[x].charCodeAt();
 
-        answer +=
-            temp === 32 ? ' ' : String.fromCharCode((temp & 96) + (((temp % 32) - 1 + n) % 26) + 1);
-    }
+//         answer +=
+//             temp === 32 ? ' ' : String.fromCharCode((temp & 96) + (((temp % 32) - 1 + n) % 26) + 1);
+//     }
 
-    return answer;
-}
+//     return answer;
+// }
 
 // 4 - 정규 표현식 + replace
 /* 
@@ -938,6 +942,91 @@ function solution(s, n) {
 console.log(solution('AB', 1));
 console.log(solution('z', 1));
 console.log(solution('a B z', 4));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 약수의 합
+
+[연습문제 > 약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)
+
+``` js
+function solution(n) {
+    let answer = 0;
+    let last = n;
+
+    for (let x = 0; x < last; x++) {
+        const temp = n / x;
+
+        if (Number.isInteger(temp)) {
+            answer += temp === x ? temp : temp + x;
+        }
+
+        last = temp;
+    }
+
+    return answer;
+}
+
+console.log(solution(12));
+console.log(solution(5));
+console.log(solution(600));
+console.log(solution(1));
+console.log(solution(0));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 이상한 문자 만들기
+
+[연습문제 > 이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
+
+``` js
+// 1
+// function solution(s) {
+//     return s
+//         .split(' ')
+//         .reduce((result, i) => {
+//             for (let x = 0; x < i.length; x++) {
+//                 result += x % 2 === 0 ? i[x].toUpperCase() : i[x].toLowerCase();
+//             }
+//             result += ' ';
+//             return result;
+//         }, '')
+//         .substring(0, s.length);
+// }
+
+// 2 - Refactoring
+// function solution(s) {
+//     return s
+//         .split(' ')
+//         .map((x) =>
+//             x
+//                 .split('')
+//                 .map((y, i) => (i % 2 === 0 ? y.toUpperCase() : y.toLowerCase()))
+//                 .join(''),
+//         )
+//         .join(' ');
+// }
+
+// 3 - Refactoring
+function solution(s) {
+    return s
+        .split(' ')
+        .map((x) =>
+            x
+                .split('')
+                .map((y, i) => (i % 2 === 0 ? y.toUpperCase() : y.toLowerCase()))
+                .join(''),
+        )
+        .join(' ');
+}
+
+console.log(solution('try hello world'));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
