@@ -54,6 +54,12 @@
 
 * [연습문제 > 이상한 문자 만들기](#이상한-문자-만들기)
 
+* [연습문제 > 자릿수 더하기](#자릿수-더하기)
+
+* [연습문제 > 자연수 뒤집어 배열로 만들기](#자연수-뒤집어-배열로-만들기)
+
+* [연습문제 > 정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -1015,18 +1021,85 @@ console.log(solution(0));
 
 // 3 - Refactoring
 function solution(s) {
-    return s
-        .split(' ')
-        .map((x) =>
-            x
-                .split('')
-                .map((y, i) => (i % 2 === 0 ? y.toUpperCase() : y.toLowerCase()))
-                .join(''),
-        )
-        .join(' ');
+    let answer = '';
+    const sLength = s.length;
+    let count = 0;
+
+    for (let i = 0; i < sLength; i++) {
+        if (s[i] === ' ') {
+            answer += ' ';
+            count = 0;
+        } else {
+            answer += count % 2 === 0 ? s[i].toUpperCase() : s[i].toLowerCase();
+            count++;
+        }
+    }
+
+    return answer;
 }
 
 console.log(solution('try hello world'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 자릿수 더하기
+
+[연습문제 > 자릿수 더하기](https://programmers.co.kr/learn/courses/30/lessons/12931)
+
+``` js
+function solution(n) {
+    return (n + '').split('').reduce((r, i) => r + +i, 0);
+}
+
+console.log(solution(123));
+console.log(solution(987));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 자연수 뒤집어 배열로 만들기
+
+[연습문제 > 자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)
+
+``` js
+// 1
+function solution(n) {
+    return (n + '')
+        .split('')
+        .reverse()
+        .map((x) => +x);
+}
+
+// 2 - Refactoring (더 느려짐)
+// function solution(n) {
+//     return (n + '').split('').reduce((r, c) => [+c, ...r], []);
+// }
+
+console.log(solution(12345));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 정수 내림차순으로 배치하기
+
+[연습문제 > 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
+
+``` js
+function solution(n) {
+    return +(n + '')
+        .split('')
+        .sort((x, y) => y - x)
+        .join('');
+}
+
+console.log(solution(118372));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

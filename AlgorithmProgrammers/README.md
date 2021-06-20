@@ -59,6 +59,12 @@
 
 * [연습문제 > 이상한 문자 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#이상한-문자-만들기)
 
+* [연습문제 > 자릿수 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#자릿수-더하기)
+
+* [연습문제 > 자연수 뒤집어 배열로 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#자연수-뒤집어-배열로-만들기)
+
+* [연습문제 > 정수 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#정수-내림차순으로-배치하기)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
