@@ -65,6 +65,12 @@
 
 * [연습문제 > 정수 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#정수-내림차순으로-배치하기)
 
+* [연습문제 > 정수 제곱근 판별](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#정수-제곱근-판별)
+
+* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#제일-작은-수-제거하기)
+
+* [연습문제 > 짝수와 홀수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#짝수와-홀수)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)

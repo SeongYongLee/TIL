@@ -60,6 +60,12 @@
 
 * [연습문제 > 정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
 
+* [연습문제 > 정수 제곱근 판별](#정수-제곱근-판별)
+
+* [연습문제 > 제일 작은 수 제거하기](#제일-작은-수-제거하기)
+
+* [연습문제 > 짝수와 홀수](#짝수와-홀수)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -1100,6 +1106,61 @@ function solution(n) {
 }
 
 console.log(solution(118372));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 정수 제곱근 판별
+
+[연습문제 > 정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
+
+``` js
+function solution(n) {
+    const sqrtN = Math.sqrt(n);
+    return Number.isInteger(sqrtN) ? Math.pow(sqrtN + 1, 2) : -1;
+}
+
+console.log(solution(121));
+console.log(solution(3));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 제일 작은 수 제거하기
+
+[연습문제 > 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
+
+``` js
+function solution(arr) {
+    if (arr.length === 1) return [-1]; 
+    
+    arr.splice(arr.indexOf(Math.min(...arr)), 1);
+    return arr;
+}
+
+console.log(solution([4, 3, 2, 1]));
+console.log(solution([10]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 짝수와 홀수
+
+[연습문제 > 짝수와 홀수](https://programmers.co.kr/learn/courses/30/lessons/12937)
+
+``` js
+function solution(num) {
+    return num % 2 === 0 ? 'Even' : 'Odd';
+}
+
+console.log(solution(3));
+console.log(solution(4));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
