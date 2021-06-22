@@ -7,6 +7,8 @@
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
+* [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#키패드-누르기)
+
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#신규-아이디-추천)
 
 * [월간 코드 첼린지 시즌1 > 내적](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#내적)
