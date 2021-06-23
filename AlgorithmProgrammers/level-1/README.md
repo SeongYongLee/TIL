@@ -6,9 +6,15 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](#신규-아이디-추천)
 
-* [월간 코드 첼린지 시즌1 > 내적](#내적)
+* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](#로또의-최고-순위와-최저-순위)
 
-* [월간 코드 첼린지 시즌1 > 3진법 뒤집기](#3진법-뒤집기)
+* [월간 코드 챌린지 시즌1 > 내적](#내적)
+
+* [월간 코드 챌린지 시즌1 > 3진법 뒤집기](#3진법-뒤집기)
+
+* [월간 코드 챌린지 시즌2 > 음양 더하기](#음양-더하기)
+
+* [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](#약수의-개수와-덧셈)
 
 * [찾아라 프로그래밍 마에스터 > 폰켓몬](#폰켓몬)
 
@@ -309,7 +315,57 @@ console.log(solution());
 
 ## 내적
 
-[월간 코드 첼린지 시즌1 > 내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
+[2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
+
+``` js
+// 1
+// function solution(lottos, win_nums) {
+//     let minimumRank = 7;
+//     let highestRank = 0;
+
+//     for (let i = 0; i < lottos.length; i++) {
+//         if (lottos[i] === 0) {
+//             highestRank++;
+//             continue;
+//         }
+
+//         if (win_nums.includes(lottos[i])) minimumRank--;
+//     }
+
+//     highestRank = minimumRank - highestRank;
+
+//     return [highestRank === 7 ? 6 : highestRank, minimumRank === 7 ? 6 : minimumRank];
+// }
+
+// 2 - Refactoring
+function solution(lottos, win_nums) {
+    const rank = [6, 6, 5, 4, 3, 2, 1];
+    let minimumCount = 0;
+    let unknowCount = 0;
+
+    for (let i = 0; i < lottos.length; i++) {
+        if (lottos[i] === 0) {
+            unknowCount++;
+        } else if (win_nums.includes(lottos[i])) {
+            minimumCount++;
+        }
+    }
+
+    return [rank[minimumCount + unknowCount], rank[minimumCount]];
+}
+
+console.log(solution([44, 1, 0, 0, 31, 25], [31, 10, 45, 1, 6, 19]));
+console.log(solution([0, 0, 0, 0, 0, 0], [38, 19, 20, 40, 15, 25]));
+console.log(solution([45, 4, 35, 20, 3, 9], [20, 9, 3, 45, 4, 35]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 내적
+
+[월간 코드 챌린지 시즌1 > 내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
 
 ``` js
 function solution(a, b) {
@@ -326,7 +382,7 @@ console.log(solution([-1, 0, 1], [1, 0, -1]));
 
 ## 3진법 뒤집기
 
-[월간 코드 첼린지 시즌1 > 3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
+[월간 코드 챌린지 시즌1 > 3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
 
 ``` js
 function solution(a, b) {
@@ -335,6 +391,73 @@ function solution(a, b) {
 
 console.log(solution(45));
 console.log(solution(125));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 음양 더하기
+
+[월간 코드 챌린지 시즌2 > 음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)
+
+``` js
+function solution(absolutes, signs) {
+    return absolutes.reduce((r, c, i) => r + (signs[i] ? +c : -c), 0);
+}
+
+console.log(solution([4, 7, 12], [true, false, true]));
+console.log(solution([1, 2, 3], [false, false, true]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 약수의 개수와 덧셈
+
+[월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
+
+``` js
+// 1
+// function solution(left, right) {
+//     let answer = 0;
+
+//     for (let x = left; x <= right; x++) {
+//         let count = 0;
+//         let last = x;
+
+//         for (let y = 0; y < last; y++) {
+//             const temp = x / y;
+
+//             if (Number.isInteger(temp)) {
+//                 count += temp === y ? 1 : 2;
+//             }
+
+//             last = temp;
+//         }
+//         answer += count % 2 ? -x : x;
+//     }
+
+//     return answer;
+// }
+
+// 2
+/* 
+    Refactoring 제곱근이 정수면 약수의 갯수가 홀수이다.
+*/
+function solution(left, right) {
+    let answer = 0;
+
+    for (let x = left; x <= right; x++) {
+        answer += Number.isInteger(Math.sqrt(x)) ? -x : x;
+    }
+
+    return answer;
+}
+
+console.log(solution(13, 17));
+console.log(solution(24, 27));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
