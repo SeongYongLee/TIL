@@ -74,6 +74,18 @@
 
 * [연습문제 > 짝수와 홀수](#짝수와-홀수)
 
+* [연습문제 > 정수 제곱근 판별](#정수-제곱근-판별)
+
+* [연습문제 > 제일 작은 수 제거하기](#제일-작은-수-제거하기)
+
+* [연습문제 > 짝수와 홀수](#짝수와-홀수)
+
+* [연습문제 > 최대공약수와 최소공배수](#최대공약수와-최소공배수)
+
+* [연습문제 > 콜라츠 추측](#콜라츠-추측)
+
+* [연습문제 > 평균 구하기](#평균-구하기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 크레인 인형뽑기 게임
@@ -1355,6 +1367,83 @@ function solution(num) {
 
 console.log(solution(3));
 console.log(solution(4));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 최대공약수와 최소공배수
+
+[연습문제 > 최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
+
+``` js
+// 1
+// function solution(n, m) {
+//     let max = 1;
+
+//     for (let x = m > n ? n : m; x > 1; x--) {
+//         if (Number.isInteger(n / x) && Number.isInteger(m / x)) {
+//             max = x;
+//             break;
+//         }
+//     }
+
+//     return [max, (m * n) / max];
+// }
+
+// 2 - 유클리드 호제법
+function solution(n, m) {
+    const greatestCommonDivisor = (a, b) => {
+        console.log(a, b);
+        return b ? greatestCommonDivisor(b, a % b) : Math.abs(a);
+    };
+
+    const greatestCommon = greatestCommonDivisor(n, m);
+    return [greatestCommon, (n * m) / greatestCommon];
+}
+
+console.log(solution(3, 12));
+console.log(solution(2, 5));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 콜라츠 추측
+
+[연습문제 > 콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
+
+``` js
+function solution(num) {
+    for (let answer = 0; answer < 500; answer++) {
+        if (num === 1) return answer;
+        num = num % 2 === 0 ? num / 2 : num * 3 + 1;
+    }
+    return -1;
+}
+
+console.log(solution(6));
+console.log(solution(16));
+console.log(solution(626331));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 평균 구하기
+
+[연습문제 > 평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)
+
+``` js
+function solution(arr) {
+    return arr.reduce((r, c) => r + c) / arr.length;
+}
+
+console.log(solution([1, 2, 3, 4]));
+console.log(solution([5, 5]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

@@ -79,6 +79,12 @@
 
 * [연습문제 > 짝수와 홀수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#짝수와-홀수)
 
+* [연습문제 > 최대공약수와 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#최대공약수와-최소공배수)
+
+* [연습문제 > 콜라츠 추측](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#콜라츠-추측)
+
+* [연습문제 > 평균 구하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#평균-구하기)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
