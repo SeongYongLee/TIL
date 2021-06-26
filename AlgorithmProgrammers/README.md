@@ -9,6 +9,8 @@
 
 * [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#키패드-누르기)
 
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#[1차]-비밀지도)
+
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#신규-아이디-추천)
 
 * [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#로또의-최고-순위와-최저-순위)
@@ -22,6 +24,8 @@
 * [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#약수의-개수와-덧셈)
 
 * [찾아라 프로그래밍 마에스터 > 폰켓몬](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#폰켓몬)
+
+* [Summer/Winter Coding(~2018) > 예산](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#예산)
 
 * [해시 > 완주하지 못한 선수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#완주하지-못한-선수)
 
@@ -90,6 +94,8 @@
 * [연습문제 > 행렬의 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#행렬의-덧셈)
 
 * [연습문제 > x만큼 간격이 있는 n개의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#x만큼-간격이-있는-n개의-숫자)
+
+* [연습문제 > 직사각형 별찍기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직사각형-별찍기)
 
 </br></br>
 

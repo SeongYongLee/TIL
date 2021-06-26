@@ -4,6 +4,8 @@
 
 * [2020 카카오 인턴십 > 키패드 누르기](#키패드-누르기)
 
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](#[1차]-비밀지도)
+
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](#신규-아이디-추천)
 
 * [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](#로또의-최고-순위와-최저-순위)
@@ -17,6 +19,8 @@
 * [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](#약수의-개수와-덧셈)
 
 * [찾아라 프로그래밍 마에스터 > 폰켓몬](#폰켓몬)
+
+* [Summer/Winter Coding(~2018) > 예산](#예산)
 
 * [해시 > 완주하지 못한 선수](#완주하지-못한-선수)
 
@@ -91,6 +95,8 @@
 * [연습문제 > 행렬의 덧셈](#행렬의-덧셈)
 
 * [연습문제 > x만큼 간격이 있는 n개의 숫자](#x만큼-간격이-있는-n개의-숫자)
+
+* [연습문제 > 직사각형 별찍기](#직사각형-별찍기)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
@@ -1541,6 +1547,98 @@ function solution(x, n) {
 console.log(solution(2, 5));
 console.log(solution(4, 3));
 console.log(solution(-4, 2));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 직사각형 별찍기
+
+[연습문제 > 직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)
+
+``` js
+/* 
+    Use Node.js!!
+*/
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', data => {
+    const dataSplit = data.split(" ");
+    const row = '*'.repeat(+dataSplit[0]);
+    const rowCount = +dataSplit[1];
+    
+    for (let i = 0; i < rowCount; i++) {
+        console.log(row);
+    }
+});
+
+// input : '5 3'
+// input : '2 2'
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 예산
+
+[Summer/Winter Coding(~2018) > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+
+``` js
+// 1
+// function solution(d, budget) {
+//     for (const [i, x] of d.sort((x, y) => x - y).entries()) {
+//         budget -= x;
+//         if (budget < 0) return i;
+//         else if (budget === 0) return i + 1;
+//     }
+//     return d.length;
+// }
+
+// 2 - Refactoring
+function solution(d, budget) {
+    const dlength = d.length;
+    d.sort((x, y) => x - y);
+
+    for (let i = 0; i < dlength; i++) {
+        budget -= d[i];
+        if (budget < 0) return i;
+        else if (budget === 0) return i + 1;
+    }
+
+    return d.length;
+}
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## [1차] 비밀지도
+
+[2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+
+``` js
+// 1
+// function solution(n, arr1, arr2) {
+//     return arr1.map((a, i) =>
+//         ('0'.repeat(n) + (a | arr2[i]).toString(2))
+//             .slice(-n)
+//             .split('')
+//             .reduce((result, i) => result + (i === '1' ? '#' : ' '), ''),
+//     );
+// }
+
+// 2 - Refactoring
+const addZero = (n, s) => {
+    return '0'.repeat(n - s.length) + s;
+}
+
+function solution(n, arr1, arr2) {
+    return arr1.map((v, i) =>
+        addZero(n, (v | arr2[i]).toString(2)).replace(/1|0/g, (a) => (+a ? '#' : ' ')),
+    );
+}
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
