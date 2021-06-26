@@ -1,16 +1,24 @@
 # AlgorithmProgrammers - Level 1
 
+[49/49 (2021/06/26 기준)]
+
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 
 * [2020 카카오 인턴십 > 키패드 누르기](#키패드-누르기)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](#[1차]-비밀지도)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](#1차-비밀지도)
+
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](#1차-다트-게임)
+
+* [2019 KAKAO BLIND RECRUITMENT > 실패율](#실패율)
 
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](#신규-아이디-추천)
 
 * [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](#로또의-최고-순위와-최저-순위)
 
 * [월간 코드 챌린지 시즌1 > 내적](#내적)
+
+* [월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기](#두-개-뽑아서-더하기)
 
 * [월간 코드 챌린지 시즌1 > 3진법 뒤집기](#3진법-뒤집기)
 
@@ -69,12 +77,6 @@
 * [연습문제 > 자연수 뒤집어 배열로 만들기](#자연수-뒤집어-배열로-만들기)
 
 * [연습문제 > 정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
-
-* [연습문제 > 정수 제곱근 판별](#정수-제곱근-판별)
-
-* [연습문제 > 제일 작은 수 제거하기](#제일-작은-수-제거하기)
-
-* [연습문제 > 짝수와 홀수](#짝수와-홀수)
 
 * [연습문제 > 정수 제곱근 판별](#정수-제곱근-판별)
 
@@ -260,6 +262,125 @@ console.log(solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 'right'));
 
 </br></br>
 
+## [1차] 비밀지도
+
+[2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+
+``` js
+// 1
+// function solution(n, arr1, arr2) {
+//     return arr1.map((a, i) =>
+//         ('0'.repeat(n) + (a | arr2[i]).toString(2))
+//             .slice(-n)
+//             .split('')
+//             .reduce((result, i) => result + (i === '1' ? '#' : ' '), ''),
+//     );
+// }
+
+// 2 - Refactoring
+const addZero = (n, s) => {
+    return '0'.repeat(n - s.length) + s;
+}
+
+function solution(n, arr1, arr2) {
+    return arr1.map((v, i) =>
+        addZero(n, (v | arr2[i]).toString(2)).replace(/1|0/g, (a) => (+a ? '#' : ' ')),
+    );
+}
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+
+## [1차] 다트 게임
+
+[2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
+
+``` js
+function solution(dartResult) {
+    var answer = [];
+
+    let tempInteger = '';
+
+    for (let x = 0; x < dartResult.length; x++) {
+        if (Number.isInteger(+dartResult[x])) {
+            tempInteger += dartResult[x];
+        } else {
+            switch (dartResult[x]) {
+                case 'S':
+                    answer.push(+tempInteger);
+                    break;
+                case 'D':
+                    answer.push(Math.pow(+tempInteger, 2));
+                    break;
+                case 'T':
+                    answer.push(Math.pow(+tempInteger, 3));
+                    break;
+                case '*':
+                    answer[answer.length - 1] *= 2;
+                    if (answer[answer.length - 2]) answer[answer.length - 2] *= 2;
+                    break;
+                case '#':
+                    answer[answer.length - 1] *= -1;
+                    break;
+            }
+            tempInteger = '';
+        }
+    }
+
+    return answer.reduce((a, b) => a + b);
+}
+
+console.log(solution('1S2D*3T'));
+console.log(solution('1D2S#10S'));
+console.log(solution('1D2S0T'));
+console.log(solution('1S*2T*3S'));
+console.log(solution('1D#2S*3S'));
+console.log(solution('1T2D3D#'));
+console.log(solution('1D2S3T*'));
+console.log(solution('10S2D*3T'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 실패율
+
+[2019 KAKAO BLIND RECRUITMENT > 실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
+
+``` js
+function solution(N, stages) {
+    const answer = [];
+    let survivor = stages.length;
+
+    for (let x = 1; x <= N; x++) {
+        if (survivor === 0) {
+            answer.push([x, 0]);
+        } else {
+            stages = stages.filter((s) => s !== x);
+            const clearCount = stages.length;
+            answer.push([x, (survivor - clearCount) / survivor]);
+            survivor = clearCount;
+        }
+    }
+
+    return answer.sort((x, y) => (y[1] === x[1] ? x[0] - y[0] : y[1] - x[1])).map((x) => x[0]);
+}
+
+console.log(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]));
+console.log(solution(4, [4, 4, 4, 4, 4]));
+console.log(solution(8, [1, 2, 3, 4, 5, 6, 7]));
+console.log(solution(1, [1, 2]));
+console.log(solution(4, [2, 2, 2, 2, 2]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
 ## 신규 아이디 추천
 
 [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
@@ -404,6 +525,32 @@ console.log(solution([-1, 0, 1], [1, 0, -1]));
 
 </br></br>
 
+## 두 개 뽑아서 더하기
+
+[월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
+
+``` js
+function solution(words) {
+    const answer = new Set();
+    const wLength = words.length;
+
+    for (let i = 0; i < wLength; i++) {
+        for (let j = i + 1; j < wLength; j++) {
+            answer.add(words[i] + words[j]);
+        }
+    }
+
+    return [...answer].sort((a, b) => a - b);
+}
+
+console.log(solution([2, 1, 3, 4, 1]));
+console.log(solution([5, 0, 2, 7]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
 ## 3진법 뒤집기
 
 [월간 코드 챌린지 시즌1 > 3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
@@ -503,6 +650,40 @@ function solution(nums) {
 console.log(solution([3, 1, 2, 3]));
 console.log(solution([3, 3, 3, 2, 2, 4]));
 console.log(solution([3, 3, 3, 2, 2, 2]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 예산
+
+[Summer/Winter Coding(~2018) > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+
+``` js
+// 1
+// function solution(d, budget) {
+//     for (const [i, x] of d.sort((x, y) => x - y).entries()) {
+//         budget -= x;
+//         if (budget < 0) return i;
+//         else if (budget === 0) return i + 1;
+//     }
+//     return d.length;
+// }
+
+// 2 - Refactoring
+function solution(d, budget) {
+    const dlength = d.length;
+    d.sort((x, y) => x - y);
+
+    for (let i = 0; i < dlength; i++) {
+        budget -= d[i];
+        if (budget < 0) return i;
+        else if (budget === 0) return i + 1;
+    }
+
+    return d.length;
+}
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
@@ -1574,71 +1755,6 @@ process.stdin.on('data', data => {
 
 // input : '5 3'
 // input : '2 2'
-```
-
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
-
-</br></br>
-
-## 예산
-
-[Summer/Winter Coding(~2018) > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
-
-``` js
-// 1
-// function solution(d, budget) {
-//     for (const [i, x] of d.sort((x, y) => x - y).entries()) {
-//         budget -= x;
-//         if (budget < 0) return i;
-//         else if (budget === 0) return i + 1;
-//     }
-//     return d.length;
-// }
-
-// 2 - Refactoring
-function solution(d, budget) {
-    const dlength = d.length;
-    d.sort((x, y) => x - y);
-
-    for (let i = 0; i < dlength; i++) {
-        budget -= d[i];
-        if (budget < 0) return i;
-        else if (budget === 0) return i + 1;
-    }
-
-    return d.length;
-}
-```
-
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
-
-</br></br>
-
-## [1차] 비밀지도
-
-[2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
-
-``` js
-// 1
-// function solution(n, arr1, arr2) {
-//     return arr1.map((a, i) =>
-//         ('0'.repeat(n) + (a | arr2[i]).toString(2))
-//             .slice(-n)
-//             .split('')
-//             .reduce((result, i) => result + (i === '1' ? '#' : ' '), ''),
-//     );
-// }
-
-// 2 - Refactoring
-const addZero = (n, s) => {
-    return '0'.repeat(n - s.length) + s;
-}
-
-function solution(n, arr1, arr2) {
-    return arr1.map((v, i) =>
-        addZero(n, (v | arr2[i]).toString(2)).replace(/1|0/g, (a) => (+a ? '#' : ' ')),
-    );
-}
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

@@ -3,13 +3,17 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1)
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) [49/49 (2021/06/26 기준)]
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
 * [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#키패드-누르기)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#[1차]-비밀지도)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#1차-비밀지도)
+
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#1차-다트-게임)
+
+* [2019 KAKAO BLIND RECRUITMENT > 실패율](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#실패율)
 
 * [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#신규-아이디-추천)
 
@@ -18,6 +22,8 @@
 * [월간 코드 챌린지 시즌1 > 내적](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#내적)
 
 * [월간 코드 챌린지 시즌1 > 3진법 뒤집기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#3진법-뒤집기)
+
+* [월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#두-개-뽑아서-더하기)
 
 * [월간 코드 챌린지 시즌2 > 음양 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#음양-더하기)
 
@@ -99,7 +105,7 @@
 
 </br></br>
 
-## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
+## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2) - [4/54]
 
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
 
@@ -111,7 +117,7 @@
 
 </br></br>
 
-## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
+## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3) - [2/42]
 
 * [2020 KAKAO BLIND RECRUITMENT > 자물쇠와 열쇠](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#자물쇠와-열쇠)
 
