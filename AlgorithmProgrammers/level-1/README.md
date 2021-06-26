@@ -34,8 +34,6 @@
 
 * [연습문제 > 제일 작은 수 제거하기](#제일-작은-수-제거하기)
 
-* [연습문제 > 하샤드 수](#하샤드-수)
-
 * [연습문제 > 같은 숫자는 싫어](#같은-숫자는-싫어)
 
 * [연습문제 > 나누어 떨어지는 숫자 배열](#나누어-떨어지는-숫자-배열)
@@ -85,6 +83,14 @@
 * [연습문제 > 콜라츠 추측](#콜라츠-추측)
 
 * [연습문제 > 평균 구하기](#평균-구하기)
+
+* [연습문제 > 하샤드 수](#하샤드-수)
+
+* [연습문제 > 핸드폰 번호 가리기](#핸드폰-번호-가리기)
+
+* [연습문제 > 행렬의 덧셈](#행렬의-덧셈)
+
+* [연습문제 > x만큼 간격이 있는 n개의 숫자](#x만큼-간격이-있는-n개의-숫자)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
@@ -1444,6 +1450,97 @@ function solution(arr) {
 
 console.log(solution([1, 2, 3, 4]));
 console.log(solution([5, 5]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 하샤드 수
+
+[연습문제 > 하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12944)
+
+``` js
+function solution(x) {
+    return !(x % (x + '').split('').reduce((r, i) => +r + +i));
+}
+
+console.log(solution(10));
+console.log(solution(12));
+console.log(solution(11));
+console.log(solution(13));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 핸드폰 번호 가리기
+
+[연습문제 > 핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
+
+``` js
+// 1
+// function solution(phone_number) {
+//     const split_number = phone_number.split('');
+//     const snLength = split_number.length;
+
+//     return '*'.repeat(snLength - 4) + split_number.slice(snLength - 4, snLength).join('');
+// }
+
+// 2 - Refactoring
+function solution(phone_number) {
+    return '*'.repeat(phone_number.length - 4) + phone_number.slice(-4);
+}
+
+console.log(solution('01033334444'));
+console.log(solution('027778888'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 행렬의 덧셈
+
+[연습문제 > 행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
+
+``` js
+function solution(arr1, arr2) {
+    return arr1.map((arr, i) => arr.map((a, j) => a + arr2[i][j]));
+}
+
+console.log(
+    solution(
+        [
+            [1, 2],
+            [2, 3],
+        ],
+        [
+            [3, 4],
+            [5, 6],
+        ],
+    ),
+);
+console.log(solution([[1], [2]], [[3], [4]]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## x만큼 간격이 있는 n개의 숫자
+
+[연습문제 > x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954)
+
+``` js
+function solution(x, n) {
+    return Array(n).fill(x).map((v, i) => v * (i + 1))
+}
+
+console.log(solution(2, 5));
+console.log(solution(4, 3));
+console.log(solution(-4, 2));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)

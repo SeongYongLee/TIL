@@ -39,8 +39,6 @@
 
 * [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#제일-작은-수-제거하기)
 
-* [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
-
 * [연습문제 > 같은 숫자는 싫어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#같은-숫자는-싫어)
 
 * [연습문제 > 나누어 떨어지는 숫자 배열](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#나누어-떨어지는-숫자-배열)
@@ -84,6 +82,14 @@
 * [연습문제 > 콜라츠 추측](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#콜라츠-추측)
 
 * [연습문제 > 평균 구하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#평균-구하기)
+
+* [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
+
+* [연습문제 > 핸드폰 번호 가리기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#핸드폰-번호-가리기)
+
+* [연습문제 > 행렬의 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#행렬의-덧셈)
+
+* [연습문제 > x만큼 간격이 있는 n개의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#x만큼-간격이-있는-n개의-숫자)
 
 </br></br>
 
