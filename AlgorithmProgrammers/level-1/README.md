@@ -1588,7 +1588,6 @@ console.log(solution(4));
 // 2 - 유클리드 호제법
 function solution(n, m) {
     const greatestCommonDivisor = (a, b) => {
-        console.log(a, b);
         return b ? greatestCommonDivisor(b, a % b) : Math.abs(a);
     };
 

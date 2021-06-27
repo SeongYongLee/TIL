@@ -1,90 +1,18 @@
 # AlgorithmProgrammers - Level 2
 
-* [스택/큐 > 기능개발](#기능개발)
-
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
 
+* [Summer/Winter Coding(2018) > 스킬트리](#스킬트리)
+
+* [Summer/Winter Coding(2019) > 멀쩡한 사각형](#멀쩡한-사각형)
+
+* [스택/큐 > 기능개발](#기능개발)
+
 * [연습문제 > 다음 큰 숫자](#다음-큰-숫자)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
-
-## 기능개발
-
-[스택/큐 > 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
-
-``` js
-// 1
-// function solution(progresses, speeds) {
-//     const answer = [];
-    
-//     while (speeds.length) {
-//         let count = 0;
-//         progresses = progresses.map((x, i) => x + speeds[i]);
-//         while (speeds.length) {
-//             if (progresses[0] >= 100) {
-//                 progresses.shift();
-//                 speeds.shift();
-//                 count++;
-//             } else break;
-//         }
-//         if (count) answer.push(count);
-//     }
-    
-//     return answer;
-// }
-
-// 2 - Refactoring
-// function solution(board, moves) {
-//     let answer = 0;
-//     const result = [];
-
-//     let fitstFilter = board.reduce((result, x, i) => x.map((i, y) => [...(result[y] || []), i]), []);
-//     let secondFilter = fitstFilter.map((x, i) => x.filter((x) => x !== 0).reverse());
-
-//     for (let x = 0; x < moves.length; x++) {
-//         const temp = secondFilter[moves[x] - 1].pop();
-//         if (!temp) continue;
-//         if (temp === result[result.length - 1]) {
-//             result.pop();
-//             answer += 2;
-//             continue;
-//         }
-//         result.push(temp);
-//     }
-//     return answer;
-// }
-
-// 3 - Change Approach
-/* 
-    프로그래머스 - 다른 사람의 풀이 참고
-*/
-function solution(progresses, speeds) {
-    const answer = [0];
-    const days = progresses.map((p, i) => Math.ceil((100 - p) / speeds[i]));
-    const dlength = days.length;
-    let maxDay = days[0];
-
-    for (let i = 0, j = 0; i < dlength; i++) {
-        if (days[i] <= maxDay) {
-            answer[j] += 1;
-        } else {
-            maxDay = days[i];
-            answer[++j] = 1;
-        }
-    }
-
-    return answer;
-}
-
-console.log(solution([93, 30, 55], [1, 30, 5]));
-console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
-```
-
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
-
-</br></br>
 
 ## 순위 검색
 
@@ -257,31 +185,6 @@ console.log(
 
 </br></br>
 
-## 다음 큰 숫자
-
-[연습문제 > 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
-
-``` js
-function solution(n) {
-  const count = (n) =>
-    n
-      .toString(2)
-      .split('')
-      .filter((x) => x === '1').length;
-
-  const nLength = count(n);
-
-  while (n++) if (nLength === count(n)) return n;
-}
-
-console.log(solution(78));
-console.log(solution(15));
-```
-
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
-
-</br></br>
-
 ## 메뉴 리뉴얼
 
 [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
@@ -445,6 +348,163 @@ function solution(orders, course) {
 console.log(solution(['ABCFG', 'AC', 'CDE', 'ACDE', 'BCFG', 'ACDEH'], [2, 3, 4]));
 console.log(solution(['ABCDE', 'AB', 'CD', 'ADE', 'XYZ', 'XYZ', 'ACD'], [2, 3, 5]));
 console.log(solution(['XYZ', 'XWY', 'WXA'], [2, 3, 4]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 스킬트리
+
+[Summer/Winter Coding(2018) > 스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
+
+``` js
+function solution(skill, skill_trees) {
+    const calc = (s) =>
+        skill.indexOf(
+            s
+                .split('')
+                .filter((x) => skill.indexOf(x) !== -1)
+                .join(''),
+        ) === 0;
+
+    return skill_trees.filter((s) => calc(s)).length;
+}
+
+console.log(solution('CBD', ['BACDE', 'CBADF', 'AECB', 'BDA']));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 멀쩡한 사각형
+
+[Summer/Winter Coding(2019) > 멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
+
+``` js
+// 1
+// const gcd = (a, b) => {
+//     return b ? gcd(b, a % b) : Math.abs(a);
+// };
+
+// function solution(w, h) {
+//     const temp = gcd(w, h);
+
+//     return w * h - (w / temp + h / temp - 1) * temp;
+// }
+
+// 2 - Refactoring
+const gcd = (a, b) => {
+    return b ? gcd(b, a % b) : Math.abs(a);
+};
+
+function solution(w, h) {
+    return w * h - (w + h - gcd(w, h));
+}
+
+console.log(solution(8, 12));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 기능개발
+
+[스택/큐 > 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
+
+``` js
+// 1
+// function solution(progresses, speeds) {
+//     const answer = [];
+    
+//     while (speeds.length) {
+//         let count = 0;
+//         progresses = progresses.map((x, i) => x + speeds[i]);
+//         while (speeds.length) {
+//             if (progresses[0] >= 100) {
+//                 progresses.shift();
+//                 speeds.shift();
+//                 count++;
+//             } else break;
+//         }
+//         if (count) answer.push(count);
+//     }
+    
+//     return answer;
+// }
+
+// 2 - Refactoring
+// function solution(board, moves) {
+//     let answer = 0;
+//     const result = [];
+
+//     let fitstFilter = board.reduce((result, x, i) => x.map((i, y) => [...(result[y] || []), i]), []);
+//     let secondFilter = fitstFilter.map((x, i) => x.filter((x) => x !== 0).reverse());
+
+//     for (let x = 0; x < moves.length; x++) {
+//         const temp = secondFilter[moves[x] - 1].pop();
+//         if (!temp) continue;
+//         if (temp === result[result.length - 1]) {
+//             result.pop();
+//             answer += 2;
+//             continue;
+//         }
+//         result.push(temp);
+//     }
+//     return answer;
+// }
+
+// 3 - Change Approach
+/* 
+    프로그래머스 - 다른 사람의 풀이 참고
+*/
+function solution(progresses, speeds) {
+    const answer = [0];
+    const days = progresses.map((p, i) => Math.ceil((100 - p) / speeds[i]));
+    const dlength = days.length;
+    let maxDay = days[0];
+
+    for (let i = 0, j = 0; i < dlength; i++) {
+        if (days[i] <= maxDay) {
+            answer[j] += 1;
+        } else {
+            maxDay = days[i];
+            answer[++j] = 1;
+        }
+    }
+
+    return answer;
+}
+
+console.log(solution([93, 30, 55], [1, 30, 5]));
+console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 다음 큰 숫자
+
+[연습문제 > 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
+
+``` js
+function solution(n) {
+  const count = (n) =>
+    n
+      .toString(2)
+      .split('')
+      .filter((x) => x === '1').length;
+
+  const nLength = count(n);
+
+  while (n++) if (nLength === count(n)) return n;
+}
+
+console.log(solution(78));
+console.log(solution(15));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
