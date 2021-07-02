@@ -1,5 +1,7 @@
 # AlgorithmProgrammers - Level 2
 
+* [2019 카카오 개발자 겨울 인턴십 > 튜플](#튜플)
+
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
@@ -18,7 +20,59 @@
 
 * [연습문제 > 124 나라의 숫자](#124-나라의-숫자)
 
+* [연습문제 > 올바른 괄호](#올바른-괄호)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
+
+## 튜플
+
+[2019 카카오 개발자 겨울 인턴십 > 튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
+
+``` js
+// 1
+// function solution(words) {
+//     const answerObject = {};
+//     const answer = [];
+//     let num = '';
+
+//     for (let i = 0; i < words.length; i++) {
+//         if (['{', ',', '}'].includes(words[i])) {
+//             if (num === '') continue;
+//             if (!answerObject[num]) answerObject[num] = 0;
+//             answerObject[num]++;
+//             num = '';
+//         } else {
+//             num += words[i];
+//         }
+//     }
+
+//     for (const p in answerObject) {
+//         answer[answerObject[p] - 1] = +p;
+//     }
+
+//     return answer.reverse();
+// }
+
+// 2 - Refactoring
+/* 
+    프로그래머스 - 다른 사람의 풀이 참고
+*/
+function solution(words) {
+    return JSON.parse(words.replace(/{/g, '[').replace(/}/g, ']'))
+        .sort((a, b) => a.length - b.length)
+        .reduce((r, c) => [...r, ...c.filter((f) => !r.includes(f))]);
+}
+
+console.log(solution('{{2},{2,1},{2,1,3},{2,1,3,4}}'));
+console.log(solution('{{1,2,3},{2,1},{1,2,4,3},{2}}'));
+console.log(solution('{{20,111},{111}}'));
+console.log(solution('{{123}}'));
+console.log(solution('{{4,2,3},{3},{2,3,4,1},{2,3}}'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
 
 ## 순위 검색
 
@@ -686,7 +740,7 @@ console.log(solution(15));
 
 </br></br>
 
-## 다음 큰 숫자
+## 123 나라의 숫자
 
 [연습문제 > 124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)
 
@@ -754,6 +808,47 @@ console.log(solution(3));
 console.log(solution(4));
 console.log(solution(13));
 console.log(solution(10));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 올바른 괄호
+
+[연습문제 > 올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
+
+``` js
+// 1
+function solution(s) {
+    let answer = 0;
+    const sLength = s.length;
+
+    for (let i = 0; i < sLength; i++) {
+        answer += s[i] === '(' ? 1 : -1;
+        if (answer < 0) return false;
+    }
+
+    return answer === 0 ? true : false;
+}
+
+// 2 - Refactoring (1이 더 빠름)
+// function solution(s) {
+//     let answer = 0;
+//     const sLength = s.length;
+
+//     for (let i = 0; i < sLength; i++) {
+//         answer += s[i] === '(' ? 1 : -1;
+//         if (answer < 0 || answer > sLength - i - 1) return false;
+//     }
+
+//     return answer === 0 ? true : false;
+// }
+
+// console.log(solution('()()'));
+// console.log(solution('(())()'));
+// console.log(solution(')()('));
+// console.log(solution('(()('));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)

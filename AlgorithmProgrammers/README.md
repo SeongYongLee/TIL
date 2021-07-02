@@ -107,6 +107,8 @@
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
+* [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#튜플)
+
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#메뉴-리뉴얼)
@@ -124,6 +126,9 @@
 * [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#다음-큰-숫자)
 
 * [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#124-나라의-숫자)
+
+* [연습문제 > 올바른 괄호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#올바른-괄호)
+
 </br></br>
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
