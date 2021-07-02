@@ -105,11 +105,13 @@
 
 </br></br>
 
-## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2) - [6/54]
+## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#메뉴-리뉴얼)
+
+* [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#게임-맵-최단거리)
 
 * [Summer/Winter Coding(2018) > 스킬트리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#스킬트리)
 
@@ -124,7 +126,7 @@
 * [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#124-나라의-숫자)
 </br></br>
 
-## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3) - [2/42]
+## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
 
 * [2020 KAKAO BLIND RECRUITMENT > 자물쇠와 열쇠](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#자물쇠와-열쇠)
 
