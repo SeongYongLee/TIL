@@ -109,6 +109,8 @@
 
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#튜플)
 
+* [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-변환)
+
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#메뉴-리뉴얼)

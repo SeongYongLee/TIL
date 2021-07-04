@@ -2,6 +2,8 @@
 
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](#튜플)
 
+* [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](#괄호-변환)
+
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](#순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
@@ -68,6 +70,77 @@ console.log(solution('{{1,2,3},{2,1},{1,2,4,3},{2}}'));
 console.log(solution('{{20,111},{111}}'));
 console.log(solution('{{123}}'));
 console.log(solution('{{4,2,3},{3},{2,3,4,1},{2,3}}'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 괄호 변환
+
+[2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
+
+``` js
+// 1
+// function solution(words) {
+//   const sol = (words) => {
+//       if (!words.length) return '';
+
+//       const u = [];
+//       let wordCount = 0;
+//       let isCorrect = true;
+
+//       while (words.length) {
+//           wordCount += words[0] === '(' ? 1 : -1;
+//           u.push(words.shift());
+//           if (wordCount < 0) isCorrect = false;
+//           else if (wordCount === 0) {
+//               if (!isCorrect) {
+//                   let temp = '';
+//                   for (let i = 1; i < u.length - 1; i++) {
+//                       temp += u[i] === '(' ? ')' : '(';
+//                   }
+//                   return '(' + sol(words) + ')' + temp;
+//               } else {
+//                   return u.join('') + sol(words);
+//               }
+//           }
+//       }
+//   };
+
+//   return sol(words.split(''));
+// }
+
+// 2 - Refactoring
+function solution(words) {
+    const sol = (words) => {
+        if (!words.length) return '';
+
+        const u = [];
+        let wordCount = 0;
+
+        do {
+            wordCount += words[0] === '(' ? 1 : -1;
+            u.push(words.shift());
+        } while (wordCount !== 0);
+
+        if (u[0] === ')') {
+            let temp = '';
+            for (let i = 1; i < u.length - 1; i++) {
+                temp += u[i] === '(' ? ')' : '(';
+            }
+            return '(' + sol(words) + ')' + temp;
+        } else {
+            return u.join('') + sol(words);
+        }
+    };
+
+    return sol(words.split(''));
+}
+
+console.log(solution('(()())()'));
+console.log(solution(')('));
+console.log(solution('()))((()'));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
