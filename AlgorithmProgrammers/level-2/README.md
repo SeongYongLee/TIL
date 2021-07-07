@@ -8,6 +8,8 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
 
+* [월간 코드 챌린지 시즌1 > 쿼드 압축 후 개수 세기](#쿼드-압축-후-개수-세기)
+
 * [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](#게임-맵-최단거리)
 
 * [Summer/Winter Coding(~2018) > 스킬트리](#스킬트리)
@@ -491,6 +493,77 @@ console.log(solution(['XYZ', 'XWY', 'WXA'], [2, 3, 4]));
 
 </br></br>
 
+## 쿼드 압축 후 개수 세기
+
+[월간 코드 챌린지 시즌1 > 쿼드 압축 후 개수 세기](https://programmers.co.kr/learn/courses/30/lessons/68936)
+
+``` js
+function solution(arr) {
+    const answer = arr.reduce(
+        (r, a) => {
+            a.map((b) => r[b]++);
+            return r;
+        },
+        [0, 0],
+    );
+    const isCompress = (num, i, j, k) => {
+        for (let a = j; a < j + i; a++) {
+            for (let b = k; b < k + i; b++) {
+                if (num !== arr[a][b]) return false;
+            }
+        }
+        return true;
+    };
+    const compress = (i, j, k) => {
+        for (let a = j; a < j + i; a++) {
+            for (let b = k; b < k + i; b++) {
+                arr[a][b] = -1;
+            }
+        }
+    };
+
+    const aLength = arr.length;
+
+    for (let i = aLength; i > 1; i /= 2) {
+        for (let j = 0; j < aLength; j += i) {
+            for (let k = 0; k < aLength; k += i) {
+                const num = arr[j][k];
+                if (num === -1) continue;
+                if (isCompress(num, i, j, k)) {
+                    compress(i, j, k);
+                    answer[num] -= i * i - 1;
+                }
+            }
+        }
+    }
+
+    return answer;
+}
+
+console.log(
+    solution([
+        [1, 1, 0, 0],
+        [1, 0, 0, 0],
+        [1, 0, 0, 1],
+        [1, 1, 1, 1],
+    ]),
+);
+console.log(
+    solution([
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 0, 0, 1, 1, 1, 1],
+        [0, 1, 0, 0, 1, 1, 1, 1],
+        [0, 0, 0, 0, 0, 0, 1, 1],
+        [0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 1, 0, 0, 1],
+        [0, 0, 0, 0, 1, 1, 1, 1],
+    ]),
+);
+```
+
+</br></br>
+
 ## 게임 맵 최단거리
 
 [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844)
@@ -702,7 +775,7 @@ console.log(solution('LULLLLLLU'));
 
 </br></br>
 
-## 방문 길이
+## 배달
 
 [Summer/Winter Coding(~2018) > 배달](https://programmers.co.kr/learn/courses/30/lessons/12978)
 
