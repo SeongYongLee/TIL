@@ -8,6 +8,8 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](#메뉴-리뉴얼)
 
+* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](#행렬-테두리-회전하기)
+
 * [월간 코드 챌린지 시즌1 > 쿼드 압축 후 개수 세기](#쿼드-압축-후-개수-세기)
 
 * [월간 코드 챌린지 시즌2 > 괄호 회전하기](#괄호-회전하기)
@@ -489,6 +491,76 @@ function solution(orders, course) {
 console.log(solution(['ABCFG', 'AC', 'CDE', 'ACDE', 'BCFG', 'ACDEH'], [2, 3, 4]));
 console.log(solution(['ABCDE', 'AB', 'CD', 'ADE', 'XYZ', 'XYZ', 'ACD'], [2, 3, 5]));
 console.log(solution(['XYZ', 'XWY', 'WXA'], [2, 3, 4]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 행렬 테두리 회전하기
+
+[2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485)
+
+``` js
+function solution(rows, columns, queries) {
+    const answer = [];
+    const matrix = new Array(rows)
+        .fill()
+        .map((r, i) => new Array(columns).fill().map((c, j) => i * columns + j + 1));
+
+    for (let i = 0; i < queries.length; i++) {
+        const setNum = (tempNum) => {
+            matrix[row][column] = lastNum;
+            lastNum = tempNum;
+            if (minNum > lastNum) minNum = lastNum;
+        };
+
+        const rowDiff = queries[i][2] - queries[i][0];
+        const columnDiff = queries[i][3] - queries[i][1];
+        let row = queries[i][0] - 1;
+        let column = queries[i][1] - 1;
+        let lastNum = matrix[row][column];
+        let minNum = lastNum;
+
+        // right
+        for (let i = 0; i < columnDiff; i++) {
+            setNum(matrix[row][++column]);
+        }
+        // down
+        for (let i = 0; i < rowDiff; i++) {
+            setNum(matrix[++row][column]);
+        }
+        // left
+        for (let i = 0; i < columnDiff; i++) {
+            setNum(matrix[row][--column]);
+        }
+        // up
+        for (let i = 0; i < rowDiff; i++) {
+            setNum(matrix[--row][column]);
+        }
+
+        answer.push(minNum);
+    }
+
+    return answer;
+}
+
+console.log(
+    solution(6, 6, [
+        [2, 2, 5, 4],
+        [3, 3, 6, 6],
+        [5, 1, 6, 3],
+    ]),
+);
+console.log(
+    solution(3, 3, [
+        [1, 1, 2, 2],
+        [1, 2, 2, 3],
+        [2, 1, 3, 2],
+        [2, 2, 3, 3],
+    ]),
+);
+console.log(solution(100, 97, [[1, 1, 100, 97]]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
