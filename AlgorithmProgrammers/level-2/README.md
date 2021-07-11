@@ -502,6 +502,7 @@ console.log(solution(['XYZ', 'XWY', 'WXA'], [2, 3, 4]));
 [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485)
 
 ``` js
+// 1
 function solution(rows, columns, queries) {
     const answer = [];
     const matrix = new Array(rows)
@@ -544,6 +545,43 @@ function solution(rows, columns, queries) {
 
     return answer;
 }
+
+// 2 - Refactoring (더 느려짐)
+// function solution(rows, columns, queries) {
+//     const matrix = new Array(rows)
+//         .fill()
+//         .map((r, i) => new Array(columns).fill().map((c, j) => i * columns + j + 1));
+
+//     return queries.map((query) => {
+//         const [sr, sc, er, ec] = query.map((q) => q - 1);
+//         const tempNum = matrix[sr][sc];
+//         let minNum = matrix[sr][sc];
+
+//         // down
+//         for (let i = sr; i < er; i++) {
+//             matrix[i][sc] = matrix[i + 1][sc];
+//             if (minNum > matrix[i][sc]) minNum = matrix[i][sc];
+//         }
+//         // right
+//         for (let i = sc; i < ec; i++) {
+//             matrix[er][i] = matrix[er][i + 1];
+//             if (minNum > matrix[er][i]) minNum = matrix[er][i];
+//         }
+//         // up
+//         for (let i = er; i > sr; i--) {
+//             matrix[i][ec] = matrix[i - 1][ec];
+//             if (minNum > matrix[i][ec]) minNum = matrix[i][ec];
+//         }
+//         // left
+//         for (let i = ec; i > sc; i--) {
+//             matrix[sr][i] = matrix[sr][i - 1];
+//             if (minNum > matrix[sr][i]) minNum = matrix[sr][i];
+//         }
+//         matrix[sr][sc + 1] = tempNum;
+
+//         return minNum;
+//     });
+// }
 
 console.log(
     solution(6, 6, [
