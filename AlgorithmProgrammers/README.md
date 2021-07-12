@@ -121,6 +121,8 @@
 
 * [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-회전하기)
 
+* [월간 코드 챌린지 시즌2 > 2개 이하로 다른 비트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#2개-이하로-다른-비트)
+
 * [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#게임-맵-최단거리)
 
 * [Summer/Winter Coding(~2018) > 스킬트리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#스킬트리)
