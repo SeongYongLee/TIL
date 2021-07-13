@@ -70,8 +70,11 @@
     ```
 
 ### Reference
+
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/FrontEnd
+
 - https://asfirstalways.tistory.com/237
+
 - https://mulder21c.github.io/2019/01/30/what-is-cross-browsing
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
@@ -97,6 +100,7 @@
 반면 `reset.css`를 포함하면 시각적으로 일반 텍스트와 구별 할 수 없다. 또한 normalize.css 는 reset.css 보다 넓은 범위를 가지고 있으며 HTML5 요소의 표시 설정, 양식 요소의 글꼴 상속 부족, pre-font 크기 렌더링 수정, IE9 의 SVG 오버플로 및 iOS 의 버튼 스타일링 버그 등에 대한 이슈를 해결해준다.
 
 ### Reference
+
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/FrontEnd
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
@@ -143,7 +147,9 @@ Feature detection이 더 확실한 방법이기에 이 방법은 권장하지 �
 이 방법은 오래된 관행이며 권장하지 않는다.
 
 ### Reference
+
 - https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/kr/javascript-questions.md
+
 - https://rlynjb.medium.com/js-interview-question-what-s-the-difference-between-feature-detection-feature-inference-and-76d2e4956a9b
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#frontend)
