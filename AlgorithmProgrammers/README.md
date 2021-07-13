@@ -143,6 +143,8 @@
 
 * [연습문제 > 올바른 괄호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#올바른-괄호)
 
+* [연습문제 > 가장 큰 정사각형 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#가장-큰-정사각형-찾기)
+
 </br></br>
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
