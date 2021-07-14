@@ -31,6 +31,8 @@ func(a); // arguments, actual parameter, 인자, 실인자
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
+</br></br>
+
 ## Evaluation Strategy
 
 프로그래밍 언어에서 함수 호출의 아규먼트(argument)의 순서를 언제 결정하고 함수에 어떤 종류의 값을 통과시킬지 결정하는 것,
@@ -38,7 +40,6 @@ func(a); // arguments, actual parameter, 인자, 실인자
 함수 실행 시 인자로 무엇을 던지느냐에 따라 함수가 어떻게 실행될지 결정하는 것을 의미한다.
 
 Call은 함수를 호출 할 때 사용하는 동사이고 Pass는 인자를 전달한다는 의미를 나타내는 동사이다.
-
 
 ### call by value (O)
 

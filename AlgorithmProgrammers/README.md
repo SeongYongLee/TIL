@@ -3,7 +3,7 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) [49/49 (2021/06/26 기준)]
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 49/49 (2021/06/26 기준)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
@@ -118,6 +118,8 @@
 * [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#행렬-테두리-회전하기)
 
 * [월간 코드 챌린지 시즌1 > 쿼드 압축 후 개수 세기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#쿼드-압축-후-개수-세기)
+
+* [월간 코드 챌린지 시즌1 > 삼각 달팽이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#삼각-달팽이)
 
 * [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-회전하기)
 
