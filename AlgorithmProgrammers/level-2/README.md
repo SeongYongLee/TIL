@@ -1,5 +1,7 @@
 # AlgorithmProgrammers - Level 2
 
+* [2017 팁스타운 > 예상 대진표](#예상-대진표)
+
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](#튜플)
 
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](#괄호-변환)
@@ -26,6 +28,8 @@
 
 * [Summer/Winter Coding(~2018) > 배달](#배달)
 
+* [Summer/Winter Coding(~2018) > 영어 끝말잇기](#영어-끝말잇기)
+
 * [Summer/Winter Coding(2019) > 멀쩡한 사각형](#멀쩡한-사각형)
 
 * [스택/큐 > 기능개발](#기능개발)
@@ -41,6 +45,33 @@
 * [연습문제 > 가장 큰 정사각형 찾기](#가장-큰-정사각형-찾기)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
+
+## 예상 대진표
+
+[2017 팁스타운 > 예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985)
+
+``` js
+function solution(n, a, b) {
+    let answer = 0;
+
+    while (a !== b) {
+        a = Math.ceil(a / 2);
+        b = Math.ceil(b / 2);
+        answer++;
+    }
+
+    return answer;
+}
+
+console.log(solution(8, 4, 7));
+console.log(solution(8, 1, 2));
+console.log(solution(8, 4, 8));
+console.log(solution(16, 4, 9));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
 
 ## 튜플
 
@@ -1266,6 +1297,55 @@ console.log(
         4,
     ),
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 영어 끝말잇기
+
+[Summer/Winter Coding(2019) > 영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
+
+``` js
+function solution(n, words) {
+    const wordsLength = words.length;
+    const history = [words[0]];
+
+    for (let i = 1; i < wordsLength; i++) {
+        if (words[i - 1].slice(-1) === words[i].slice(0, 1) && history.indexOf(words[i]) === -1) {
+            history.push(words[i]);
+        } else {
+            return [(i % n) + 1, Math.floor(i / n) + 1];
+        }
+    }
+
+    return [0, 0];
+}
+
+console.log(
+    solution(3, ['tank', 'kick', 'know', 'wheel', 'land', 'dream', 'mother', 'robot', 'tank']),
+);
+console.log(
+    solution(5, [
+        'hello',
+        'observe',
+        'effect',
+        'take',
+        'either',
+        'recognize',
+        'encourage',
+        'ensure',
+        'establish',
+        'hang',
+        'gather',
+        'refer',
+        'reference',
+        'estimate',
+        'executive',
+    ]),
+);
+console.log(solution(2, ['hello', 'one', 'even', 'never', 'now', 'world', 'draw']));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
