@@ -33,6 +33,8 @@
 
 * [Summer/Winter Coding(~2018) > 예산](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#예산)
 
+* [Summer/Winter Coding(~2018) > 소수 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#소수-만들기)
+
 * [해시 > 완주하지 못한 선수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#완주하지-못한-선수)
 
 * [완전탐색 > 모의고사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#모의고사)
