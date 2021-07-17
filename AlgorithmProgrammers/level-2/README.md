@@ -30,6 +30,8 @@
 
 * [Summer/Winter Coding(~2018) > 영어 끝말잇기](#영어-끝말잇기)
 
+* [Summer/Winter Coding(~2018) > 점프와 순간 이동](#점프와-순간-이동)
+
 * [Summer/Winter Coding(2019) > 멀쩡한 사각형](#멀쩡한-사각형)
 
 * [스택/큐 > 기능개발](#기능개발)
@@ -43,6 +45,8 @@
 * [연습문제 > 올바른 괄호](#올바른-괄호)
 
 * [연습문제 > 가장 큰 정사각형 찾기](#가장-큰-정사각형-찾기)
+
+* [연습문제 > N개의 최소공배수](#N개의-최소공배수)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
@@ -1352,6 +1356,44 @@ console.log(solution(2, ['hello', 'one', 'even', 'never', 'now', 'world', 'draw'
 
 </br></br>
 
+## 점프와 순간 이동
+
+[Summer/Winter Coding(~2018) > 점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980)
+
+``` js
+// 1
+// function solution(n) {
+//     let ans = 0;
+
+//     while (n) {
+//         if (n % 2 === 0) {
+//             n /= 2;
+//         } else {
+//             n--;
+//             ans++;
+//         }
+//     }
+
+//     return ans;
+// }
+
+// 2 - Refactoring
+function solution(n) {
+    return n
+        .toString(2)
+        .split('')
+        .filter((n) => +n).length;
+}
+
+console.log(solution(5));
+console.log(solution(6));
+console.log(solution(5000));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
 ## 멀쩡한 사각형
 
 [Summer/Winter Coding(2019) > 멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
@@ -1729,6 +1771,27 @@ console.log(
         [0, 1, 1, 1, 1],
     ]),
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## N개의 최소공배수
+
+[연습문제 > N개의 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12953)
+
+``` js
+const gcd = (a, b) => {
+    return b ? gcd(b, a % b) : Math.abs(a);
+};
+
+function solution(words) {
+    return words.reduce((r, c) => (r * c) / gcd(r, c));
+}
+
+console.log(solution([2, 6, 8, 14]));
+console.log(solution([1, 2, 3]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)

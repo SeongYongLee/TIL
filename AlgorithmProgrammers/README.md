@@ -137,6 +137,8 @@
 
 * [Summer/Winter Coding(~2018) > 영어 끝말잇기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#영어-끝말잇기)
 
+* [Summer/Winter Coding(~2018) > 점프와 순간 이동](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#점프와-순간-이동)
+
 * [Summer/Winter Coding(2019) > 멀쩡한 사각형](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#멀쩡한-사각형)
 
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
@@ -150,6 +152,8 @@
 * [연습문제 > 올바른 괄호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#올바른-괄호)
 
 * [연습문제 > 가장 큰 정사각형 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#가장-큰-정사각형-찾기)
+
+* [연습문제 > N개의 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#N개의-최소공배수)
 
 </br></br>
 
