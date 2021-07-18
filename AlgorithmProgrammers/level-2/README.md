@@ -2,6 +2,8 @@
 
 * [2017 팁스타운 > 예상 대진표](#예상-대진표)
 
+* [2017 팁스타운 > 짝지어 제거하기](#짝지어-제거하기)
+
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](#튜플)
 
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](#괄호-변환)
@@ -48,6 +50,8 @@
 
 * [연습문제 > N개의 최소공배수](#N개의-최소공배수)
 
+* [연습문제 > JadenCase 문자열 만들기](#JadenCase-문자열-만들기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 예상 대진표
@@ -71,6 +75,32 @@ console.log(solution(8, 4, 7));
 console.log(solution(8, 1, 2));
 console.log(solution(8, 4, 8));
 console.log(solution(16, 4, 9));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 짝지어 제거하기
+
+[2017 팁스타운 > 짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
+
+``` js
+function solution(s) {
+    const temp = [];
+
+    for (let i = 0; i < s.length; i++) {
+        if (temp[temp.length - 1] === s[i]) temp.pop();
+        else temp.push(s[i]);
+    }
+
+    return temp.length ? 0 : 1;
+}
+
+console.log(solution('baabaa'));
+console.log(solution('baabaa'));
+console.log(solution('cdcd'));
+
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
@@ -1792,6 +1822,26 @@ function solution(words) {
 
 console.log(solution([2, 6, 8, 14]));
 console.log(solution([1, 2, 3]));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## JadenCase 문자열 만들기
+
+[연습문제 > JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
+
+``` js
+function solution(s) {
+    return s
+        .split(' ')
+        .map((str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase())
+        .join(' ');
+}
+
+console.log(solution('3people  unFollowed me'));
+console.log(solution('for the last week'));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)

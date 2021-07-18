@@ -3,7 +3,7 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 49/49 (2021/06/26 기준)
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 50/50 (2021/06/26 기준)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
@@ -111,6 +111,8 @@
 
 * [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#예상-대진표)
 
+* [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#짝지어-제거하기)
+
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#튜플)
 
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-변환)
@@ -156,6 +158,8 @@
 * [연습문제 > 가장 큰 정사각형 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#가장-큰-정사각형-찾기)
 
 * [연습문제 > N개의 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#N개의-최소공배수)
+
+* [연습문제 > JadenCase 문자열 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#JadenCase-문자열-만들기)
 
 </br></br>
 
