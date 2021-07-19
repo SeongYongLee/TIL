@@ -3,11 +3,13 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 50/50 (2021/06/26 기준)
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) (50 + 1)/(50 + 1) (2021/07/19 기준)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
 * [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#키패드-누르기)
+
+* [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#숫자-문자열과-영단어)
 
 * [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#1차-비밀지도)
 

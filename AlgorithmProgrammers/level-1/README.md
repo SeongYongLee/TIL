@@ -1,10 +1,12 @@
 # AlgorithmProgrammers - Level 1
 
-50/50 (2021/06/26 기준)
+(50 + 1)/(50 + 1) (2021/07/19 기준)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 
 * [2020 카카오 인턴십 > 키패드 누르기](#키패드-누르기)
+
+* [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](#숫자-문자열과-영단어)
 
 * [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](#1차-비밀지도)
 
@@ -258,6 +260,81 @@ function solution(numbers, hand) {
 console.log(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], 'right'));
 console.log(solution([7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2], 'left'));
 console.log(solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 'right'));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 숫자 문자열과 영단어
+
+* [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
+
+``` js
+// 1
+// function solution(s) {
+//     const strList = [
+//         'zero',
+//         'one',
+//         'two',
+//         'three',
+//         'four',
+//         'five',
+//         'six',
+//         'seven',
+//         'eight',
+//         'nine',
+//     ];
+//     let remainList = strList.slice();
+//     let remainIndex = 0;
+//     let answer = '';
+
+//     for (let i = 0; i < s.length; i++) {
+//         if (Number.isInteger(+s[i])) {
+//             answer += s[i];
+//         } else {
+//             remainList = remainList.filter((list) => list[remainIndex] === s[i]);
+//             if (remainList.length === 1) {
+//                 answer += strList.indexOf(remainList[0]);
+//                 i += remainList[0].length - remainIndex - 1;
+//                 remainList = strList.slice();
+//                 remainIndex = 0;
+//             } else {
+//                 remainIndex++;
+//             }
+//         }
+//     }
+
+//     return +answer;
+// }
+
+// 2 - Refactoring
+function solution(s) {
+    const numbers = [
+        'zero',
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+    ];
+    let answer = s;
+
+    for (let i = 0; i < numbers.length; i++) {
+        answer = answer.split(numbers[i]).join(i);
+    }
+
+    return +answer;
+}
+
+console.log(solution('one4seveneight'));
+console.log(solution('23four5six7'));
+console.log(solution('2three45sixseven'));
+console.log(solution('123'));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
