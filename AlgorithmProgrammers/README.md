@@ -3,7 +3,7 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) (50 + 1)/(50 + 1) (2021/07/19 기준)
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) COMPLETE :tada: (2021/07/19 기준)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
@@ -116,6 +116,8 @@
 * [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#짝지어-제거하기)
 
 * [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#튜플)
+
+* [2020 카카오 인턴십 > 수식 최대화](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#수식-최대화)
 
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-변환)
 
