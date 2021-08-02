@@ -3,7 +3,9 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) COMPLETE :tada: (2021/07/19 기준)
+## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 
+
+**COMPLETE :tada: (2021/07/19 기준)**
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
@@ -164,6 +166,8 @@
 * [연습문제 > N개의 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#N개의-최소공배수)
 
 * [연습문제 > JadenCase 문자열 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#JadenCase-문자열-만들기)
+
+* [연습문제 > 행렬의 곱셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#행렬의-곱셈)
 
 </br></br>
 

@@ -1,6 +1,6 @@
 # AlgorithmProgrammers - Level 1
 
-COMPLETE :tada: (2021/07/19 기준)
+**COMPLETE :tada: (2021/07/19 기준)**
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 
