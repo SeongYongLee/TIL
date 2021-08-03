@@ -56,6 +56,10 @@
 
 * [연습문제 > 행렬의 곱셈](#행렬의-곱셈)
 
+* [연습문제 > 피보나치 수](#피보나치-수)
+
+* [연습문제 > 최솟값 만들기](#최솟값-만들기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
 
 ## 예상 대진표
@@ -2006,6 +2010,52 @@ console.log(
         ],
     ),
 );
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 피보나치 수
+
+[연습문제 > 피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
+
+``` js
+function solution(n) {
+    let history = 0;
+    let answer = 1;
+
+    for (let i = 1; i < n; i++) {
+        const temp = (history + answer) % 1234567;
+        history = answer;
+        answer = temp;
+    }
+
+    return answer;
+}
+
+console.log(solution(3));
+console.log(solution(5));
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)
+
+</br></br>
+
+## 최솟값 만들기
+
+[연습문제 > 최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
+
+``` js
+function solution(A, B){
+    A.sort((a, b) => a - b);
+    B.sort((a, b) => b - a);
+
+    return A.reduce((r, c, i) => r + c * B[i], 0);
+}
+
+console.log(solution([1, 4, 2], [5, 4, 4]));
+console.log(solution([1, 2], [3, 4]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-2)

@@ -169,6 +169,10 @@
 
 * [연습문제 > 행렬의 곱셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#행렬의-곱셈)
 
+* [연습문제 > 피보나치 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#피보나치-수)
+
+* [연습문제 > 최솟값 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최솟값-만들기)
+
 </br></br>
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
