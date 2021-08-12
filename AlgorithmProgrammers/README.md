@@ -5,7 +5,11 @@
 
 ## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 
 
-**COMPLETE :tada: (2021/07/19 기준)**
+**COMPLETE :tada: (2021/08/12 기준)**
+
+* [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#부족한-금액-계산하기)
+
+* [위클리 챌린지 > 2주차 > 상호 평가](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#상호-평가)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 

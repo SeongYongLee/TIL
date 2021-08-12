@@ -1,6 +1,10 @@
 # AlgorithmProgrammers - Level 1
 
-**COMPLETE :tada: (2021/07/19 기준)**
+**COMPLETE :tada: (2021/08/12 기준)**
+
+* [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](#부족한-금액-계산하기)
+
+* [위클리 챌린지 > 2주차 > 상호 평가](#상호-평가)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 
@@ -105,6 +109,100 @@
 * [연습문제 > 직사각형 별찍기](#직사각형-별찍기)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)
+
+## 부족한 금액 계산하기
+
+[위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://programmers.co.kr/learn/courses/30/lessons/82612)
+
+``` js
+function solution(price, money, count) {
+    const answer = price * (count + 1) * (count / 2) - money;
+
+    return answer > 0 ? answer : 0;
+}
+
+console.log(solution(3, 20, 4));
+
+// 1 1
+// 3 2
+// 6 3
+// 10 4
+// 15 5
+// 21 6 (n + 1) * (n / 2)
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
+
+## 상호 평가
+
+[위클리 챌린지 > 2주차 > 상호 평가](https://programmers.co.kr/learn/courses/30/lessons/83201)
+
+``` js
+function solution(scores) {
+    const getGrade = (score) => {
+        const sumScore = score.reduce((r, s) => r + s) / score.length;
+
+        return sumScore >= 90
+            ? 'A'
+            : sumScore >= 80
+            ? 'B'
+            : sumScore >= 70
+            ? 'C'
+            : sumScore >= 50
+            ? 'D'
+            : 'F';
+    };
+
+    return scores
+        .reduce(
+            (result, score) => score.map((s, i) => [...(result[i] || []), s]),
+            []
+        )
+        .reduce((result, score, i) => {
+            const sliceScore = score.slice();
+            const selfScore = score.splice(i, 1);
+
+            return (
+                result +
+                getGrade(
+                    selfScore > Math.max(...score) ||
+                        selfScore < Math.min(...score)
+                        ? score
+                        : sliceScore
+                )
+            );
+        }, '');
+}
+
+console.log(
+    solution([
+        [100, 90, 98, 88, 65],
+        [50, 45, 99, 85, 77],
+        [47, 88, 95, 80, 67],
+        [61, 57, 100, 80, 65],
+        [24, 90, 94, 75, 65],
+    ])
+);
+console.log(
+    solution([
+        [50, 90],
+        [50, 87],
+    ])
+);
+console.log(
+    solution([
+        [70, 49, 90],
+        [68, 50, 38],
+        [73, 31, 100],
+    ])
+);
+```
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)/[위로](#algorithmprogrammers---level-1)
+
+</br></br>
 
 ## 크레인 인형뽑기 게임
 
