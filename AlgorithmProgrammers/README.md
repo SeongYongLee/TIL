@@ -187,4 +187,6 @@
 
 * [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##합승-택시-요금)
 
+* [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##입국심사)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
