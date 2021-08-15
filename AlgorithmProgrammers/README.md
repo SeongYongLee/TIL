@@ -189,4 +189,6 @@
 
 * [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##입국심사)
 
+* [탐욕법 > 섬 연결하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##섬-연결하기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
