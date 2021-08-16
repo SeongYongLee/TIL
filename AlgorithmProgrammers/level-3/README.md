@@ -232,7 +232,7 @@ console.log(solution(6, [7, 10, 11]));
 
 ## 섬 연결하기
 
-[탐욕법 - 섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861)
+[탐욕법 > 섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861)
 
 ``` js
 // 1 - 플로이드 와샬 (Floyd Warshall) - 시간 초과, 접근 방법이 잘못됨
@@ -284,39 +284,63 @@ console.log(solution(6, [7, 10, 11]));
 // }
 
 // 2 - MST 프림 알고리즘 (table)
+// function solution(n, costs) {
+//     const table = new Array(n)
+//         .fill()
+//         .map((_, i) => new Array(n).fill(Infinity).fill(0, i, i + 1));
+
+//     let answer = 0;
+
+//     for (let i = 0; i < costs.length; i++) {
+//         if (table[costs[i][0]][costs[i][1]] > costs[i][2]) {
+//             table[costs[i][0]][costs[i][1]] = costs[i][2];
+//             table[costs[i][1]][costs[i][0]] = costs[i][2];
+//         }
+//     }
+
+//     const visited = new Array(n).fill(false).fill(true, 0, 1);
+
+//     for (let x = 0; x < n - 1; x++) {
+//         let minNum = Infinity;
+//         let minNumIndex = -1;
+
+//         for (let i = 0; i < n; i++) {
+//             if (!visited[i]) continue;
+//             for (let j = 0; j < n; j++) {
+//                 if (visited[j]) continue;
+
+//                 if (minNum > table[i][j]) {
+//                     minNum = table[i][j];
+//                     minNumIndex = j;
+//                 }
+//             }
+//         }
+//         visited[minNumIndex] = true;
+//         answer += minNum;
+//     }
+
+//     return answer;
+// }
+
+// 3 - MST 프림 알고리즘 (sort queue)
+/* 
+    프로그래머스 - 다른 사람의 풀이 참고
+*/
 function solution(n, costs) {
-    const table = new Array(n)
-        .fill()
-        .map((_, i) => new Array(n).fill(Infinity).fill(0, i, i + 1));
+    costs.sort((a, b) => a[2] - b[2]);
+    let [from, to, answer] = costs.shift();
+    const connected = new Set([from, to]);
 
-    let answer = 0;
+    while (connected.size < n) {
+        const index = costs.findIndex(
+            ([from, to]) =>
+                (connected.has(from) && !connected.has(to)) ||
+                (connected.has(to) && !connected.has(from))
+        );
+        let [[from, to, cost]] = costs.splice(index, 1);
 
-    for (let i = 0; i < costs.length; i++) {
-        if (table[costs[i][0]][costs[i][1]] > costs[i][2]) {
-            table[costs[i][0]][costs[i][1]] = costs[i][2];
-            table[costs[i][1]][costs[i][0]] = costs[i][2];
-        }
-    }
-
-    const visited = new Array(n).fill(false).fill(true, 0, 1);
-
-    for (let x = 0; x < n - 1; x++) {
-        let minNum = Infinity;
-        let minNumIndex = -1;
-
-        for (let i = 0; i < n; i++) {
-            if (!visited[i]) continue;
-            for (let j = 0; j < n; j++) {
-                if (visited[j]) continue;
-
-                if (minNum > table[i][j]) {
-                    minNum = table[i][j];
-                    minNumIndex = j;
-                }
-            }
-        }
-        visited[minNumIndex] = true;
-        answer += minNum;
+        answer += cost;
+        connected.add(from).add(to);
     }
 
     return answer;
