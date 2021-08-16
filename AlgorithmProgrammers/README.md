@@ -185,10 +185,12 @@
 
 * [2020 KAKAO BLIND RECRUITMENT > 자물쇠와 열쇠](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#자물쇠와-열쇠)
 
-* [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##합승-택시-요금)
+* [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#합승-택시-요금)
 
-* [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##입국심사)
+* [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#입국심사)
 
-* [탐욕법 > 섬 연결하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3##섬-연결하기)
+* [탐욕법 > 섬 연결하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#섬-연결하기)
+
+* [탐욕법 > 단속카메라](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#단속카메라)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
