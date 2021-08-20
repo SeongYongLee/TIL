@@ -197,4 +197,8 @@
 
 * [그래프 > 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#순위)
 
+* [연습문제 > 2 x n 타일링](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#2-x-n-타일링)
+
+* [연습문제 > 멀리 뛰기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#멀리-뛰기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
