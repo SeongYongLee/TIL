@@ -115,6 +115,8 @@
 
 * [연습문제 > 직사각형 별찍기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직사각형-별찍기)
 
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
+
 </br></br>
 
 ## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
@@ -181,6 +183,8 @@
 
 * [연습문제 > 최솟값 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최솟값-만들기)
 
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
+
 </br></br>
 
 ## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
@@ -205,4 +209,6 @@
 
 * [연습문제 > 멀리 뛰기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#멀리-뛰기)
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main)
+* [연습문제 > 야근 지수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#야근-지수)
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
