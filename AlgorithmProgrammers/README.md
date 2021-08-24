@@ -183,6 +183,8 @@
 
 * [연습문제 > 최솟값 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최솟값-만들기)
 
+* [연습문제 > 숫자의 표현](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#숫자의-표현)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
 
 </br></br>
