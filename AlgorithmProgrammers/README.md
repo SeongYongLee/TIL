@@ -185,6 +185,8 @@
 
 * [연습문제 > 숫자의 표현](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#숫자의-표현)
 
+* [연습문제 > 땅따먹기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#땅따먹기)
+
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
 
 </br></br>
