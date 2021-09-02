@@ -189,6 +189,8 @@
 
 * [연습문제 > 땅따먹기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#땅따먹기)
 
+* [연습문제 > 최댓값과 최솟값](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최댓값과-최솟값)
+
 * [사라진문제 > 스택/큐 > 탑](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#탑)
 
 * [사라진문제 > 스택/큐 > 쇠막대기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#쇠막대기)
