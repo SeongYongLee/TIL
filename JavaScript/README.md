@@ -2,9 +2,10 @@
 
 * [Parameter vs Arguments](#parameter-vs-arguments)
 * [Evaluation Strategy](#evaluation-strategy)
+* TODO : [변수의 선언과 할당](#변수의-선언과-할당)
+* [Hoisting](#hoisting)
 * [Scope](#scope)
 * TODO : [IIFE](#iife)
-* [Hoisting](#hoisting)
 * TODO : [Closure](#closure)
 * TODO : [Immutable](#immutable)
 * TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
@@ -341,19 +342,9 @@ console.log(APP.info.name); // APP is not defined
 
 </br></br>
 
-## Hoisting
+## 변수의 선언과 할당
 
-### 호이스팅
-
-hoist 라는 단어의 사전적 정의는 끌어올리기 라는 뜻이다.
-
-var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상
-
-실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상을 말한다.
-
-유효범위의 코드가 실행되기 전 메모리에 먼저 저장했던 선언문을 사용할 수 있다.
-
-### 선언, 할당
+TODO : 
 
 #### 선언 (Declaration)
 
@@ -375,13 +366,39 @@ var, let, const로 정의된 변수나 함수선언문, 함수표현식들이 �
 
 특정 변수에 값을 할당하는 과정이다. 할당 구문은 런타임 과정에서 이루어진다.
 
+### Reference
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>
+
+## Hoisting
+
+### 호이스팅
+
+hoist 라는 단어의 사전적 정의는 끌어올리기 라는 뜻이다.
+
+실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상, 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상을 말한다.
+
+자바스크립트는 모든 선언(var, let, const, function, function*, class)을 호이스팅한다.
+
+유효범위의 코드가 실행되기 전 메모리에 먼저 저장했던 선언문을 사용할 수 있다.
+
 ### 호이스팅 대상 - 변수
 
 호이스팅 현상이 발생한다.
 
-#### var
+#### var (Variable Hositing)
 
 선언만 끌어 올려지며 할당은 끌어 올려지지 않는다. 
+
+var 키워드로 선언된 변수는 선언 단계와 초기화 단계가 한번에 이루어진다.
+
+즉, 스코프에 변수가 등록되고 변수는 메모리에 공간을 확보한 후 undefined로 초기화된다.
+
+따라서 변수 선언문 이전에 변수에 접근하여도 Variable Object에 변수가 존재하기 때문에 에러가 발생하지 않는다. 다만 undefined를 반환한다. 이러한 현상을 변수 호이스팅(Variable Hoisting)이라한다.
+
+이후 변수 할당문에 도달하면 비로소 값의 할당이 이루어진다.
 
 #### let & const
 
@@ -433,7 +450,7 @@ const b = '외부 b';
 
 JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 더글러스 크락포드(Douglas Crockford)는 이와 같은 문제 때문에 함수 표현식 만을 사용할 것을 권고하고 있다.
 
-함수 호이스팅은 함수 호출 전 반드시 함수를 선언하여야 한다는 규칙을 무시하므로 코드의 구조를 엉성하게 만들 수 있다고 지적한다.
+함수표현식 호이스팅은 함수 호출 전 반드시 함수를 선언하여야 한다는 규칙을 무시하므로 코드의 구조를 엉성하게 만들 수 있다고 지적한다.
 
 TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
 
@@ -514,16 +531,14 @@ function yourName() { // 같은 이름의 함수 선언
 }
 
 console.log(typeof myName); // > "string"
-console.log(typeof yourName); // > "functio
+console.log(typeof yourName); // > "function"
 ```
 
 ### 주의점
 
 코드의 가독성과 유지보수를 위해 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅 현상 및 스코프 꼬임을 방지할 수 있다.  
 
-호이스팅을 이해하지 못하면 의도한 결과가 나오지 않을 수도 있다.
-
-최근에는 ES6 문법이 표준화가 되면서 크게 신경쓰지 않아도 되는 부분이 되었지만, JavaScript 라는 언어의 특성을 가장 잘 보여주는 특성 중 하나이기에 호이스팅을 이해하는 것이 중요하다.
+호이스팅을 이해하지 못하면 의도한 결과가 나오지 않을 수도 있고, JavaScript 라는 언어의 특성을 가장 잘 보여주는 특성 중 하나이기에 호이스팅을 이해하는 것이 중요하다.
 
 ### Reference
 
