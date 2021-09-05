@@ -3,9 +3,13 @@
 * [Parameter vs Arguments](#parameter-vs-arguments)
 * [Evaluation Strategy](#evaluation-strategy)
 * [Scope](#scope)
+* TODO : [IIFE](#iife)
 * [Hoisting](#hoisting)
-* TODO : [ES6 - let & const](#es6---let--const)
+* TODO : [Closure](#closure)
+* TODO : [Immutable](#immutable)
 * TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
+
+* TODO : [ES6 - let & const](#es6---let--const)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)
 
@@ -35,7 +39,9 @@ func(a); // arguments, actual parameter, 인자, 실인자
 
 ## Evaluation Strategy
 
-프로그래밍 언어에서 함수 호출의 아규먼트(argument)의 순서를 언제 결정하고 함수에 어떤 종류의 값을 통과시킬지 결정하는 것,
+**평가 전략**
+
+프로그래밍 언어에서 함수 호출의 아규먼트(argument)의 순서를 언제 결정하고 함수에 어떤 종류의 값을 통과시킬지 결정하는 것
 
 함수 실행 시 인자로 무엇을 던지느냐에 따라 함수가 어떻게 실행될지 결정하는 것을 의미한다.
 
@@ -45,11 +51,13 @@ Call은 함수를 호출 할 때 사용하는 동사이고 Pass는 인자를 전
 
 데이터 타입이 원시 타입인 경우 값(value)으로 전달된다. 즉, 값이 복사되어 전달된다. 이를 call-by-value(값에 의한 전달)라 한다.
 
-원시 타입은 값이 한번 정해지면 변경할 수 없다. (immutable)
+원시 타입은 값이 한번 정해지면 변경할 수 없다. (Immutable)
 
 또한 이들 값은 런타임(변수 할당 시점)에 메모리의 스택 영역(Stack Segment)에 고정된 메모리 영역을 점유하고 저장된다.
 
 caller가 인자를 복사해서 넘겨준다. callee가 값이 변경되어도 caller는 영향을 받지 않는다.
+
+TODO : [Immutable](#immutable)
 
 ```js
 var value = 2;
@@ -62,14 +70,13 @@ callee(value); // caller
 console.log(value); // 2
 ```
 
-### call by Reference (X)
+### call by reference (X)
 
 **JS는 무조건 call by value로 작동한다.**
 
 ### call by sharing (O)
 
 **Call By Value of Reference.**
-
 
 자바스크립트에 함수의 매개변수를 설명할 때 일반적으로 얘기하는 값으로 전달(Call by Value) 또는 참조로 전달(Call by Reference) 방식으로는 이해하기 힘들다.
 
@@ -196,6 +203,14 @@ function hello(name){
 }
 
 hello('LSY');
+
+var topic = "자바스크립트";
+if (topic) {
+	var topic = "리액트";
+	console.log('블록', topic); // 블록 리액트
+}
+console.log('글로벌', topic); // 글로벌 리액트
+// Hoisting으로 인해 두 topic은 같은 변수이다.
 ```
 
 #### 레벨 - 블록 스코프
@@ -204,9 +219,13 @@ hello('LSY');
 
 - let, const - JS는 ES2015(ES6)부터 블록 레벨 스코프를 지원하기 시작했다.
 
-함수 레벨 스코프가 사용하기에는 더 편리하지만 블록 레벨 스코프보다 스코프의 범위가 넓으므로 코드에 대한 복잡성을 증가하는 요인이 된다.
+함수 레벨 스코프가 사용하기에는 더 편리하지만 블록 레벨 스코프보다 스코프의 범위가 넓으므로 코드에 대한 복잡성을 증가하는 요인이 된다. 대표적인 예로 if/else 문이 있다.
 
 따라서 변수의 유효 범위는 좁을수록 좋고 선택이 가능하다면 블록 레벨 스코프를 사용해야 한다.
+
+비동기처리 반복문의 해결 방법 중 하나로 블록 레벨 스코프로 사용하는 예가 있다.
+
+TODO : [Closure](#closure)
 
 ```js
 function hello(name){
@@ -217,6 +236,13 @@ function hello(name){
 }
 
 hello('LSY');
+
+var topic = "자바스크립트";
+if (topic) {
+	let topic = "리액트";
+	console.log('블록', topic); // 블록 리액트
+}
+console.log('글로벌', topic); // 글로벌 자바스크립트
 ```
 
 #### 레벨 - 전역 스코프
@@ -231,20 +257,7 @@ hello('LSY');
 
 이러한 충돌을 줄이기 위해 모듈 패턴(즉시 실행 함수)를 사용해서 전역 변수를 해당 파일(모듈)에서만 범위를 억제, 로컬 네임스페이스 내에 캡슐화하는 방법이 있다.
 
-```js
-(function(){
-	var APP = APP || {};
-	APP.info = {
-		name : 'chat app', version : '1.2.1'
-	};
-	APP.Start = function() {
-		// ....
-	};
-	console.log(APP.info.name); // chat app
-})();
-
-console.log(APP.info.name); // APP is not defined
-```
+TODO : [IIFE](#iife)
 
 #### 레벨 - 지역 스코프
 
@@ -267,6 +280,62 @@ console.log(APP.info.name); // APP is not defined
 - https://meetup.toast.com/posts/86
 
 - https://okayoon.tistory.com/entry/%EC%8A%A4%EC%BD%94%ED%94%84Scope%EB%9E%80
+
+- [https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e](https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e)
+
+- 러닝 리액트(Learning React) 2판 | 알렉스 뱅크스 , 이브 포셀로 지음 | 오현석 옮김 | 한빛미디어
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>
+
+## IIFE
+
+TODO : 
+
+```js
+// 예시 1
+// 로컬 네임스페이스
+var obj = {
+  x: 'local',
+  y: function() {
+    alert(this.x);
+  }
+}
+// ->
+var another = function () {
+  var x = 'local';
+  function y() {
+    alert(x);
+  }
+  return { y: y };
+}
+var newScope = another();
+// -> 즉시 호출 함수
+var newScope = (function () {
+  var x = 'local';
+  return {
+    y: function() {
+      alert(x);
+    }
+  };
+})();
+// 예시 2
+(function(){
+	var APP = APP || {};
+	APP.info = {
+		name : 'chat app', version : '1.2.1'
+	};
+	APP.Start = function() {
+		// ....
+	};
+	console.log(APP.info.name); // chat app
+})();
+
+console.log(APP.info.name); // APP is not defined
+```
+
+### Reference
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
@@ -467,6 +536,26 @@ console.log(typeof yourName); // > "functio
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/blob/master/JavaScript/README.md#hoisting
 
 - https://poiemaweb.com/js-function
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>
+
+## Closure
+
+TODO : 
+
+### Reference
+
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
+
+</br></br>
+
+## Immutable
+
+TODO : 
+
+### Reference
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)
 
