@@ -13,7 +13,9 @@
 
 * [위클리 챌린지 > 4주차 > 직업군 추천하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직업군-평가하기)
 
-* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직업군-평가하기)
+* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#모음-사전)
+
+* [위클리 챌린지 > 6주차 > 복서 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1복서-정렬하기)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
 
