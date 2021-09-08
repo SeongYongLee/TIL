@@ -23,9 +23,9 @@
 
 * [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/숫자-문자열과-영단어)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/1차-비밀지도)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/[1차]-비밀지도)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/1차-다트-게임)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/[1차]-다트-게임)
 
 * [2019 KAKAO BLIND RECRUITMENT > 실패율](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/실패율)
 
@@ -98,8 +98,6 @@
 * [연습문제 > 정수 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/정수-내림차순으로-배치하기)
 
 * [연습문제 > 정수 제곱근 판별](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/정수-제곱근-판별)
-
-* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/제일-작은-수-제거하기)
 
 * [연습문제 > 짝수와 홀수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/짝수와-홀수)
 
