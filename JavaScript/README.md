@@ -442,15 +442,15 @@ const b = '외부 b';
 
 따라서 함수가 정의되기 이전에 함수 호출이 가능하며 함수 선언의 위치와는 상관없이 코드 내 어느 곳에서든지 호출이 가능하다.
 
+함수 호이스팅은 함수 호출 전 반드시 함수를 선언하여야 한다는 규칙을 무시하므로 코드의 구조를 엉성하게 만들 수 있다고 지적한다.
+
+JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 더글러스 크락포드(Douglas Crockford)는 이와 같은 문제 때문에 함수 표현식 만을 사용할 것을 권고하고 있다.
+
 #### 함수표현식
 
 호이스팅은 발동하지만 변수 호이스팅이 일어난다.
 
 함수 호출 전 함수를 선언하면 TypeError가 발생한다.
-
-JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 더글러스 크락포드(Douglas Crockford)는 이와 같은 문제 때문에 함수 표현식 만을 사용할 것을 권고하고 있다.
-
-함수표현식 호이스팅은 함수 호출 전 반드시 함수를 선언하여야 한다는 규칙을 무시하므로 코드의 구조를 엉성하게 만들 수 있다고 지적한다.
 
 TODO : [함수선언문과 함수표현식](#함수선언문과-함수표현식)
 
@@ -459,11 +459,17 @@ foo(); // hello
 foo2(); // TypeError: foo2 is not a function
 
 function foo() { // 함수선언문
-        console.log("hello");
+    console.log("hello");
 }
 
-var foo2 = function() { // 함수표현식
-        console.log("hello2");
+var foo2 = function() { // 함수표현식 + var
+    console.log("hello2");
+}
+
+foo3(); // ReferenceError: foo3 is not defined
+
+const foo3 = function() { // 함수표현식 + const
+    console.log("hello3");
 }
 ```
 

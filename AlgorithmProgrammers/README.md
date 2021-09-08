@@ -5,119 +5,119 @@
 
 ## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 
 
-**COMPLETE :tada: (2021/08/23 기준)**
+**COMPLETE :tada: (2021/09/06 기준)**
 
-* [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#부족한-금액-계산하기)
+* [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/부족한-금액-계산하기)
 
-* [위클리 챌린지 > 2주차 > 상호 평가](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#상호-평가)
+* [위클리 챌린지 > 2주차 > 상호 평가](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/상호-평가)
 
-* [위클리 챌린지 > 4주차 > 직업군 추천하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직업군-평가하기)
+* [위클리 챌린지 > 4주차 > 직업군 추천하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/직업군-평가하기)
 
-* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#모음-사전)
+* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/모음-사전)
 
 * [위클리 챌린지 > 6주차 > 복서 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1복서-정렬하기)
 
-* [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#크레인-인형뽑기-게임)
+* [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/크레인-인형뽑기-게임)
 
-* [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#키패드-누르기)
+* [2020 카카오 인턴십 > 키패드 누르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/키패드-누르기)
 
-* [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#숫자-문자열과-영단어)
+* [2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/숫자-문자열과-영단어)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#1차-비밀지도)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 비밀지도](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/1차-비밀지도)
 
-* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#1차-다트-게임)
+* [2018 KAKAO BLIND RECRUITMENT > [1차] 다트 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/1차-다트-게임)
 
-* [2019 KAKAO BLIND RECRUITMENT > 실패율](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#실패율)
+* [2019 KAKAO BLIND RECRUITMENT > 실패율](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/실패율)
 
-* [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#신규-아이디-추천)
+* [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/신규-아이디-추천)
 
-* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#로또의-최고-순위와-최저-순위)
+* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 로또의 최고 순위와 최저 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/로또의-최고-순위와-최저-순위)
 
-* [월간 코드 챌린지 시즌1 > 내적](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#내적)
+* [월간 코드 챌린지 시즌1 > 내적](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/내적)
 
-* [월간 코드 챌린지 시즌1 > 3진법 뒤집기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#3진법-뒤집기)
+* [월간 코드 챌린지 시즌1 > 3진법 뒤집기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/3진법-뒤집기)
 
-* [월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#두-개-뽑아서-더하기)
+* [월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/두-개-뽑아서-더하기)
 
-* [월간 코드 챌린지 시즌2 > 음양 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#음양-더하기)
+* [월간 코드 챌린지 시즌2 > 음양 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/음양-더하기)
 
-* [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#약수의-개수와-덧셈)
+* [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/약수의-개수와-덧셈)
 
-* [찾아라 프로그래밍 마에스터 > 폰켓몬](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#폰켓몬)
+* [찾아라 프로그래밍 마에스터 > 폰켓몬](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/폰켓몬)
 
-* [Summer/Winter Coding(~2018) > 예산](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#예산)
+* [Summer/Winter Coding(~2018) > 예산](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/예산)
 
-* [Summer/Winter Coding(~2018) > 소수 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#소수-만들기)
+* [Summer/Winter Coding(~2018) > 소수 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/소수-만들기)
 
-* [해시 > 완주하지 못한 선수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#완주하지-못한-선수)
+* [해시 > 완주하지 못한 선수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/완주하지-못한-선수)
 
-* [완전탐색 > 모의고사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#모의고사)
+* [완전탐색 > 모의고사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/모의고사)
 
-* [탐욕법(Greedy) > 체육복](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#체육복)
+* [탐욕법(Greedy) > 체육복](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/체육복)
 
-* [정렬 > K번째 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#K번째-수)
+* [정렬 > K번째 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/K번째-수)
 
-* [연습문제 > 2016년](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#2016년)
+* [연습문제 > 2016년](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/2016년)
 
-* [연습문제 > 가운데 글자 가져오기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#가운데-글자-가져오기)
+* [연습문제 > 가운데 글자 가져오기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/가운데-글자-가져오기)
 
-* [연습문제 > 두 정수 사이의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#두-정수-사이의-합)
+* [연습문제 > 두 정수 사이의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/두-정수-사이의-합)
 
-* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#제일-작은-수-제거하기)
+* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/제일-작은-수-제거하기)
 
-* [연습문제 > 같은 숫자는 싫어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#같은-숫자는-싫어)
+* [연습문제 > 같은 숫자는 싫어](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/같은-숫자는-싫어)
 
-* [연습문제 > 나누어 떨어지는 숫자 배열](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#나누어-떨어지는-숫자-배열)
+* [연습문제 > 나누어 떨어지는 숫자 배열](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/나누어-떨어지는-숫자-배열)
 
-* [연습문제 > 문자열 내 마음대로 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-내-마음대로-정렬하기)
+* [연습문제 > 문자열 내 마음대로 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/문자열-내-마음대로-정렬하기)
 
-* [연습문제 > 문자열 내 p와 y의 개수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-내-p와-y의-개수)
+* [연습문제 > 문자열 내 p와 y의 개수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/문자열-내-p와-y의-개수)
 
-* [연습문제 > 문자열 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-내림차순으로-배치하기)
+* [연습문제 > 문자열 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/문자열-내림차순으로-배치하기)
 
-* [연습문제 > 문자열 다루기 기본](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열-다루기-기본)
+* [연습문제 > 문자열 다루기 기본](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/문자열-다루기-기본)
 
-* [연습문제 > 서울에서 김서방 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#서울에서-김서방-찾기)
+* [연습문제 > 서울에서 김서방 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/서울에서-김서방-찾기)
 
-* [연습문제 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#소수-찾기)
+* [연습문제 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/소수-찾기)
 
-* [연습문제 > 수박수박수박수박수박수?](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#수박수박수박수박수박수)
+* [연습문제 > 수박수박수박수박수박수?](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/수박수박수박수박수박수)
 
-* [연습문제 > 문자열을 정수로 바꾸기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#문자열을-정수로-바꾸기)
+* [연습문제 > 문자열을 정수로 바꾸기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/문자열을-정수로-바꾸기)
 
-* [연습문제 > 시저 암호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#시저-암호)
+* [연습문제 > 시저 암호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/시저-암호)
 
-* [연습문제 > 약수의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#약수의-합)
+* [연습문제 > 약수의 합](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/약수의-합)
 
-* [연습문제 > 이상한 문자 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#이상한-문자-만들기)
+* [연습문제 > 이상한 문자 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/이상한-문자-만들기)
 
-* [연습문제 > 자릿수 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#자릿수-더하기)
+* [연습문제 > 자릿수 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/자릿수-더하기)
 
-* [연습문제 > 자연수 뒤집어 배열로 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#자연수-뒤집어-배열로-만들기)
+* [연습문제 > 자연수 뒤집어 배열로 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/자연수-뒤집어-배열로-만들기)
 
-* [연습문제 > 정수 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#정수-내림차순으로-배치하기)
+* [연습문제 > 정수 내림차순으로 배치하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/정수-내림차순으로-배치하기)
 
-* [연습문제 > 정수 제곱근 판별](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#정수-제곱근-판별)
+* [연습문제 > 정수 제곱근 판별](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/정수-제곱근-판별)
 
-* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#제일-작은-수-제거하기)
+* [연습문제 > 제일 작은 수 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/제일-작은-수-제거하기)
 
-* [연습문제 > 짝수와 홀수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#짝수와-홀수)
+* [연습문제 > 짝수와 홀수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/짝수와-홀수)
 
-* [연습문제 > 최대공약수와 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#최대공약수와-최소공배수)
+* [연습문제 > 최대공약수와 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/최대공약수와-최소공배수)
 
-* [연습문제 > 콜라츠 추측](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#콜라츠-추측)
+* [연습문제 > 콜라츠 추측](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/콜라츠-추측)
 
-* [연습문제 > 평균 구하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#평균-구하기)
+* [연습문제 > 평균 구하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/평균-구하기)
 
-* [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#하샤드-수)
+* [연습문제 > 하샤드 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/하샤드-수)
 
-* [연습문제 > 핸드폰 번호 가리기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#핸드폰-번호-가리기)
+* [연습문제 > 핸드폰 번호 가리기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/핸드폰-번호-가리기)
 
-* [연습문제 > 행렬의 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#행렬의-덧셈)
+* [연습문제 > 행렬의 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/행렬의-덧셈)
 
-* [연습문제 > x만큼 간격이 있는 n개의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#x만큼-간격이-있는-n개의-숫자)
+* [연습문제 > x만큼 간격이 있는 n개의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/x만큼-간격이-있는-n개의-숫자)
 
-* [연습문제 > 직사각형 별찍기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1#직사각형-별찍기)
+* [연습문제 > 직사각형 별찍기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/직사각형-별찍기)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
 
