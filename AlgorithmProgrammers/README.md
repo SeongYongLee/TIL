@@ -3,7 +3,7 @@
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-## [Level 1](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1) 
+## Level 1
 
 **COMPLETE :tada: (2021/09/06 기준)**
 
@@ -121,7 +121,7 @@
 
 </br></br>
 
-## [Level 2](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2)
+## Level 2
 
 * [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#예상-대진표)
 
@@ -199,7 +199,7 @@
 
 </br></br>
 
-## [Level 3](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3)
+## Level 3
 
 * [위클리 챌린지 > 3주차 > 퍼즐 조각 채우기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#퍼즐-조각-채우기)
 
