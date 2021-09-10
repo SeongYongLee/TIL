@@ -1,7 +1,4 @@
 # AlgorithmProgrammers
-[프로그래머스 코딩테스트 연습](https://programmers.co.kr/learn/challenges)에 있는 문제 중 해결한 문제의 답을 정리하는 공간입니다 :)
-
-모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
 ## Level 1
 
@@ -123,77 +120,77 @@
 
 ## Level 2
 
-* [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#예상-대진표)
+* [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/예상-대진표)
 
-* [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#짝지어-제거하기)
+* [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/짝지어-제거하기)
 
-* [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#튜플)
+* [2019 카카오 개발자 겨울 인턴십 > 튜플](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/튜플)
 
-* [2020 카카오 인턴십 > 수식 최대화](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#수식-최대화)
+* [2020 카카오 인턴십 > 수식 최대화](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/수식-최대화)
 
-* [2021 카카오 채용연계형 인턴십 > 거리두기 확인하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#거리두기-확인하기)
+* [2021 카카오 채용연계형 인턴십 > 거리두기 확인하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/거리두기-확인하기)
 
-* [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-변환)
+* [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-변환)
 
-* [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#순위-검색)
+* [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/순위-검색)
 
-* [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#메뉴-리뉴얼)
+* [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/메뉴-리뉴얼)
 
-* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#행렬-테두리-회전하기)
+* [2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 행렬 테두리 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/행렬-테두리-회전하기)
 
-* [월간 코드 챌린지 시즌1 > 쿼드압축 후 개수 세기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#쿼드-압축-후-개수-세기)
+* [월간 코드 챌린지 시즌1 > 쿼드압축 후 개수 세기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/쿼드-압축-후-개수-세기)
 
-* [월간 코드 챌린지 시즌1 > 삼각 달팽이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#삼각-달팽이)
+* [월간 코드 챌린지 시즌1 > 삼각 달팽이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/삼각-달팽이)
 
-* [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#괄호-회전하기)
+* [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-회전하기)
 
-* [월간 코드 챌린지 시즌2 > 2개 이하로 다른 비트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#2개-이하로-다른-비트)
+* [월간 코드 챌린지 시즌2 > 2개 이하로 다른 비트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/2개-이하로-다른-비트)
 
-* [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#게임-맵-최단거리)
+* [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/게임-맵-최단거리)
 
-* [Summer/Winter Coding(~2018) > 스킬트리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#스킬트리)
+* [Summer/Winter Coding(~2018) > 스킬트리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/스킬트리)
 
-* [Summer/Winter Coding(~2018) > 방문 길이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#방문-길이)
+* [Summer/Winter Coding(~2018) > 방문 길이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/방문-길이)
 
-* [Summer/Winter Coding(~2018) > 배달](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#배달)
+* [Summer/Winter Coding(~2018) > 배달](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/배달)
 
-* [Summer/Winter Coding(~2018) > 영어 끝말잇기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#영어-끝말잇기)
+* [Summer/Winter Coding(~2018) > 영어 끝말잇기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/영어-끝말잇기)
 
-* [Summer/Winter Coding(~2018) > 점프와 순간 이동](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#점프와-순간-이동)
+* [Summer/Winter Coding(~2018) > 점프와 순간 이동](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/점프와-순간-이동)
 
-* [Summer/Winter Coding(2019) > 멀쩡한 사각형](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#멀쩡한-사각형)
+* [Summer/Winter Coding(2019) > 멀쩡한 사각형](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/멀쩡한-사각형)
 
-* [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#기능개발)
+* [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/기능개발)
 
-* [스택/큐 > 프린터](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#프린터)
+* [스택/큐 > 프린터](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/프린터)
 
-* [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#다음-큰-숫자)
+* [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/다음-큰-숫자)
 
-* [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#124-나라의-숫자)
+* [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/124-나라의-숫자)
 
-* [연습문제 > 올바른 괄호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#올바른-괄호)
+* [연습문제 > 올바른 괄호](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/올바른-괄호)
 
-* [연습문제 > 가장 큰 정사각형 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#가장-큰-정사각형-찾기)
+* [연습문제 > 가장 큰 정사각형 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/가장-큰-정사각형-찾기)
 
-* [연습문제 > N개의 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#N개의-최소공배수)
+* [연습문제 > N개의 최소공배수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/N개의-최소공배수)
 
-* [연습문제 > JadenCase 문자열 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#JadenCase-문자열-만들기)
+* [연습문제 > JadenCase 문자열 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/JadenCase-문자열-만들기)
 
-* [연습문제 > 행렬의 곱셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#행렬의-곱셈)
+* [연습문제 > 행렬의 곱셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/행렬의-곱셈)
 
-* [연습문제 > 피보나치 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#피보나치-수)
+* [연습문제 > 피보나치 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/피보나치-수)
 
-* [연습문제 > 최솟값 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최솟값-만들기)
+* [연습문제 > 최솟값 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/최솟값-만들기)
 
-* [연습문제 > 숫자의 표현](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#숫자의-표현)
+* [연습문제 > 숫자의 표현](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/숫자의-표현)
 
-* [연습문제 > 땅따먹기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#땅따먹기)
+* [연습문제 > 땅따먹기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/땅따먹기)
 
-* [연습문제 > 최댓값과 최솟값](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#최댓값과-최솟값)
+* [연습문제 > 최댓값과 최솟값](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/최댓값과-최솟값)
 
-* [사라진문제 > 스택/큐 > 탑](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#탑)
+* [사라진문제 > 스택/큐 > 탑](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/탑)
 
-* [사라진문제 > 스택/큐 > 쇠막대기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2#쇠막대기)
+* [사라진문제 > 스택/큐 > 쇠막대기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/쇠막대기)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
 
@@ -201,26 +198,26 @@
 
 ## Level 3
 
-* [위클리 챌린지 > 3주차 > 퍼즐 조각 채우기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#퍼즐-조각-채우기)
+* [위클리 챌린지 > 3주차 > 퍼즐 조각 채우기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/퍼즐-조각-채우기)
 
-* [2020 KAKAO BLIND RECRUITMENT > 자물쇠와 열쇠](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#자물쇠와-열쇠)
+* [2020 KAKAO BLIND RECRUITMENT > 자물쇠와 열쇠](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/자물쇠와-열쇠)
 
-* [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#합승-택시-요금)
+* [2021 KAKAO BLIND RECRUITMENT > 합승 택시 요금](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/합승-택시-요금)
 
-* [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#입국심사)
+* [이분탐색 > 입국심사](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/입국심사)
 
-* [탐욕법 > 섬 연결하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#섬-연결하기)
+* [탐욕법 > 섬 연결하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/섬-연결하기)
 
-* [탐욕법 > 단속카메라](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#단속카메라)
+* [탐욕법 > 단속카메라](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/단속카메라)
 
-* [그래프 > 가장 먼 노드](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#가장-먼-노드)
+* [그래프 > 가장 먼 노드](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/가장-먼-노드)
 
-* [그래프 > 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#순위)
+* [그래프 > 순위](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/순위)
 
-* [연습문제 > 2 x n 타일링](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#2-x-n-타일링)
+* [연습문제 > 2 x n 타일링](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/2-x-n-타일링)
 
-* [연습문제 > 멀리 뛰기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#멀리-뛰기)
+* [연습문제 > 멀리 뛰기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/멀리-뛰기)
 
-* [연습문제 > 야근 지수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3#야근-지수)
+* [연습문제 > 야근 지수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-3/야근-지수)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#algorithmprogrammers)
