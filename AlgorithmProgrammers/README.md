@@ -2,7 +2,7 @@
 
 ## Level 1
 
-**COMPLETE :tada: (2021/09/06 기준)**
+**COMPLETE :tada: (2021/09/13 기준)**
 
 * [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/부족한-금액-계산하기)
 
@@ -12,7 +12,9 @@
 
 * [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/모음-사전)
 
-* [위클리 챌린지 > 6주차 > 복서 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1복서-정렬하기)
+* [위클리 챌린지 > 6주차 > 복서 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/복서-정렬하기)
+
+* [위클리 챌린지 > 7주차 > 입실 퇴실](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/입실-퇴실)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/크레인-인형뽑기-게임)
 
