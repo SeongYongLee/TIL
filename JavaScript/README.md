@@ -14,7 +14,7 @@
 
 * TODO : [Closure](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Closure)
 
-* TODO : [함수선언문과 함수표현식](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수선언문과-함수표현식)
+* TODO : [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
 
 * [Parameter vs Arguments](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Parameter-vs-Arguments)
 

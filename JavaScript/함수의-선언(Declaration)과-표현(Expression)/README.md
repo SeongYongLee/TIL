@@ -1,8 +1,8 @@
-## 함수선언문과 함수표현식
+# 함수의 선언(Declaration)과 표현(Expression)
 
 TODO : 
 
-### Reference
+## Reference
 
 TODO : 
 

@@ -78,7 +78,7 @@ JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 �
 
 함수 호출 전 함수를 선언하면 TypeError가 발생한다.
 
-TODO : [함수선언문과 함수표현식](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수선언문과-함수표현식)
+* TODO : [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
 
 ```js
 foo(); // hello
