@@ -132,7 +132,7 @@ void function() {
 
 자바스크립트 코드를 해석할 때 function 으로 시작하면 함수 선언식으로 인지하지만 위 코드처럼 `!,+,-,~,void` 등의 연산자와 키워드를 사용할 경우 함수 표현식으로 인지하기 때문에 위와 같은 문법으로 사용이 가능하다.
 
-* TODO : [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
+* [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
 
 만약 IIFE가 return 값이 존재할 경우 위 방식을 사용하면 아래와 같이 예상치 못한 결과가 나타난다.
 
