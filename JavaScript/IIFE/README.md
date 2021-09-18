@@ -8,9 +8,9 @@ JavaScript parser는 `function foo(){ }();`을 `function foo(){ }`와 `();`로 �
 
 괄호를 추가하여 고치는 두 가지 방법으로 `(function foo(){ })()` 와 `(function foo(){ }()). function`가 있다. `function`으로 시작하는 문은 함수 선언으로 간주된다. 이 함수를 ()로 묶으면 함수 식이 되고, 이렇게하면 다음 ()로 함수를 실행할 수 있다.
 
-## **주요 이점**
+## 주요 이점
 
-### **불필요한 전역 변수와 함수를 생성하지 않는다.**
+### 불필요한 전역 변수와 함수를 생성하지 않는다.
 
 IIFE 에서 생성된 변수와 함수의 이름은 전역 Scope와 충돌하지 않는다. (이를 오염시키지 않는다고도 말한다.)
 
@@ -47,7 +47,7 @@ init()
 console.log(operate) //operate is not defiend
 ```
 
-### C**losure**
+### Closure
 
 closure와 함께 private data를 사용할 수 있다. IIFE의 대표적 use case 중 하나로 Closure와 함께 priavte 변수를 생성하여 사용합니다. 아래 예제에서 count라는 private 변수를 만들어 사용하고 있다.
 
@@ -69,7 +69,7 @@ IIFE가 실행과 동시에 Closure 함수를 리턴하고 있으며 이때 coun
 
 * TODO : [Closure](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Closure)
 
-### **변수 이름 alias**
+### 변수 이름 alias
 
 jQuery와 또 다른 라이브러리를 사용하고 있는데 둘 다 $ 을 전역 변수로 사용할 때 인자를 사용하는 IIFE로 아래와 같이 사용할 수 있다.
 
@@ -130,11 +130,11 @@ void function() {
 }();
 ```
 
-자바스크립트 코드를 해석할 때 function 으로 시작하면 함수 선언식으로 인지하지만 위 코드처럼 `!,+,-,~,void` 등의 연산자와 키워드를 사용할 경우 **`함수 표현식으로 인지`**하기 때문에 위와 같은 문법으로 사용이 가능하다.
+자바스크립트 코드를 해석할 때 function 으로 시작하면 함수 선언식으로 인지하지만 위 코드처럼 `!,+,-,~,void` 등의 연산자와 키워드를 사용할 경우 함수 표현식으로 인지하기 때문에 위와 같은 문법으로 사용이 가능하다.
 
 * TODO : [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
 
-만약 IIFE가 **`return 값이 존재할 경우`** 위 방식을 사용하면 아래와 같이 예상치 못한 결과가 나타난다.
+만약 IIFE가 return 값이 존재할 경우 위 방식을 사용하면 아래와 같이 예상치 못한 결과가 나타난다.
 
 ```jsx
 var a = ~function() {
@@ -156,9 +156,9 @@ const foo = void (function bar() {
 console.log(foo); // undefined
 ```
 
-연산자나 void는 보다는 **`(function() {} )()`** 이 널리 활용되므로 위 방법은 알고만 넘어가면 된다.
+연산자나 void는 보다는 `(function() {} )()` 이 널리 활용되므로 위 방법은 알고만 넘어가면 된다.
 
-IIFE에 **`인자`**를 전달할 수 있다.
+IIFE에 인자를 전달할 수 있다.
 
 ```jsx
 (function(count) {
@@ -167,7 +167,7 @@ IIFE에 **`인자`**를 전달할 수 있다.
 })(3);
 ```
 
-또한 IIFE에 **`이름`**을 붙일 수도 있다.
+또한 IIFE에 이름을 붙일 수도 있다.
 
 ```jsx
 (function named(count) {
@@ -176,7 +176,7 @@ IIFE에 **`인자`**를 전달할 수 있다.
 })(3);
 ```
 
-종종 아래와 같이 **`IIFE 앞에 semicolon`** 이 붙는 경우를 봤을 것이다.
+종종 아래와 같이 IIFE 앞에 semicolon이 붙는 경우를 봤을 것이다.
 
 ```
 ;(function() {
@@ -184,7 +184,7 @@ IIFE에 **`인자`**를 전달할 수 있다.
 })();
 ```
 
-이는 IIFE 이전 코드의 semicolon이 생략된 경우 에러가 발생하기 때문에 대비한 것이다. 구체적인 예시 하나를 보겠습니다.
+이는 IIFE 이전 코드의 semicolon이 생략된 경우 에러가 발생하기 때문에 대비한 것이다. 구체적인 예시 하나를 보면 다음과 같다.
 
 ```
 var name = value
@@ -194,7 +194,7 @@ var name = value
 })();
 ```
 
-위 코드는 아래와 같이 해석됩니다. IIFE 이전 코드에 **`semicolon이 없을 경우`** 함수의 **`인자로 전달`**되서 에러가 발생할 수 있습니다.
+위 코드는 아래와 같이 해석됩니다. IIFE 이전 코드에 semicolon이 없을 경우 함수의 인자로 전달되서 에러가 발생할 수 있다.
 
 ```
 var name = value(function() {

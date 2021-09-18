@@ -10,7 +10,7 @@
 
 * [Scope](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Scope)
 
-* TODO : [IIFE](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/IIFE)
+* [IIFE](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/IIFE)
 
 * TODO : [Closure](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Closure)
 
@@ -20,6 +20,6 @@
 
 * TODO : [Immutable](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Immutable)
 
-* TODO : [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
+* [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main)/[위로](#javascript)

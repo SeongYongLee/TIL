@@ -38,7 +38,7 @@ var 키워드로 선언된 변수는 선언 단계와 초기화 단계가 한번
 
 변수가 초기화되는 순간 TDZ에서 나오게 되며 사용할 수 있다.
 
-* TODO : [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
+* [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
 
 ```js
 console.log(i); // undefined
