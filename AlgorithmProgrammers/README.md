@@ -10,11 +10,7 @@
 
 * [위클리 챌린지 > 4주차 > 직업군 추천하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/직업군-평가하기)
 
-* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/모음-사전)
-
 * [위클리 챌린지 > 6주차 > 복서 정렬하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/복서-정렬하기)
-
-* [위클리 챌린지 > 7주차 > 입실 퇴실](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/입실-퇴실)
 
 * [2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/크레인-인형뽑기-게임)
 
@@ -41,6 +37,8 @@
 * [월간 코드 챌린지 시즌2 > 음양 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/음양-더하기)
 
 * [월간 코드 챌린지 시즌2 > 약수의 개수와 덧셈](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/약수의-개수와-덧셈)
+
+* [월간 코드 챌린지 시즌3 > 없는 숫자 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/없는-숫자-더하기)
 
 * [찾아라 프로그래밍 마에스터 > 폰켓몬](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/폰켓몬)
 
@@ -122,6 +120,10 @@
 
 ## Level 2
 
+* [위클리 챌린지 > 5주차 > 모음 사전](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/모음-사전)
+
+* [위클리 챌린지 > 7주차 > 입실 퇴실](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/입실-퇴실)
+
 * [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/예상-대진표)
 
 * [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/짝지어-제거하기)
@@ -147,6 +149,8 @@
 * [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-회전하기)
 
 * [월간 코드 챌린지 시즌2 > 2개 이하로 다른 비트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/2개-이하로-다른-비트)
+
+* [월간 코드 챌린지 시즌3 > 빛의 경로 사이클](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/빛의-경로-사이클)
 
 * [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/게임-맵-최단거리)
 
