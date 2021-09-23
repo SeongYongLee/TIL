@@ -134,6 +134,8 @@
 
 * [2021 카카오 채용연계형 인턴십 > 거리두기 확인하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/거리두기-확인하기)
 
+* [2019 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/오픈채팅방)
+
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-변환)
 
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/순위-검색)
