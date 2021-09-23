@@ -146,6 +146,8 @@
 
 * [월간 코드 챌린지 시즌1 > 삼각 달팽이](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/삼각-달팽이)
 
+* [월간 코드 챌린지 시즌1 > 이진 변환 반복하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/이진-변환-반복하기)
+
 * [월간 코드 챌린지 시즌2 > 괄호 회전하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-회전하기)
 
 * [월간 코드 챌린지 시즌2 > 2개 이하로 다른 비트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/2개-이하로-다른-비트)

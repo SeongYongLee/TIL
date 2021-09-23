@@ -15,7 +15,7 @@ Today I Learned
 
 ## Notion
 
-Notion에 정리 한 내용을 한 번 더 정리해서 올리는 공간입니다 :)
+[Notion](https://adaptable-garnet-c01.notion.site/2a6eca3fe9a84c3bab9ce5d9b30c379f)에 정리 한 내용을 한 번 더 정리해서 올리는 공간입니다 :)
 
 * [FrontEnd](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
 
