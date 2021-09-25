@@ -138,6 +138,8 @@
 
 * [2020 KAKAO BLIND RECRUITMENT > 괄호 변환](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/괄호-변환)
 
+* [2020 KAKAO BLIND RECRUITMENT > 문자열 압축](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/문자열-압축)
+
 * [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/순위-검색)
 
 * [2021 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/메뉴-리뉴얼)
