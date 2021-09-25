@@ -172,6 +172,8 @@
 
 * [Summer/Winter Coding(2019) > 멀쩡한 사각형](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/멀쩡한-사각형)
 
+* [깊이/너비 우선 탐색(DFS/BFS) > 타겟 넘버](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/타겟-넘버)
+
 * [스택/큐 > 기능개발](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/기능개발)
 
 * [스택/큐 > 프린터](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/프린터)
