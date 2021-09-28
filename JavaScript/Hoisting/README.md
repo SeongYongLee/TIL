@@ -82,6 +82,7 @@ JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 �
 
 ```js
 foo(); // hello
+console.log(foo2); // undefined
 foo2(); // TypeError: foo2 is not a function
 
 function foo() { // 함수선언문
@@ -94,9 +95,7 @@ var foo2 = function() { // 함수표현식 + var
 
 foo3(); // ReferenceError: foo3 is not defined
 
-const foo3 = function() { // 함수표현식 + const
-    console.log("hello3");
-}
+const foo3 = () => console.log("hello3"); // 함수표현식 + const
 ```
 
 ### 호이스팅 순서

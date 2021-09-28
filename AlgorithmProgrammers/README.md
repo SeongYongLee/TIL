@@ -180,6 +180,10 @@
 
 * [스택/큐 > 프린터](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/프린터)
 
+* [정렬 > 가장 큰 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/가장-큰-수)
+
+* [완전탐색 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/소수-찾기)
+
 * [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/다음-큰-숫자)
 
 * [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/124-나라의-숫자)
