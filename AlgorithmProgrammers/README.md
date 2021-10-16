@@ -42,6 +42,8 @@
 
 * [월간 코드 챌린지 시즌3 > 없는 숫자 더하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/없는-숫자-더하기)
 
+* [월간 코드 챌린지 시즌3 > 나머지가 1이 되는 수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/나머지가-1이-되는-수-찾기)
+
 * [찾아라 프로그래밍 마에스터 > 폰켓몬](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/폰켓몬)
 
 * [Summer/Winter Coding(~2018) > 예산](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-1/예산)
