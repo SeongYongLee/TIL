@@ -166,6 +166,8 @@
 
 * [월간 코드 챌린지 시즌3 > 빛의 경로 사이클](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/빛의-경로-사이클)
 
+* [월간 코드 챌린지 시즌3 > n^2 배열 자르기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/n2-배열-자르기)
+
 * [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/게임-맵-최단거리)
 
 * [Summer/Winter Coding(~2018) > 스킬트리](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/스킬트리)
