@@ -15,4 +15,4 @@ console.log(solution(10));
 console.log(solution(12));
 ```
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)`
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers)

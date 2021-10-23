@@ -190,6 +190,8 @@
 
 * [정렬 > 가장 큰 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/가장-큰-수)
 
+* [해시 > 위장](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/위장)
+
 * [완전탐색 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/소수-찾기)
 
 * [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/다음-큰-숫자)
