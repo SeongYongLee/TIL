@@ -130,6 +130,8 @@
 
 * [위클리 챌린지 > 9주차 > 전력망을 둘로 나누기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/전력망을-둘로-나누기)
 
+* [위클리 챌린지 > 10주차 > 교점에 별 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/교점에-별-만들기)
+
 * [2017 팁스타운 > 예상 대진표](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/예상-대진표)
 
 * [2017 팁스타운 > 짝지어 제거하기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/짝지어-제거하기)
