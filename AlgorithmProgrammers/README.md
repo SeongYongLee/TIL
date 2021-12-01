@@ -194,6 +194,8 @@
 
 * [정렬 > 가장 큰 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/가장-큰-수)
 
+* [정렬 > H-Index](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/H-Index)
+
 * [해시 > 위장](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/위장)
 
 * [완전탐색 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/소수-찾기)
