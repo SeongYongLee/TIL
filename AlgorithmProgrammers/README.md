@@ -200,6 +200,8 @@
 
 * [완전탐색 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/소수-찾기)
 
+* [완전탐색 > 카펫](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/카펫)
+
 * [연습문제 > 다음 큰 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/다음-큰-숫자)
 
 * [연습문제 > 124 나라의 숫자](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/124-나라의-숫자)
