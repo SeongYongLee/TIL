@@ -194,6 +194,8 @@
 
 * [스택/큐 > 프린터](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/프린터)
 
+* [스택/큐 > 다리를 지나는 트럭](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/다리를-지나는-트럭)
+
 * [정렬 > 가장 큰 수](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/가장-큰-수)
 
 * [정렬 > H-Index](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/H-Index)
