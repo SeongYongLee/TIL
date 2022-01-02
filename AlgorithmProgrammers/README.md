@@ -206,6 +206,8 @@
 
 * [탐욕법(Greedy) > 큰 수 만들기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/큰-수-만들기)
 
+* [탐욕법(Greedy) > 구명보트](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/구명보트)
+
 * [완전탐색 > 소수 찾기](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/소수-찾기)
 
 * [완전탐색 > 카펫](https://github.com/SeongYongLee/TIL/tree/main/AlgorithmProgrammers/level-2/카펫)
