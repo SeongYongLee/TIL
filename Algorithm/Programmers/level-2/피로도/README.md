@@ -2,7 +2,7 @@
 
 [위클리 챌린지 > 12주차 > 피로도](https://programmers.co.kr/learn/courses/30/lessons/87946)
 
-``` js
+```js
 // 1
 // function solution(k, dungeons) {
 //     return dungeons
@@ -68,95 +68,91 @@
 
 // 5
 function solution(k, dungeons) {
-    let answer = 0;
-    const stack = [[k, dungeons, 0]];
+  let answer = 0;
+  const stack = [[k, dungeons, 0]];
 
-    while (stack.length) {
-        const next = stack.pop();
+  while (stack.length) {
+    const next = stack.pop();
 
-        if (next[1].length <= 1)
-            answer =
-                answer > next[2] + next[1].length
-                    ? answer
-                    : next[2] + next[1].length;
-        else {
-            for (let i = 0; i < next[1].length; i++) {
-                const sliceDungeons = next[1].slice();
-                const spliceDungeons = sliceDungeons.splice(i, 1)[0];
+    if (next[1].length <= 1)
+      answer =
+        answer > next[2] + next[1].length ? answer : next[2] + next[1].length;
+    else {
+      for (let i = 0; i < next[1].length; i++) {
+        const sliceDungeons = next[1].slice();
+        const spliceDungeons = sliceDungeons.splice(i, 1)[0];
 
-                stack.push([
-                    next[0] - spliceDungeons[1],
-                    sliceDungeons.filter(
-                        (d) => next[0] - spliceDungeons[1] >= d[0]
-                    ),
-                    next[2] + 1,
-                ]);
-            }
-        }
+        stack.push([
+          next[0] - spliceDungeons[1],
+          sliceDungeons.filter((d) => next[0] - spliceDungeons[1] >= d[0]),
+          next[2] + 1,
+        ]);
+      }
     }
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(
-    solution(80, [
-        [80, 20],
-        [50, 40],
-        [30, 10],
-    ])
+  solution(80, [
+    [80, 20],
+    [50, 40],
+    [30, 10],
+  ]),
 );
 
 console.log(
-    solution(80, [
-        [80, 20],
-        [50, 40],
-        [40, 30],
-        [45, 10],
-        [45, 10],
-        [45, 10],
-        [45, 10],
-        [45, 10],
-        [45, 1],
-        [45, 1],
-        [45, 1],
-        [45, 1],
-        [45, 1],
-        [10, 2],
-        [10, 2],
-        [10, 2],
-        [10, 2],
-        [10, 2],
-    ])
+  solution(80, [
+    [80, 20],
+    [50, 40],
+    [40, 30],
+    [45, 10],
+    [45, 10],
+    [45, 10],
+    [45, 10],
+    [45, 10],
+    [45, 1],
+    [45, 1],
+    [45, 1],
+    [45, 1],
+    [45, 1],
+    [10, 2],
+    [10, 2],
+    [10, 2],
+    [10, 2],
+    [10, 2],
+  ]),
 );
 
 console.log(
-    solution(50, [
-        [50, 10],
-        [30, 10],
-        [30, 5],
-        [30, 15],
-        [50, 10],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-        [50, 1],
-    ])
+  solution(50, [
+    [50, 10],
+    [30, 10],
+    [30, 5],
+    [30, 15],
+    [50, 10],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+    [50, 1],
+  ]),
 );
 ```
 

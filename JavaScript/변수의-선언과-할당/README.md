@@ -26,7 +26,7 @@ var cylinderVolume = circleArea * 5;
 원주율은 변하지 않는 상수이지만 자바스크립트는 상수를 별도 지원하지 않으므로 변수 이름을 대문자로 하여 상수임을 암시하도록 하자.
 `원주율은 자바스크립트 빌트인 상수인 Math.PI을 통해 참조할 수 있다. 상수는 ES6의 const 키워드를 사용해 표현할 수 있다.`
 
-* [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
+- [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
 
 그리고 반지름과 원기둥의 높이도 값의 의미를 명확히하고 변화에 대처하기 쉽도록 변수에 저장하도록 하자.
 
@@ -49,7 +49,7 @@ var score = 100;  // OK
 
 변수명은 식별자(identifier)로 불리기도 하며 명명 규칙이 존재한다.
 
-- 반드시 영문자(특수문자 제외), underscore ( _ ), 또는 달러 기호($)로 시작하여야 한다. 이어지는 문자에는 숫자(0~9)도 사용할 수 있다.
+- 반드시 영문자(특수문자 제외), underscore ( \_ ), 또는 달러 기호($)로 시작하여야 한다. 이어지는 문자에는 숫자(0~9)도 사용할 수 있다.
 - 자바스크립트는 대/소문자를 구별하므로 사용할 수 있는 문자는 “A” ~ “Z” (대문자)와 “a” ~ “z” (소문자)이다.
 
 ### 변수의 선언과 할당
@@ -88,7 +88,7 @@ console.log(y); // ReferenceError
 
 변수 선언(생성) 단계와 초기화 및 할당 단계로 나누고, 선언 단계에서는 그 선언이 소스코드의 어디에 위치하든 해당 스코프의 컴파일단계에서 처리한다. 선언 단계가 스코프의 꼭대기로 호이스팅 되는 작업이라고 볼 수 있다.
 
-* [Hoisting](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Hoisting)
+- [Hoisting](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Hoisting)
 
 **초기화 (Initialization)**
 
@@ -98,7 +98,7 @@ console.log(y); // ReferenceError
 
 할당 연산자(등호, =, equal sign)을 사용해 특정 변수에 값을 **할당**한다. 할당 구문은 런타임 과정에서 이루어진다.
 
-* TODO : [JS Runtime, Event Loop](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/JS-Runtime-Event-Loop)
+- TODO : [JS Runtime, Event Loop](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/JS-Runtime-Event-Loop)
 
 값을 할당하지 않은 변수 즉 선언만 되어 있는 변수는 `undefined`로 초기값을 갖는다. 선언하지 않은 변수에 접근하면 `ReferenceError`가 발생한다.
 
@@ -127,11 +127,11 @@ console.log(x); // 100
 위 예제의 변수 x는 중복 선언되었다. 이처럼 변수를 중복 선언하면 에러없이 이전 변수의 값을 덮어쓴다. 만약 동일한 변수명이 선언되어 있는 것을 모르고 변수를 중복 선언했다면 의도치 않게 변수의 값을 변경하는 부작용을 발생시킨다. 따라서 변수의 중복 선언은 문법적으로 허용되지만 사용하지 않는 것이 좋다.
 `ES6의 let, const 키워드는 재선언이 불가능하다.`
 
-* [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
+- [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
 
 ## Reference
 
 - [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable)
 - [https://meetup.toast.com/posts/86](https://meetup.toast.com/posts/86)
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

@@ -2,7 +2,7 @@
 
 [연습문제 > 최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 
-``` js
+```js
 // 1
 // function solution(s) {
 //     const sSplit = s.split(' ');
@@ -19,14 +19,14 @@
 // }
 // 2 - Refactoring
 function solution(s) {
-    const arr = s.split(' ');
+  const arr = s.split(" ");
 
-    return `${Math.min(...arr)} ${Math.max(...arr)}`;
+  return `${Math.min(...arr)} ${Math.max(...arr)}`;
 }
 
-console.log(solution('1 2 3 4'));
-console.log(solution('-1 -2 -3 -4'));
-console.log(solution('-1 -1'));
+console.log(solution("1 2 3 4"));
+console.log(solution("-1 -2 -3 -4"));
+console.log(solution("-1 -1"));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)

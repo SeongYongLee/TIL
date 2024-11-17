@@ -2,7 +2,7 @@
 
 [월간 코드 챌린지 시즌1 > 삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645)
 
-``` js
+```js
 // 1
 // function solution(n) {
 //     let step = 0; // 0: down, 1: right, 2: up
@@ -73,20 +73,20 @@
     프로그래머스 - 다른 사람의 풀이 참고
 */
 function solution(n) {
-    let num = 0;
-    let y = -1;
-    let x = 0;
-    const answer = Array(n)
-        .fill()
-        .map((_, i) => Array(i + 1).fill());
+  let num = 0;
+  let y = -1;
+  let x = 0;
+  const answer = Array(n)
+    .fill()
+    .map((_, i) => Array(i + 1).fill());
 
-    for (let i = n; i > 0; i -= 3) {
-        for (let j = 0; j < i; j++) answer[++y][x] = ++num;
-        for (let j = 0; j < i - 1; j++) answer[y][++x] = ++num;
-        for (let j = 0; j < i - 2; j++) answer[--y][--x] = ++num;
-    }
+  for (let i = n; i > 0; i -= 3) {
+    for (let j = 0; j < i; j++) answer[++y][x] = ++num;
+    for (let j = 0; j < i - 1; j++) answer[y][++x] = ++num;
+    for (let j = 0; j < i - 2; j++) answer[--y][--x] = ++num;
+  }
 
-    return answer.flat();
+  return answer.flat();
 }
 
 console.log(solution(4));

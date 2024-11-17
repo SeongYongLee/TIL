@@ -2,18 +2,18 @@
 
 [연습문제 > 피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 
-``` js
+```js
 function solution(n) {
-    let history = 0;
-    let answer = 1;
+  let history = 0;
+  let answer = 1;
 
-    for (let i = 1; i < n; i++) {
-        const temp = (history + answer) % 1234567;
-        history = answer;
-        answer = temp;
-    }
+  for (let i = 1; i < n; i++) {
+    const temp = (history + answer) % 1234567;
+    history = answer;
+    answer = temp;
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(solution(3));

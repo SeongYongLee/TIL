@@ -2,9 +2,9 @@
 
 [연습문제 > 자릿수 더하기](https://programmers.co.kr/learn/courses/30/lessons/12931)
 
-``` js
+```js
 function solution(n) {
-    return (n + '').split('').reduce((r, i) => r + +i, 0);
+  return (n + "").split("").reduce((r, i) => r + +i, 0);
 }
 
 console.log(solution(123));

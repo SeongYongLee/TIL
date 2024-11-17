@@ -1,4 +1,5 @@
 # TIL
+
 Today I Learned
 
 </br>
@@ -9,7 +10,7 @@ Today I Learned
 
 모든 문제는 직접 푼 풀이이며 언어는 JavaScript를 사용하였습니다.
 
-* [AlgorithmProgrammers](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)
+- [AlgorithmProgrammers](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)
 
 </br>
 
@@ -17,8 +18,8 @@ Today I Learned
 
 [Notion](https://www.notion.so/2a6eca3fe9a84c3bab9ce5d9b30c379f)에 정리 한 내용을 한 번 더 정리해서 올리는 공간입니다 :)
 
-* [FrontEnd](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+- [FrontEnd](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
 
-* [JavaScript](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)
+- [JavaScript](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)
 
-* [Vue](https://github.com/SeongYongLee/TIL/tree/main/Vue)
+- [Vue](https://github.com/SeongYongLee/TIL/tree/main/Vue)

@@ -2,7 +2,7 @@
 
 [2021 KAKAO BLIND RECRUITMENT > 순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412)
 
-``` js
+```js
 // 1 - 효율성 테스트 탈락
 // function solution(info, query) {
 //     const infoSplit = info.map((m) => m.split(' ')).sort((a, b) => b[4] - a[4]);
@@ -79,89 +79,89 @@
     https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1
 */
 function solution(info, query) {
-    const infoLength = info.length;
-    const queryLength = query.length;
-    const infoObject = {};
-    const answer = [];
+  const infoLength = info.length;
+  const queryLength = query.length;
+  const infoObject = {};
+  const answer = [];
 
-    function getInfoObject(infoArray, infoNum, start) {
-        const key = infoArray.join('');
+  function getInfoObject(infoArray, infoNum, start) {
+    const key = infoArray.join("");
 
-        // 효율성 테스트 오답의 주요 원인 1
-        // infoObject[key] = infoObject[key] ? [...infoObject[key], infoNum] : [infoNum];
-        if (infoObject[key]) {
-            infoObject[key].push(infoNum);
-        } else {
-            infoObject[key] = [infoNum];
+    // 효율성 테스트 오답의 주요 원인 1
+    // infoObject[key] = infoObject[key] ? [...infoObject[key], infoNum] : [infoNum];
+    if (infoObject[key]) {
+      infoObject[key].push(infoNum);
+    } else {
+      infoObject[key] = [infoNum];
+    }
+
+    for (let i = start; i < infoArray.length; i++) {
+      const temp = [...infoArray];
+      temp[i] = "-";
+      getInfoObject(temp, infoNum, i + 1);
+    }
+  }
+
+  for (let i = 0; i < infoLength; i++) {
+    const infoSplit = info[i].split(" ");
+    const infoNum = +infoSplit.pop();
+    getInfoObject(infoSplit, infoNum, 0);
+  }
+
+  for (const key in infoObject) {
+    infoObject[key].sort((a, b) => a - b);
+  }
+
+  for (let i = 0; i < queryLength; i++) {
+    const querySplit = query[i].split(" ");
+    const queryString = `${querySplit[0]}${querySplit[2]}${querySplit[4]}${querySplit[6]}`;
+    const queryNum = +querySplit[7];
+    const resultArray = infoObject[queryString];
+    let count = 0;
+
+    if (resultArray) {
+      // 효율성 테스트 오답의 주요 원인 2
+      // resultArray.sort((a, b) => a - b);
+      let start = 0;
+      let end = resultArray.length;
+      while (start < end) {
+        const mid = Math.floor((start + end) / 2);
+
+        if (resultArray[mid] >= queryNum) {
+          end = mid;
+        } else if (resultArray[mid] < queryNum) {
+          start = mid + 1;
         }
+      }
 
-        for (let i = start; i < infoArray.length; i++) {
-            const temp = [...infoArray];
-            temp[i] = '-';
-            getInfoObject(temp, infoNum, i + 1);
-        }
+      count = resultArray.length - start;
     }
 
-    for (let i = 0; i < infoLength; i++) {
-        const infoSplit = info[i].split(' ');
-        const infoNum = +infoSplit.pop();
-        getInfoObject(infoSplit, infoNum, 0);
-    }
+    answer.push(count);
+  }
 
-    for (const key in infoObject) {
-        infoObject[key].sort((a, b) => a - b);
-    }
-
-    for (let i = 0; i < queryLength; i++) {
-        const querySplit = query[i].split(' ');
-        const queryString = `${querySplit[0]}${querySplit[2]}${querySplit[4]}${querySplit[6]}`;
-        const queryNum = +querySplit[7];
-        const resultArray = infoObject[queryString];
-        let count = 0;
-
-        if (resultArray) {
-            // 효율성 테스트 오답의 주요 원인 2
-            // resultArray.sort((a, b) => a - b);
-            let start = 0;
-            let end = resultArray.length;
-            while (start < end) {
-                const mid = Math.floor((start + end) / 2);
-
-                if (resultArray[mid] >= queryNum) {
-                    end = mid;
-                } else if (resultArray[mid] < queryNum) {
-                    start = mid + 1;
-                }
-            }
-
-            count = resultArray.length - start;
-        }
-
-        answer.push(count);
-    }
-
-    return answer;
+  return answer;
 }
 
 console.log(
-    solution(
-        [
-            'java backend junior pizza 150',
-            'python frontend senior chicken 210',
-            'python frontend senior chicken 150',
-            'cpp backend senior pizza 260',
-            'java backend junior chicken 80',
-            'python backend senior chicken 50',
-        ],
-        [
-            'java and backend and junior and pizza 100',
-            'python and frontend and senior and chicken 200',
-            'cpp and - and senior and pizza 250',
-            '- and backend and senior and - 150',
-            '- and - and - and chicken 100',
-            '- and - and - and - 150',
-        ]
-    )
+  solution(
+    [
+      "java backend junior pizza 150",
+      "python frontend senior chicken 210",
+      "python frontend senior chicken 150",
+      "cpp backend senior pizza 260",
+      "java backend junior chicken 80",
+      "python backend senior chicken 50",
+    ],
+    [
+      "java and backend and junior and pizza 100",
+      "python and frontend and senior and chicken 200",
+      "cpp and - and senior and pizza 250",
+      "- and backend and senior and - 150",
+      "- and - and - and chicken 100",
+      "- and - and - and - 150",
+    ],
+  ),
 );
 ```
 

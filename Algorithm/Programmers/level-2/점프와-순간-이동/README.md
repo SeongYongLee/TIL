@@ -2,7 +2,7 @@
 
 [Summer/Winter Coding(~2018) > 점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980)
 
-``` js
+```js
 // 1
 // function solution(n) {
 //     let ans = 0;
@@ -21,10 +21,10 @@
 
 // 2 - Refactoring
 function solution(n) {
-    return n
-        .toString(2)
-        .split('')
-        .filter((n) => +n).length;
+  return n
+    .toString(2)
+    .split("")
+    .filter((n) => +n).length;
 }
 
 console.log(solution(5));

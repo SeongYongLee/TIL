@@ -2,11 +2,11 @@
 
 [스택/큐 > 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
 
-``` js
+```js
 // 1
 // function solution(progresses, speeds) {
 //     const answer = [];
-    
+
 //     while (speeds.length) {
 //         let count = 0;
 //         progresses = progresses.map((x, i) => x + speeds[i]);
@@ -19,7 +19,7 @@
 //         }
 //         if (count) answer.push(count);
 //     }
-    
+
 //     return answer;
 // }
 
@@ -49,21 +49,21 @@
     프로그래머스 - 다른 사람의 풀이 참고
 */
 function solution(progresses, speeds) {
-    const answer = [0];
-    const days = progresses.map((p, i) => Math.ceil((100 - p) / speeds[i]));
-    const dlength = days.length;
-    let maxDay = days[0];
+  const answer = [0];
+  const days = progresses.map((p, i) => Math.ceil((100 - p) / speeds[i]));
+  const dlength = days.length;
+  let maxDay = days[0];
 
-    for (let i = 0, j = 0; i < dlength; i++) {
-        if (days[i] <= maxDay) {
-            answer[j] += 1;
-        } else {
-            maxDay = days[i];
-            answer[++j] = 1;
-        }
+  for (let i = 0, j = 0; i < dlength; i++) {
+    if (days[i] <= maxDay) {
+      answer[j] += 1;
+    } else {
+      maxDay = days[i];
+      answer[++j] = 1;
     }
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(solution([93, 30, 55], [1, 30, 5]));

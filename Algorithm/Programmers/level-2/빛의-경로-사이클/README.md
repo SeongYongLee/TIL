@@ -2,7 +2,7 @@
 
 [월간 코드 챌린지 시즌2 > 빛의 경로 사이클](https://programmers.co.kr/learn/courses/30/lessons/86052)
 
-``` js
+```js
 // 1 - 잘못된 풀이 접근
 // function solution(grid) {
 //     const answer = [];
@@ -143,77 +143,77 @@
 
 // 2
 function solution(grid) {
-    const answer = [];
-    const gridXLength = grid[0].length;
-    const gridYLength = grid.length;
-    const entry = ['left', 'right', 'top', 'bottom'];
-    const isEntry = Array(grid.length)
+  const answer = [];
+  const gridXLength = grid[0].length;
+  const gridYLength = grid.length;
+  const entry = ["left", "right", "top", "bottom"];
+  const isEntry = Array(grid.length)
+    .fill()
+    .map((_) =>
+      Array(grid[0].length)
         .fill()
-        .map((_) =>
-            Array(grid[0].length)
-                .fill()
-                .map((_) => Array(4).fill(false))
-        );
+        .map((_) => Array(4).fill(false)),
+    );
 
-    for (let i = 0; i < gridYLength; i++) {
-        for (let j = 0; j < gridXLength; j++) {
-            for (let k = 0; k < entry.length; k++) {
-                if (isEntry[i][j][k]) continue;
-                isEntry[i][j][k] = true;
+  for (let i = 0; i < gridYLength; i++) {
+    for (let j = 0; j < gridXLength; j++) {
+      for (let k = 0; k < entry.length; k++) {
+        if (isEntry[i][j][k]) continue;
+        isEntry[i][j][k] = true;
 
-                let x = i;
-                let y = j;
-                let currentEntry = k;
-                let count = 1;
+        let x = i;
+        let y = j;
+        let currentEntry = k;
+        let count = 1;
 
-                while (1) {
-                    switch (grid[x][y]) {
-                        case 'S':
-                            break;
-                        case 'L':
-                            currentEntry = [3, 2, 0, 1][currentEntry];
-                            break;
-                        case 'R':
-                            currentEntry = [2, 3, 1, 0][currentEntry];
-                            break;
-                    }
-                    switch (currentEntry) {
-                        case 0:
-                            y += 1;
-                            if (y === gridXLength) y = 0;
-                            break;
-                        case 1:
-                            y -= 1;
-                            if (y === -1) y = gridXLength - 1;
-                            break;
-                        case 2:
-                            x += 1;
-                            if (x === gridYLength) x = 0;
-                            break;
-                        case 3:
-                            x -= 1;
-                            if (x === -1) x = gridYLength - 1;
-                            break;
-                    }
-                    if (isEntry[x][y][currentEntry]) break;
-                    isEntry[x][y][currentEntry] = true;
-                    count++;
-                }
-                answer.push(count);
-            }
+        while (1) {
+          switch (grid[x][y]) {
+            case "S":
+              break;
+            case "L":
+              currentEntry = [3, 2, 0, 1][currentEntry];
+              break;
+            case "R":
+              currentEntry = [2, 3, 1, 0][currentEntry];
+              break;
+          }
+          switch (currentEntry) {
+            case 0:
+              y += 1;
+              if (y === gridXLength) y = 0;
+              break;
+            case 1:
+              y -= 1;
+              if (y === -1) y = gridXLength - 1;
+              break;
+            case 2:
+              x += 1;
+              if (x === gridYLength) x = 0;
+              break;
+            case 3:
+              x -= 1;
+              if (x === -1) x = gridYLength - 1;
+              break;
+          }
+          if (isEntry[x][y][currentEntry]) break;
+          isEntry[x][y][currentEntry] = true;
+          count++;
         }
+        answer.push(count);
+      }
     }
+  }
 
-    return answer.sort((a, b) => a - b);
+  return answer.sort((a, b) => a - b);
 }
 
-console.log(solution(['SL', 'LR']));
-console.log(solution(['S']));
-console.log(solution(['R', 'R']));
-console.log(solution(['RR', 'RR']));
-console.log(solution(['S', 'S', 'S', 'S']));
-console.log(solution(['SRLS']));
-console.log(solution(['R']));
+console.log(solution(["SL", "LR"]));
+console.log(solution(["S"]));
+console.log(solution(["R", "R"]));
+console.log(solution(["RR", "RR"]));
+console.log(solution(["S", "S", "S", "S"]));
+console.log(solution(["SRLS"]));
+console.log(solution(["R"]));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)

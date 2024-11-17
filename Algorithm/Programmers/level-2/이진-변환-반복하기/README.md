@@ -2,7 +2,7 @@
 
 [월간 코드 챌린지 시즌1 > 이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
 
-``` js
+```js
 // 1
 // function sol(s, play_count, delete_count) {
 //     const temp = s
@@ -34,22 +34,22 @@
 
 // 3 - Refactoring while
 function solution(s) {
-    let times = 0;
-    let deleteCount = 0;
+  let times = 0;
+  let deleteCount = 0;
 
-    while (s !== '1') {
-        const temp = s.split('').filter((v) => +v).length;
-        times++;
-        deleteCount += s.length - temp;
-        s = temp.toString(2);
-    }
+  while (s !== "1") {
+    const temp = s.split("").filter((v) => +v).length;
+    times++;
+    deleteCount += s.length - temp;
+    s = temp.toString(2);
+  }
 
-    return [times, deleteCount];
+  return [times, deleteCount];
 }
 
-console.log(solution('110010101001'));
-console.log(solution('01110'));
-console.log(solution('1111111'));
+console.log(solution("110010101001"));
+console.log(solution("01110"));
+console.log(solution("1111111"));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)

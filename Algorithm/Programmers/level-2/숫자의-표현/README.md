@@ -2,7 +2,7 @@
 
 [연습문제 > 숫자의 표현](https://programmers.co.kr/learn/courses/30/lessons/12924)
 
-``` js
+```js
 // 1
 // function solution(n) {
 //     let answer = 1;
@@ -23,13 +23,13 @@
     홀수인 약수의 개수를 찾으면 된다.
 */
 function solution(n) {
-    let answer = n % 2 ? 1 : 0;
+  let answer = n % 2 ? 1 : 0;
 
-    for (let i = 1; i < n / 2; i++) {
-        if (!(n % i) && i % 2) answer++;
-    }
+  for (let i = 1; i < n / 2; i++) {
+    if (!(n % i) && i % 2) answer++;
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(solution(15));

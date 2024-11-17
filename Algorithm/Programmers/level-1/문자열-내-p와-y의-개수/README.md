@@ -2,7 +2,7 @@
 
 [연습문제 > 문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
 
-``` js
+```js
 // 1
 // function solution(s) {
 //     let answer = 0;
@@ -15,11 +15,11 @@
 //     return answer === 0;
 // }
 
-// 2 - Refactoring 
+// 2 - Refactoring
 function solution(s) {
-    return (
-        s.toUpperCase().split('P').length === s.toUpperCase().split('Y').length
-    );
+  return (
+    s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length
+  );
 }
 
 console.log(solution("pPoooyY"));

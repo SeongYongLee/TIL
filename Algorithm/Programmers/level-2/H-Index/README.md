@@ -2,7 +2,7 @@
 
 [정렬 > H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747)
 
-``` js
+```js
 // 1
 // function solution(citations) {
 //     for (let i = citations.length; i > 0; i--) {
@@ -15,13 +15,13 @@
 
 // 2 - Refactoring
 function solution(citations) {
-    citations = citations.sort((a, b) => b - a);
+  citations = citations.sort((a, b) => b - a);
 
-    let i = -1;
+  let i = -1;
 
-    while (++i < citations[i]) {}
+  while (++i < citations[i]) {}
 
-    return i;
+  return i;
 }
 
 console.log(solution([3, 0, 6, 1, 5]));

@@ -2,7 +2,7 @@
 
 [그래프 > 가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189)
 
-``` js
+```js
 // 1 - 시간 초과
 // function solution(n, edge) {
 //     const visited = new Set([1]);
@@ -55,47 +55,47 @@
 
 // 3 - Refactoring
 function solution(n, edge) {
-    const edgeList = edge.reduce(
-        (r, c) => {
-            r[c[0]].push(c[1]);
-            r[c[1]].push(c[0]);
-            return r;
-        },
-        new Array(n + 1).fill().map(() => [])
-    );
+  const edgeList = edge.reduce(
+    (r, c) => {
+      r[c[0]].push(c[1]);
+      r[c[1]].push(c[0]);
+      return r;
+    },
+    new Array(n + 1).fill().map(() => []),
+  );
 
-    const visited = new Set([1]);
-    let lastVisited = new Set([1]);
-    let tempLastVisited = new Set();
+  const visited = new Set([1]);
+  let lastVisited = new Set([1]);
+  let tempLastVisited = new Set();
 
-    while (visited.size < n) {
-        tempLastVisited = new Set(lastVisited);
-        lastVisited = new Set();
+  while (visited.size < n) {
+    tempLastVisited = new Set(lastVisited);
+    lastVisited = new Set();
 
-        for (let i of tempLastVisited) {
-            for (let j = 0; j < edgeList[i].length; j++) {
-                if (!visited.has(edgeList[i][j])) {
-                    visited.add(edgeList[i][j]);
-                    lastVisited.add(edgeList[i][j]);
-                }
-            }
+    for (let i of tempLastVisited) {
+      for (let j = 0; j < edgeList[i].length; j++) {
+        if (!visited.has(edgeList[i][j])) {
+          visited.add(edgeList[i][j]);
+          lastVisited.add(edgeList[i][j]);
         }
-        // console.log(visited, lastVisited, tempLastVisited);
+      }
     }
+    // console.log(visited, lastVisited, tempLastVisited);
+  }
 
-    return lastVisited.size;
+  return lastVisited.size;
 }
 
 console.log(
-    solution(6, [
-        [3, 6],
-        [4, 3],
-        [3, 2],
-        [1, 3],
-        [1, 2],
-        [2, 4],
-        [5, 2],
-    ])
+  solution(6, [
+    [3, 6],
+    [4, 3],
+    [3, 2],
+    [1, 3],
+    [1, 2],
+    [2, 4],
+    [5, 2],
+  ]),
 );
 ```
 

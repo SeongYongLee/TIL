@@ -2,7 +2,7 @@
 
 [연습문제 > 시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
-``` js
+```js
 // 1
 // function solution(s, n) {
 //     let answer = '';
@@ -78,19 +78,19 @@
     replace의 성능이 너무 좋다.
 */
 function solution(s, n) {
-    return s.replace(
-        /[a-z]/gi,
-        (c) =>
-            [
-                (c = c.charCodeAt(0)),
-                String.fromCharCode((c & 96) + (((c % 32) + n - 1) % 26) + 1),
-            ][1],
-    );
+  return s.replace(
+    /[a-z]/gi,
+    (c) =>
+      [
+        (c = c.charCodeAt(0)),
+        String.fromCharCode((c & 96) + (((c % 32) + n - 1) % 26) + 1),
+      ][1],
+  );
 }
 
-console.log(solution('AB', 1));
-console.log(solution('z', 1));
-console.log(solution('a B z', 4));
+console.log(solution("AB", 1));
+console.log(solution("z", 1));
+console.log(solution("a B z", 4));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)

@@ -8,7 +8,8 @@ parameter는 함수 선언부에 정의되고, arguments는 함수 호출부에�
 
 ```js
 var a = 1;
-var func = function(b) { // parameter, formal parameter, 매개변수, 형식 매개변수
+var func = function (b) {
+  // parameter, formal parameter, 매개변수, 형식 매개변수
   // code...
 };
 
@@ -16,6 +17,7 @@ func(a); // arguments, actual parameter, 인자, 실인자
 ```
 
 ### Reference
+
 - https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference/
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

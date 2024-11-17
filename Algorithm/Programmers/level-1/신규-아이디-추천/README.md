@@ -2,7 +2,7 @@
 
 [2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
 
-``` js
+```js
 // 1
 // function solution(new_id) {
 //     const low_new_id = new_id.toLowerCase(); // 1
@@ -52,22 +52,22 @@
 
 // 3 - 정규 표현식 + padEnd
 function solution(new_id) {
-    const answer = new_id
-        .toLowerCase() // 1
-        .replace(/[^\w-.]/g, '') // 2
-        .replace(/\.+/g, '.') // 3
-        .replace(/^\./g, '') // 4
-        .slice(0, 15) // 6
-        .replace(/\.$/g, '') // 4
-        .padEnd(1, 'a') // 5
+  const answer = new_id
+    .toLowerCase() // 1
+    .replace(/[^\w-.]/g, "") // 2
+    .replace(/\.+/g, ".") // 3
+    .replace(/^\./g, "") // 4
+    .slice(0, 15) // 6
+    .replace(/\.$/g, "") // 4
+    .padEnd(1, "a"); // 5
 
-    const len = answer.length;
+  const len = answer.length;
 
-    return answer.padEnd(3, answer[len - 1]); // 7
+  return answer.padEnd(3, answer[len - 1]); // 7
 }
 
-console.log(solution('...!@BaT#*..y.abcdefghijklm'));
-console.log(solution('z-+.^.'));
+console.log(solution("...!@BaT#*..y.abcdefghijklm"));
+console.log(solution("z-+.^."));
 console.log(solution());
 ```
 

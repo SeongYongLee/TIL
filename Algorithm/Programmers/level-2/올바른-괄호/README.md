@@ -2,18 +2,18 @@
 
 [연습문제 > 올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
 
-``` js
+```js
 // 1
 function solution(s) {
-    let answer = 0;
-    const sLength = s.length;
+  let answer = 0;
+  const sLength = s.length;
 
-    for (let i = 0; i < sLength; i++) {
-        answer += s[i] === '(' ? 1 : -1;
-        if (answer < 0) return false;
-    }
+  for (let i = 0; i < sLength; i++) {
+    answer += s[i] === "(" ? 1 : -1;
+    if (answer < 0) return false;
+  }
 
-    return answer === 0 ? true : false;
+  return answer === 0 ? true : false;
 }
 
 // 2 - Refactoring (1이 더 빠름)

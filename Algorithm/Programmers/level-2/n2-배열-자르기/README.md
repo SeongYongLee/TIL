@@ -1,8 +1,8 @@
 ## n^2 배열 자르기
 
-* [월간 코드 챌린지 시즌3 > n^2 배열 자르기](https://programmers.co.kr/learn/courses/30/lessons/87390)
+- [월간 코드 챌린지 시즌3 > n^2 배열 자르기](https://programmers.co.kr/learn/courses/30/lessons/87390)
 
-``` js
+```js
 // 1 (시간 초과)
 // function solution(n, left, right) {
 //     const answer = [];
@@ -51,21 +51,21 @@
 
 // 4
 function solution(n, left, right) {
-    const nLength = n + 1;
-    const answer = [];
-    const answerLastLength = right - left + 1;
-    let answerLength = 0;
-    let i = Math.floor((left + 1) / n);
-    let count = (i - 1) * n;
+  const nLength = n + 1;
+  const answer = [];
+  const answerLastLength = right - left + 1;
+  let answerLength = 0;
+  let i = Math.floor((left + 1) / n);
+  let count = (i - 1) * n;
 
-    for (i; i < nLength; i++) {
-        for (let j = 1; j < nLength; j++) {
-            if (++count > left) {
-                answer.push(i < j ? j : i);
-                if (++answerLength === answerLastLength) return answer;
-            }
-        }
+  for (i; i < nLength; i++) {
+    for (let j = 1; j < nLength; j++) {
+      if (++count > left) {
+        answer.push(i < j ? j : i);
+        if (++answerLength === answerLastLength) return answer;
+      }
     }
+  }
 }
 
 console.log(solution(3, 2, 5));

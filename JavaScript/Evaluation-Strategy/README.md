@@ -23,7 +23,8 @@ TODO : [Immutable](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Immu
 ```js
 var value = 2;
 
-var callee = (copiedValue) => {  // callee - 이 줄에서 copiedValue = 2와 동일한 동작이 수행됨
+var callee = (copiedValue) => {
+  // callee - 이 줄에서 copiedValue = 2와 동일한 동작이 수행됨
   copiedValue = copiedValue + 1;
 };
 
@@ -46,13 +47,14 @@ console.log(value); // 2
 따라서 call by Reference와 차이점은 함수 안에서 객체의 속성 수정 시에는 같은 곳을 참조하지만 객체 자체를 수정해버리면 관계가 깨져버린다.
 
 ```js
-function test(x) { // callee
+function test(x) {
+  // callee
   x.a = 9;
   console.log(x); // {a: 9}
 }
 
-var i = {a: 5};
-test(i); // caller 
+var i = { a: 5 };
+test(i); // caller
 console.log(i); // {a: 9}
 ```
 
@@ -60,12 +62,12 @@ console.log(i); // {a: 9}
 function change(num, obj1, obj2) {
   num = num * 10;
   obj1.item = "changed";
-  obj2 = {item: "changed"};
+  obj2 = { item: "changed" };
 }
 
 var num = 10;
-var obj1 = {item: "unchanged"};
-var obj2 = {item: "unchanged"};
+var obj1 = { item: "unchanged" };
+var obj2 = { item: "unchanged" };
 
 change(num, obj1, obj2);
 
@@ -84,4 +86,4 @@ console.log(obj2.item); // unchanged, call by Reference라면 바뀌어야 한�
 
 - https://velog.io/@jimmyjoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8F%89%EA%B0%80%EC%A0%84%EB%9E%B5-Call-By-Value-vs-Call-By-Reference-vs-Call-By-Sharing
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

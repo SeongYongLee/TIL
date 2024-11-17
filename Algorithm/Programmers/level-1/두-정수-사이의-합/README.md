@@ -2,19 +2,19 @@
 
 [연습문제 > 두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
-``` js
+```js
 function solution(a, b) {
-    const calc = (min, max) => {
-        let answer = 0;
-        
-        for (let i = min; i <= max; i++) {
-            answer += i;
-        }
-        
-        return answer;
+  const calc = (min, max) => {
+    let answer = 0;
+
+    for (let i = min; i <= max; i++) {
+      answer += i;
     }
-    
-    return a > b ? calc(b, a) : calc(a, b);
+
+    return answer;
+  };
+
+  return a > b ? calc(b, a) : calc(a, b);
 }
 
 console.log(solution(3, 5));

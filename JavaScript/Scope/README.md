@@ -22,17 +22,16 @@
 
 런타임에서 렉시컬 스코프를 수정할 수 있는 방법들(eval, with)이 있지만, 권장하지 않는다.
 
-
 ```js
-var name = 'first';
+var name = "first";
 
 function first() {
-	console.log(name); // first
+  console.log(name); // first
 }
 
 function second() {
-	var name = 'second';
-	first();
+  var name = "second";
+  first();
 }
 
 second();
@@ -45,15 +44,15 @@ second();
 만약 JS가 동적 스코프인 경우 아래 예제와 같다.
 
 ```js
-var name = 'first';
+var name = "first";
 
 function first() {
-	console.log(name); // second
+  console.log(name); // second
 }
 
 function second() {
-	var name = 'second';	
-	first();
+  var name = "second";
+  first();
 }
 
 second();
@@ -66,21 +65,21 @@ second();
 - var
 
 ```js
-function hello(name){
-	if(name){
-		var greet = name + '님 안녕하세요';
-	}
-	console.log(greet); // LSY님 안녕하세요
+function hello(name) {
+  if (name) {
+    var greet = name + "님 안녕하세요";
+  }
+  console.log(greet); // LSY님 안녕하세요
 }
 
-hello('LSY');
+hello("LSY");
 
 var topic = "자바스크립트";
 if (topic) {
-	var topic = "리액트";
-	console.log('블록', topic); // 블록 리액트
+  var topic = "리액트";
+  console.log("블록", topic); // 블록 리액트
 }
-console.log('글로벌', topic); // 글로벌 리액트
+console.log("글로벌", topic); // 글로벌 리액트
 // Hoisting으로 인해 두 topic은 같은 변수이다.
 ```
 
@@ -99,21 +98,21 @@ console.log('글로벌', topic); // 글로벌 리액트
 TODO : [Closure](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Closure)
 
 ```js
-function hello(name){
-	if(name){
-		let greet = name + '님 안녕하세요';
-	}
-	console.log(greet); // greet is not defined
+function hello(name) {
+  if (name) {
+    let greet = name + "님 안녕하세요";
+  }
+  console.log(greet); // greet is not defined
 }
 
-hello('LSY');
+hello("LSY");
 
 var topic = "자바스크립트";
 if (topic) {
-	let topic = "리액트";
-	console.log('블록', topic); // 블록 리액트
+  let topic = "리액트";
+  console.log("블록", topic); // 블록 리액트
 }
-console.log('글로벌', topic); // 글로벌 자바스크립트
+console.log("글로벌", topic); // 글로벌 자바스크립트
 ```
 
 #### 레벨 - 전역 스코프
@@ -156,4 +155,4 @@ TODO : [IIFE](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/IIFE)
 
 - 러닝 리액트(Learning React) 2판 | 알렉스 뱅크스 , 이브 포셀로 지음 | 오현석 옮김 | 한빛미디어
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

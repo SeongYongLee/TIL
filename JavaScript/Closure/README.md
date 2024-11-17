@@ -1,9 +1,9 @@
 ## Closure
 
-TODO : 
+TODO :
 
 ### Reference
 
-TODO : 
+TODO :
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

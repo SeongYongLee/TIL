@@ -5,15 +5,15 @@
 ES5에서 변수를 선언할 수 있는 유일한 방법은 var 키워드를 사용하는 것이다. var 키워드로 선언된 변수는 아래와 같은 특징을 갖는다. 이는 다른 C-family 언어와는 차별되는 특징(설계상 오류)으로 주의를 기울이지 않으면 심각한 문제를 발생시킨다.
 
 1. 함수 레벨 스코프(Function-level scope)
-    - 전역 변수의 남발
-    - for loop 초기화식에서 사용한 변수를 for loop 외부 또는 전역에서 참조할 수 있다.
-    - 변수의 유효 범위(scope)는 좁을수록 좋다.
+   - 전역 변수의 남발
+   - for loop 초기화식에서 사용한 변수를 for loop 외부 또는 전역에서 참조할 수 있다.
+   - 변수의 유효 범위(scope)는 좁을수록 좋다.
 2. var 키워드 생략 허용
-    - 의도하지 않은 변수의 전역화
+   - 의도하지 않은 변수의 전역화
 3. 중복 선언 허용
-    - 의도하지 않은 변수값 변경
+   - 의도하지 않은 변수값 변경
 4. 변수 호이스팅
-    - 변수를 선언하기 전에 참조가 가능하다.
+   - 변수를 선언하기 전에 참조가 가능하다.
 
 대부분의 문제는 전역 변수로 인해 발생한다.
 
@@ -36,28 +36,28 @@ let - 재할당 가능, 재선언 불가
 const - 재할당, 재선언 불가
 
 ```jsx
-var name = 'bathingape'
-console.log(name) // bathingape
+var name = "bathingape";
+console.log(name); // bathingape
 
-var name = 'javascript'
-console.log(name) // javascript
+var name = "javascript";
+console.log(name); // javascript
 
-let name = 'bathingape'
-console.log(name) // bathingape
+let name = "bathingape";
+console.log(name); // bathingape
 
-let name = 'javascript'
-console.log(name) 
+let name = "javascript";
+console.log(name);
 // Uncaught SyntaxError: Identifier 'name' has already been declared
 
-const name = 'bathingape'
-console.log(name) // bathingape
+const name = "bathingape";
+console.log(name); // bathingape
 
-const name = 'javascript'
-console.log(name) 
+const name = "javascript";
+console.log(name);
 // Uncaught SyntaxError: Identifier 'name' has already been declared
 
-name = 'react'
-console.log(name) 
+name = "react";
+console.log(name);
 //Uncaught TypeError: Assignment to constant variable.
 ```
 
@@ -67,7 +67,7 @@ console.log(name)
 
 스코프의 시작에서 변수의 선언까지 일시적 사각지대(Temporal Dead Zone; TDZ)에 빠지기 때문이다.
 
-* [Hoisting](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Hoisting)
+- [Hoisting](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Hoisting)
 
 ### 스코프
 
@@ -75,7 +75,7 @@ var - 함수 스코프
 
 let, const - 블록 스코프
 
-* [Scope](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Scope)
+- [Scope](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/Scope)
 
 ## 결론
 
@@ -86,4 +86,4 @@ let, const - 블록 스코프
 - [https://velog.io/@bathingape/JavaScript-var-let-const-차이점](https://velog.io/@bathingape/JavaScript-var-let-const-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 - [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable)
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/Vue)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

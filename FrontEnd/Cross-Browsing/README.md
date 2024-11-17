@@ -40,25 +40,25 @@
 
 - Cross-Browser Compatibility
 
-    각 브라우저 들이 웹표준을 지키고 있는지 여러가지 툴들을 사용하여 확인한다.
+  각 브라우저 들이 웹표준을 지키고 있는지 여러가지 툴들을 사용하여 확인한다.
 
 - reset, css
 
-    CSS의 경우 browser 기본 스타일이 제각각인 경우가 있다. 동일한 스타일을 적용하기 위해 defalut 값을 초기화 시킬 필요가 있다. 라이브러리를 사용하는 경우 무작정 C&P 하지 말고, 어떤 의미에서 초기화 시키는지 알고 사용해야 한다.
-    
-    - [Normalize vs Reset](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd/Normalize-vs-Reset)
+  CSS의 경우 browser 기본 스타일이 제각각인 경우가 있다. 동일한 스타일을 적용하기 위해 defalut 값을 초기화 시킬 필요가 있다. 라이브러리를 사용하는 경우 무작정 C&P 하지 말고, 어떤 의미에서 초기화 시키는지 알고 사용해야 한다.
+
+  - [Normalize vs Reset](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd/Normalize-vs-Reset)
 
 - css prefix
 
-    모든 브라우저에서 지원하는 호환 프로퍼티를 먼저 정의하고 css3에서 지원하는 프로퍼티를 나중에 정의해서 사용한다.
+  모든 브라우저에서 지원하는 호환 프로퍼티를 먼저 정의하고 css3에서 지원하는 프로퍼티를 나중에 정의해서 사용한다.
 
-    ```css
-    #menu {
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-    }
-    ```
+  ```css
+  #menu {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+  ```
 
 ### Reference
 

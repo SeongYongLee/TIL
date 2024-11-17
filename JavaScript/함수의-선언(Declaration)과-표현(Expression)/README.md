@@ -26,16 +26,16 @@ function 키워드로 시작하고, 그 뒤에 함수 이름이 온다. 함수�
 // 함수의 선언
 foo1(); // foo
 function foo1() {
-    alert('foo');
+  alert("foo");
 }
 // 함수의 선언 + IIFE
 foo3(); // "foo3" is not defined.
-(function foo3 () {});
+(function foo3() {});
 
 // 함수의 표현
 foo2(); // Uncaught TypeError: foo2 is not a function
-var foo2 = function() {
-    alert('foo');
+var foo2 = function () {
+  alert("foo");
 };
 ```
 
@@ -44,4 +44,4 @@ var foo2 = function() {
 - [https://okayoon.tistory.com/entry/호이스팅Hoisting?category=835832](https://okayoon.tistory.com/entry/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85Hoisting?category=835832)
 - [https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations](https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations/)
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

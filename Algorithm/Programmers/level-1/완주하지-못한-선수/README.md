@@ -2,7 +2,7 @@
 
 [해시 > 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
-``` js
+```js
 // 1
 // function solution(participant, completion) {
 //     participant.sort();
@@ -21,30 +21,32 @@
     var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
 */
 function solution(participant, completion) {
-    completion.map((name) => (completion[name] = (completion[name] | 0) + 1));
+  completion.map((name) => (completion[name] = (completion[name] | 0) + 1));
 
-    return participant.find((name) => !completion[name]--);
+  return participant.find((name) => !completion[name]--);
 }
 
-console.log(solution(['leo', 'kiki', 'eden'], ['eden', 'kiki']));
+console.log(solution(["leo", "kiki", "eden"], ["eden", "kiki"]));
 console.log(
-    solution(
-        ['marina', 'josipa', 'nikola', 'vinko', 'filipa'],
-        ['josipa', 'filipa', 'marina', 'nikola'],
-    ),
-);
-console.log(solution(['mislav', 'stanko', 'mislav', 'ana'], ['stanko', 'ana', 'mislav']));
-console.log(
-    solution(
-        ['mislav', 'stanko', 'mislav', 'ana', 'mislav', 'stanko'],
-        ['mislav', 'stanko', 'mislav', 'ana', 'mislav'],
-    ),
+  solution(
+    ["marina", "josipa", "nikola", "vinko", "filipa"],
+    ["josipa", "filipa", "marina", "nikola"],
+  ),
 );
 console.log(
-    solution(
-        ['mislav', 'stanko', 'mislav', 'ana', 'mislav'],
-        ['stanko', 'ana', 'mislav', 'mislav'],
-    ),
+  solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]),
+);
+console.log(
+  solution(
+    ["mislav", "stanko", "mislav", "ana", "mislav", "stanko"],
+    ["mislav", "stanko", "mislav", "ana", "mislav"],
+  ),
+);
+console.log(
+  solution(
+    ["mislav", "stanko", "mislav", "ana", "mislav"],
+    ["stanko", "ana", "mislav", "mislav"],
+  ),
 );
 ```
 

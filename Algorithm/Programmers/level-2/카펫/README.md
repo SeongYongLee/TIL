@@ -2,18 +2,18 @@
 
 [완전탐색 > 카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
 
-``` js
+```js
 function solution(brown, yellow) {
-    const total = brown + yellow;
-    let i = 2;
+  const total = brown + yellow;
+  let i = 2;
 
-    while (i++) {
-        const j = total / i;
+  while (i++) {
+    const j = total / i;
 
-        if (Number.isInteger(j) && (i + j - 2) * 2 === brown) {
-            return i > j ? [i, j] : [j, i];
-        }
+    if (Number.isInteger(j) && (i + j - 2) * 2 === brown) {
+      return i > j ? [i, j] : [j, i];
     }
+  }
 }
 
 console.log(solution(10, 2));

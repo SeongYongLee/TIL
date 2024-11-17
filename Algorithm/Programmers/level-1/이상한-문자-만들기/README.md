@@ -2,7 +2,7 @@
 
 [연습문제 > 이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
 
-``` js
+```js
 // 1
 // function solution(s) {
 //     return s
@@ -32,24 +32,24 @@
 
 // 3 - Refactoring
 function solution(s) {
-    let answer = '';
-    const sLength = s.length;
-    let count = 0;
+  let answer = "";
+  const sLength = s.length;
+  let count = 0;
 
-    for (let i = 0; i < sLength; i++) {
-        if (s[i] === ' ') {
-            answer += ' ';
-            count = 0;
-        } else {
-            answer += count % 2 === 0 ? s[i].toUpperCase() : s[i].toLowerCase();
-            count++;
-        }
+  for (let i = 0; i < sLength; i++) {
+    if (s[i] === " ") {
+      answer += " ";
+      count = 0;
+    } else {
+      answer += count % 2 === 0 ? s[i].toUpperCase() : s[i].toLowerCase();
+      count++;
     }
+  }
 
-    return answer;
+  return answer;
 }
 
-console.log(solution('try hello world'));
+console.log(solution("try hello world"));
 ```
 
 [뒤로](https://github.com/SeongYongLee/TIL/tree/main/Algorithm/Programmers)

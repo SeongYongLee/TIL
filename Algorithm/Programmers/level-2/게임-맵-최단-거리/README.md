@@ -2,7 +2,7 @@
 
 [찾아라 프로그래밍 마에스터 > 게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844)
 
-``` js
+```js
 // 1 - DFS (효율성 테스트 탈락)
 // function solution(maps) {
 //     let answer = Infinity;
@@ -73,62 +73,62 @@
 
 // 3 - BFS Refactoring
 function solution(maps) {
-    let answer = 2;
-    let locaQueue = [[0, 0]];
-    const rows = maps.length - 1;
-    const cols = maps[0].length - 1;
-    const mapsCount = maps.map((row) => row.map((_) => 0));
-    mapsCount[0][0] = 1;
+  let answer = 2;
+  let locaQueue = [[0, 0]];
+  const rows = maps.length - 1;
+  const cols = maps[0].length - 1;
+  const mapsCount = maps.map((row) => row.map((_) => 0));
+  mapsCount[0][0] = 1;
 
-    while (locaQueue.length) {
-        const next = [];
+  while (locaQueue.length) {
+    const next = [];
 
-        for (let i = 0; i < locaQueue.length; i++) {
-            const row = locaQueue[i][0];
-            const col = locaQueue[i][1];
-            const map = [
-                [row + 1, col],
-                [row, col + 1],
-                [row - 1, col],
-                [row, col - 1],
-            ];
+    for (let i = 0; i < locaQueue.length; i++) {
+      const row = locaQueue[i][0];
+      const col = locaQueue[i][1];
+      const map = [
+        [row + 1, col],
+        [row, col + 1],
+        [row - 1, col],
+        [row, col - 1],
+      ];
 
-            for (let j = 0; j < 4; j++) {
-                const row = map[j][0];
-                const col = map[j][1];
+      for (let j = 0; j < 4; j++) {
+        const row = map[j][0];
+        const col = map[j][1];
 
-                if (maps[row] && maps[row][col] && !mapsCount[row][col]) {
-                    if (row === rows && col === cols) return answer;
-                    mapsCount[row][col] = 1;
-                    next.push([row, col]);
-                }
-            }
+        if (maps[row] && maps[row][col] && !mapsCount[row][col]) {
+          if (row === rows && col === cols) return answer;
+          mapsCount[row][col] = 1;
+          next.push([row, col]);
         }
-
-        answer++;
-        locaQueue = next;
+      }
     }
 
-    return -1;
+    answer++;
+    locaQueue = next;
+  }
+
+  return -1;
 }
 
 console.log(
-    solution([
-        [1, 0, 1, 1, 1],
-        [1, 0, 1, 0, 1],
-        [1, 0, 1, 1, 1],
-        [1, 1, 1, 0, 1],
-        [0, 0, 0, 0, 1],
-    ])
+  solution([
+    [1, 0, 1, 1, 1],
+    [1, 0, 1, 0, 1],
+    [1, 0, 1, 1, 1],
+    [1, 1, 1, 0, 1],
+    [0, 0, 0, 0, 1],
+  ]),
 );
 console.log(
-    solution([
-        [1, 0, 1, 1, 1],
-        [1, 0, 1, 0, 1],
-        [1, 0, 1, 1, 1],
-        [1, 1, 1, 0, 0],
-        [0, 0, 0, 0, 1],
-    ]),
+  solution([
+    [1, 0, 1, 1, 1],
+    [1, 0, 1, 0, 1],
+    [1, 0, 1, 1, 1],
+    [1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 1],
+  ]),
 );
 ```
 

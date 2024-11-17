@@ -2,26 +2,26 @@
 
 [탐욕법(Greedy) > 체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
-``` js
+```js
 function solution(n, lost, reserve) {
-    return lost.reduce((r, c) => {
-        let a = reserve.indexOf(c);
-        if (a !== -1) {
-            reserve.splice(a, 1);
-            return r;
-        }
-        a = reserve.indexOf(c - 1);
-        if (a !== -1) {
-            reserve.splice(a, 1);
-            return r;
-        }
-        a = reserve.indexOf(c + 1);
-        if (a !== -1 && lost.indexOf(c + 1) === -1) {
-            reserve.splice(a, 1);
-            return r;
-        }
-        return --r;
-    }, n);
+  return lost.reduce((r, c) => {
+    let a = reserve.indexOf(c);
+    if (a !== -1) {
+      reserve.splice(a, 1);
+      return r;
+    }
+    a = reserve.indexOf(c - 1);
+    if (a !== -1) {
+      reserve.splice(a, 1);
+      return r;
+    }
+    a = reserve.indexOf(c + 1);
+    if (a !== -1 && lost.indexOf(c + 1) === -1) {
+      reserve.splice(a, 1);
+      return r;
+    }
+    return --r;
+  }, n);
 }
 
 console.log(solution(5, [2, 4], [1, 3, 5]));

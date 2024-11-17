@@ -6,8 +6,8 @@
 
 Feature Detection은 브라우저가 특정 코드 블록을 지원하는지에 따라 다른 코드를 실행하도록 하는 방법이다.
 
-``` js
-if ('geolocation' in navigator) {
+```js
+if ("geolocation" in navigator) {
   // navigator.geolocation를 사용할 수 있습니다
 } else {
   // 부족한 기능 핸들링
@@ -22,11 +22,12 @@ Modernizr는 사용자의 브라우저에서 차세대 웹 기술의 가용성�
 
 Feature inference는 Feature detection과 마찬가지로 기능을 확인하지만 해당 기능이 존재한다고 가정한 후 사용하는 방법이다.
 
-``` js
+```js
 if (document.getElementsByTagName) {
   element = document.getElementById(id);
 }
 ```
+
 Feature detection이 더 확실한 방법이기에 이 방법은 권장하지 않는다.
 
 ### UA String (UA 문자열)

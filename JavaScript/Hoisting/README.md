@@ -6,7 +6,7 @@ hoist 라는 단어의 사전적 정의는 끌어올리기 라는 뜻이다.
 
 실행 컨텍스트가 활성화 되었을때 해당 영역에서 변수의 이름을 메모리에 먼저 수집하는 현상으로 인해 발생하는 현상, 해당 스코프의 꼭대기(유효 범위의 최상단)에 모두 끌어올려지는것 처럼 보이는 현상을 말한다.
 
-자바스크립트는 모든 선언(var, let, const, function, function*, class)을 호이스팅한다.
+자바스크립트는 모든 선언(var, let, const, function, function\*, class)을 호이스팅한다.
 
 유효범위의 코드가 실행되기 전 메모리에 먼저 저장했던 선언문을 사용할 수 있다.
 
@@ -16,7 +16,7 @@ hoist 라는 단어의 사전적 정의는 끌어올리기 라는 뜻이다.
 
 #### var (Variable Hositing)
 
-선언만 끌어 올려지며 할당은 끌어 올려지지 않는다. 
+선언만 끌어 올려지며 할당은 끌어 올려지지 않는다.
 
 var 키워드로 선언된 변수는 선언 단계와 초기화 단계가 한번에 이루어진다.
 
@@ -38,24 +38,24 @@ var 키워드로 선언된 변수는 선언 단계와 초기화 단계가 한번
 
 변수가 초기화되는 순간 TDZ에서 나오게 되며 사용할 수 있다.
 
-* [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
+- [ES6 - let & const](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/ES6-let-&-const)
 
 ```js
 console.log(i); // undefined
 console.log(j); // Uncaught ReferenceError
-var i = "var"; // var 변수 
+var i = "var"; // var 변수
 let j = "let"; // let 변수
 
-var a = '외부 a';
-const b = '외부 b';
-(function() {
-	console.log(a); // undefined
-	var a = '내부 a';
-}());
-(function() {
-	console.log(b); // ReferenceError
-	const b = '내부 b';
-}());
+var a = "외부 a";
+const b = "외부 b";
+(function () {
+  console.log(a); // undefined
+  var a = "내부 a";
+})();
+(function () {
+  console.log(b); // ReferenceError
+  const b = "내부 b";
+})();
 ```
 
 ### 호이스팅 대상 - 함수
@@ -78,20 +78,22 @@ JavaScript: The Good Parts의 저자이며 자바스크립트의 권위자인 �
 
 함수 호출 전 함수를 선언하면 TypeError가 발생한다.
 
-* [함수의 선언(Declaration)과 표현(Expression)](https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression))
+- [함수의 선언(Declaration)과 표현(Expression)](<https://github.com/SeongYongLee/TIL/tree/main/JavaScript/함수의-선언(Declaration)과-표현(Expression)>)
 
 ```js
 foo(); // hello
 console.log(foo2); // undefined
 foo2(); // TypeError: foo2 is not a function
 
-function foo() { // 함수선언문
-    console.log("hello");
+function foo() {
+  // 함수선언문
+  console.log("hello");
 }
 
-var foo2 = function() { // 함수표현식 + var
-    console.log("hello2");
-}
+var foo2 = function () {
+  // 함수표현식 + var
+  console.log("hello2");
+};
 
 foo3(); // ReferenceError: foo3 is not defined
 
@@ -109,10 +111,10 @@ console.log(typeof yourName);
 var myName = "hi";
 
 function myName() {
-    console.log("yuddomack");
+  console.log("yuddomack");
 }
 function yourName() {
-    console.log("everyone");
+  console.log("everyone");
 }
 
 var yourName = "bye";
@@ -122,21 +124,21 @@ console.log(typeof yourName);
 
 /** --- JS Parser 내부의 호이스팅(Hoisting)의 결과 --- */
 
-// 1. [Hoisting] 변수값 선언 
-var myName; 
-var yourName; 
+// 1. [Hoisting] 변수값 선언
+var myName;
+var yourName;
 
 // 2. [Hoisting] 함수선언문
 function myName() {
-    console.log("yuddomack");
+  console.log("yuddomack");
 }
 function yourName() {
-    console.log("everyone");
+  console.log("everyone");
 }
 
 // 3. 변수값 할당 전
 
-console.log(typeof myName);  // > "function"
+console.log(typeof myName); // > "function"
 console.log(typeof yourName); // > "function"
 
 // 4. 변수값 할당 후
@@ -151,14 +153,16 @@ console.log(typeof yourName); // > "string"
 따라서 값이 할당되어 있지 않은 변수의 경우는 다음과 같다.
 
 ```js
-var myName = "Heee"; // 값 할당 
+var myName = "Heee"; // 값 할당
 var yourName; // 값 할당 X
 
-function myName() { // 같은 이름의 함수 선언
-    console.log("myName Function");
+function myName() {
+  // 같은 이름의 함수 선언
+  console.log("myName Function");
 }
-function yourName() { // 같은 이름의 함수 선언
-    console.log("yourName Function");
+function yourName() {
+  // 같은 이름의 함수 선언
+  console.log("yourName Function");
 }
 
 console.log(typeof myName); // > "string"
@@ -167,7 +171,7 @@ console.log(typeof yourName); // > "function"
 
 ### 주의점
 
-코드의 가독성과 유지보수를 위해 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅 현상 및 스코프 꼬임을 방지할 수 있다.  
+코드의 가독성과 유지보수를 위해 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅 현상 및 스코프 꼬임을 방지할 수 있다.
 
 호이스팅을 이해하지 못하면 의도한 결과가 나오지 않을 수도 있고, JavaScript 라는 언어의 특성을 가장 잘 보여주는 특성 중 하나이기에 호이스팅을 이해하는 것이 중요하다.
 
@@ -183,4 +187,4 @@ console.log(typeof yourName); // > "function"
 
 - https://poiemaweb.com/js-function
 
-[뒤로](https://github.com/SeongYongLee/TIL/tree/main/FrontEnd)
+[뒤로](https://github.com/SeongYongLee/TIL/tree/main/JavaScript)

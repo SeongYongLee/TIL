@@ -2,7 +2,7 @@
 
 [연습문제 > 가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905)
 
-``` js
+```js
 // 1 - 효율성 탈락
 // function solution(board) {
 //     let answer = 0;
@@ -57,44 +57,45 @@
 
 // 3
 function solution(board) {
-    const x = board[0].length;
-    const y = board.length;
-    let answer = 0;
+  const x = board[0].length;
+  const y = board.length;
+  let answer = 0;
 
-    if (x === 1) {
-        for (const i of board) {
-            if (i[0]) return 1;
-        }
-        return 0;
+  if (x === 1) {
+    for (const i of board) {
+      if (i[0]) return 1;
     }
+    return 0;
+  }
 
-    if (y === 1) {
-        return board[0].indexOf(1) === -1 ? 0 : 1;
+  if (y === 1) {
+    return board[0].indexOf(1) === -1 ? 0 : 1;
+  }
+
+  for (let i = 1; i < y; i++) {
+    for (let j = 1; j < x; j++) {
+      if (board[i][j] > 0) {
+        board[i][j] =
+          Math.min(board[i - 1][j - 1], board[i][j - 1], board[i - 1][j]) + 1;
+      }
+      if (answer < board[i][j]) {
+        answer = board[i][j];
+      }
     }
+  }
 
-    for (let i = 1; i < y; i++) {
-        for (let j = 1; j < x; j++) {
-            if (board[i][j] > 0) {
-                board[i][j] = Math.min(board[i - 1][j - 1], board[i][j - 1], board[i - 1][j]) + 1;
-            }
-            if (answer < board[i][j]) {
-                answer = board[i][j];
-            }
-        }
-    }
-
-    return Math.pow(answer, 2);
+  return Math.pow(answer, 2);
 }
 
 console.log(solution([[1], [1]]));
 console.log(
-    solution([
-        [0, 0, 1, 1, 0],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [0, 1, 1, 1, 1],
-    ]),
+  solution([
+    [0, 0, 1, 1, 0],
+    [1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1],
+    [0, 1, 1, 1, 1],
+  ]),
 );
 ```
 

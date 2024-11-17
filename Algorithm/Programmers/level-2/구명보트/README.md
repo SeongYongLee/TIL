@@ -2,7 +2,7 @@
 
 [탐욕법(Greedy) > 구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
 
-``` js
+```js
 // 1
 // function solution(people, limit) {
 //     let answer = 0;
@@ -48,19 +48,19 @@
 
 // 3
 function solution(people, limit) {
-    let answer = -1;
-    let pLength = people.length - 1;
+  let answer = -1;
+  let pLength = people.length - 1;
 
-    people.sort((a, b) => b - a);
+  people.sort((a, b) => b - a);
 
-    while (++answer <= pLength) {
-        if (people[answer] <= limit / 2)
-            return answer + Math.round((pLength - answer + 1) / 2);
+  while (++answer <= pLength) {
+    if (people[answer] <= limit / 2)
+      return answer + Math.round((pLength - answer + 1) / 2);
 
-        if (people[answer] + people[pLength] <= limit) pLength--;
-    }
+    if (people[answer] + people[pLength] <= limit) pLength--;
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(solution([70, 50, 80, 50], 100));

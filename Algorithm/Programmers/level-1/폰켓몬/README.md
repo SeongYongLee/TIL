@@ -2,12 +2,12 @@
 
 [찾아라 프로그래밍 마에스터 > 폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
 
-``` js
+```js
 function solution(nums) {
-    const numCount = new Set(nums).size;
-    const numMax = nums.length / 2;
-    
-    return numCount > numMax ? numMax : numCount;
+  const numCount = new Set(nums).size;
+  const numMax = nums.length / 2;
+
+  return numCount > numMax ? numMax : numCount;
 }
 
 console.log(solution([3, 1, 2, 3]));

@@ -2,13 +2,13 @@
 
 [연습문제 > 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
 
-``` js
+```js
 function solution(n) {
   const count = (n) =>
     n
       .toString(2)
-      .split('')
-      .filter((x) => x === '1').length;
+      .split("")
+      .filter((x) => x === "1").length;
 
   const nLength = count(n);
 

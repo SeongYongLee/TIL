@@ -2,23 +2,21 @@
 
 [위클리 챌린지 > 5주차 > 모음 사전](https://programmers.co.kr/learn/courses/30/lessons/84512)
 
-``` js
+```js
 function solution(words) {
-    return words
-        .split('')
-        .reduce(
-            (r, c, i) =>
-                r +
-                [781, 156, 31, 6, 1][i] * ['A', 'E', 'I', 'O', 'U'].indexOf(c) +
-                1,
-            0
-        );
+  return words
+    .split("")
+    .reduce(
+      (r, c, i) =>
+        r + [781, 156, 31, 6, 1][i] * ["A", "E", "I", "O", "U"].indexOf(c) + 1,
+      0,
+    );
 }
 
-console.log(solution('AAAAE'));
-console.log(solution('AAAE'));
-console.log(solution('I'));
-console.log(solution('EIO'));
+console.log(solution("AAAAE"));
+console.log(solution("AAAE"));
+console.log(solution("I"));
+console.log(solution("EIO"));
 
 // A - 1
 // AA - 2

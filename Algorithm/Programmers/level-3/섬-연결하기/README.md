@@ -2,7 +2,7 @@
 
 [탐욕법 > 섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861)
 
-``` js
+```js
 // 1 - 플로이드 와샬 (Floyd Warshall) - 시간 초과, 접근 방법이 잘못됨
 // function solution(n, costs) {
 //     const table = new Array(n)
@@ -95,77 +95,77 @@
     프로그래머스 - 다른 사람의 풀이 참고
 */
 function solution(n, costs) {
-    costs.sort((a, b) => a[2] - b[2]);
-    let [from, to, answer] = costs.shift();
-    const connected = new Set([from, to]);
+  costs.sort((a, b) => a[2] - b[2]);
+  let [from, to, answer] = costs.shift();
+  const connected = new Set([from, to]);
 
-    while (connected.size < n) {
-        const index = costs.findIndex(
-            ([from, to]) =>
-                (connected.has(from) && !connected.has(to)) ||
-                (connected.has(to) && !connected.has(from))
-        );
-        let [[from, to, cost]] = costs.splice(index, 1);
+  while (connected.size < n) {
+    const index = costs.findIndex(
+      ([from, to]) =>
+        (connected.has(from) && !connected.has(to)) ||
+        (connected.has(to) && !connected.has(from)),
+    );
+    let [[from, to, cost]] = costs.splice(index, 1);
 
-        answer += cost;
-        connected.add(from).add(to);
-    }
+    answer += cost;
+    connected.add(from).add(to);
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(
-    solution(6, [
-        [0, 1, 1],
-        [0, 2, 2],
-        [1, 2, 5],
-        [1, 3, 1],
-        [2, 3, 8],
-        [3, 4, 20],
-        [2, 5, 20],
-        [4, 5, 20],
-    ])
+  solution(6, [
+    [0, 1, 1],
+    [0, 2, 2],
+    [1, 2, 5],
+    [1, 3, 1],
+    [2, 3, 8],
+    [3, 4, 20],
+    [2, 5, 20],
+    [4, 5, 20],
+  ]),
 );
 
 console.log(
-    solution(5, [
-        [0, 1, 5],
-        [1, 2, 3],
-        [2, 3, 3],
-        [3, 1, 2],
-        [3, 0, 4],
-        [2, 4, 6],
-        [4, 0, 7],
-    ])
+  solution(5, [
+    [0, 1, 5],
+    [1, 2, 3],
+    [2, 3, 3],
+    [3, 1, 2],
+    [3, 0, 4],
+    [2, 4, 6],
+    [4, 0, 7],
+  ]),
 );
 
 console.log(
-    solution(5, [
-        [0, 1, 1],
-        [3, 4, 1],
-        [1, 2, 2],
-        [2, 3, 4],
-    ])
+  solution(5, [
+    [0, 1, 1],
+    [3, 4, 1],
+    [1, 2, 2],
+    [2, 3, 4],
+  ]),
 );
 
 console.log(
-    solution(4, [
-        [0, 1, 5],
-        [1, 2, 3],
-        [2, 3, 3],
-        [1, 3, 2],
-        [0, 3, 4],
-    ])
+  solution(4, [
+    [0, 1, 5],
+    [1, 2, 3],
+    [2, 3, 3],
+    [1, 3, 2],
+    [0, 3, 4],
+  ]),
 );
 
 console.log(
-    solution(5, [
-        [0, 1, 1],
-        [3, 1, 1],
-        [0, 2, 2],
-        [0, 3, 2],
-        [0, 4, 100],
-    ])
+  solution(5, [
+    [0, 1, 1],
+    [3, 1, 1],
+    [0, 2, 2],
+    [0, 3, 2],
+    [0, 4, 100],
+  ]),
 );
 ```
 

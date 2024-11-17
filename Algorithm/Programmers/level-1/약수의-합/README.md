@@ -2,22 +2,22 @@
 
 [연습문제 > 약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)
 
-``` js
+```js
 function solution(n) {
-    let answer = 0;
-    let last = n;
+  let answer = 0;
+  let last = n;
 
-    for (let x = 0; x < last; x++) {
-        const temp = n / x;
+  for (let x = 0; x < last; x++) {
+    const temp = n / x;
 
-        if (Number.isInteger(temp)) {
-            answer += temp === x ? temp : temp + x;
-        }
-
-        last = temp;
+    if (Number.isInteger(temp)) {
+      answer += temp === x ? temp : temp + x;
     }
 
-    return answer;
+    last = temp;
+  }
+
+  return answer;
 }
 
 console.log(solution(12));

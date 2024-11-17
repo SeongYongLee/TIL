@@ -2,7 +2,7 @@
 
 사라진문제 > 스택/큐 > 탑
 
-``` js
+```js
 // 1
 // function solution(heights) {
 //     const answer = [];
@@ -24,13 +24,13 @@
 
 // 2 - Refactoring
 function solution(heights) {
-    return heights.map((v, i) => {
-        while (i--) {
-            if (heights[i] > v) return i + 1;
-        }
+  return heights.map((v, i) => {
+    while (i--) {
+      if (heights[i] > v) return i + 1;
+    }
 
-        return 0;
-    });
+    return 0;
+  });
 }
 
 console.log(solution([6, 9, 5, 7, 4]));

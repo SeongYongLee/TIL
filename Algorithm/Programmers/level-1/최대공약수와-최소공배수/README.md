@@ -2,7 +2,7 @@
 
 [연습문제 > 최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
 
-``` js
+```js
 // 1
 // function solution(n, m) {
 //     let max = 1;
@@ -19,12 +19,12 @@
 
 // 2 - 유클리드 호제법
 function solution(n, m) {
-    const greatestCommonDivisor = (a, b) => {
-        return b ? greatestCommonDivisor(b, a % b) : Math.abs(a);
-    };
+  const greatestCommonDivisor = (a, b) => {
+    return b ? greatestCommonDivisor(b, a % b) : Math.abs(a);
+  };
 
-    const greatestCommon = greatestCommonDivisor(n, m);
-    return [greatestCommon, (n * m) / greatestCommon];
+  const greatestCommon = greatestCommonDivisor(n, m);
+  return [greatestCommon, (n * m) / greatestCommon];
 }
 
 console.log(solution(3, 12));

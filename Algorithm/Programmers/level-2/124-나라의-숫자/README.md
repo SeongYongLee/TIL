@@ -2,7 +2,7 @@
 
 [연습문제 > 124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)
 
-``` js
+```js
 // 1
 // function solution(n) {
 //     const temp = n.toString(3).split('');
@@ -48,7 +48,7 @@
     프로그래머스 - 다른 사람의 풀이 참고
 */
 function solution(n) {
-    return n ? solution(parseInt((n - 1) / 3)) + [1, 2, 4][(n - 1) % 3] : '';
+  return n ? solution(parseInt((n - 1) / 3)) + [1, 2, 4][(n - 1) % 3] : "";
 }
 // /*
 // 1   1           1

@@ -2,7 +2,7 @@
 
 [위클리 챌린지 > 11주차 > 아이템 줍기](https://programmers.co.kr/learn/courses/30/lessons/84021)
 
-``` js
+```js
 // 1 - 테스트 케이스 빗나감
 // function solution(rectangle, characterX, characterY, itemX, itemY) {
 //     const box = Array(51)
@@ -169,133 +169,133 @@
 
 // 3
 function solution(rectangle, characterX, characterY, itemX, itemY) {
-    const box = Array(51)
-        .fill()
-        .map((_) => Array(51).fill());
+  const box = Array(51)
+    .fill()
+    .map((_) => Array(51).fill());
 
-    for (let i = 0; i < rectangle.length; i++) {
-        for (let j = rectangle[i][0] + 1; j < rectangle[i][2]; j++) {
-            box[rectangle[i][1]][j] = box[rectangle[i][1]][j] === 3 ? 3 : 1;
-            box[rectangle[i][3]][j] = box[rectangle[i][3]][j] === 2 ? 2 : 0;
-        }
-        for (let j = rectangle[i][1] + 1; j < rectangle[i][3]; j++) {
-            box[j][rectangle[i][0]] = box[j][rectangle[i][0]] === 0 ? 0 : 3;
-            box[j][rectangle[i][2]] = box[j][rectangle[i][2]] === 1 ? 1 : 2;
-        }
-        box[rectangle[i][1]][rectangle[i][0]] = 1;
-        box[rectangle[i][3]][rectangle[i][0]] = 3;
-        box[rectangle[i][1]][rectangle[i][2]] = 2;
-        box[rectangle[i][3]][rectangle[i][2]] = 0;
+  for (let i = 0; i < rectangle.length; i++) {
+    for (let j = rectangle[i][0] + 1; j < rectangle[i][2]; j++) {
+      box[rectangle[i][1]][j] = box[rectangle[i][1]][j] === 3 ? 3 : 1;
+      box[rectangle[i][3]][j] = box[rectangle[i][3]][j] === 2 ? 2 : 0;
     }
-
-    const move = [
-        [0, -1],
-        [0, 1],
-        [1, 0],
-        [-1, 0],
-    ]; // ['left', 'right', 'top', 'bottom'];
-    let total = 0;
-    let answer = 0;
-    let y = characterY;
-    let x = characterX;
-    let count = 0;
-
-    while (++count) {
-        const lotation = box[y][x];
-        y += move[lotation][0];
-        x += move[lotation][1];
-
-        if (itemX === x && itemY === y) answer = count;
-        if (characterX === x && characterY === y) {
-            total = count;
-            break;
-        }
+    for (let j = rectangle[i][1] + 1; j < rectangle[i][3]; j++) {
+      box[j][rectangle[i][0]] = box[j][rectangle[i][0]] === 0 ? 0 : 3;
+      box[j][rectangle[i][2]] = box[j][rectangle[i][2]] === 1 ? 1 : 2;
     }
+    box[rectangle[i][1]][rectangle[i][0]] = 1;
+    box[rectangle[i][3]][rectangle[i][0]] = 3;
+    box[rectangle[i][1]][rectangle[i][2]] = 2;
+    box[rectangle[i][3]][rectangle[i][2]] = 0;
+  }
 
-    return total - answer < answer ? total - answer : answer;
+  const move = [
+    [0, -1],
+    [0, 1],
+    [1, 0],
+    [-1, 0],
+  ]; // ['left', 'right', 'top', 'bottom'];
+  let total = 0;
+  let answer = 0;
+  let y = characterY;
+  let x = characterX;
+  let count = 0;
+
+  while (++count) {
+    const lotation = box[y][x];
+    y += move[lotation][0];
+    x += move[lotation][1];
+
+    if (itemX === x && itemY === y) answer = count;
+    if (characterX === x && characterY === y) {
+      total = count;
+      break;
+    }
+  }
+
+  return total - answer < answer ? total - answer : answer;
 }
 
 console.log(
-    solution(
-        [
-            [1, 1, 7, 4],
-            [3, 2, 5, 5],
-            [4, 3, 6, 9],
-            [2, 6, 8, 8],
-        ],
-        1,
-        3,
-        7,
-        8
-    )
+  solution(
+    [
+      [1, 1, 7, 4],
+      [3, 2, 5, 5],
+      [4, 3, 6, 9],
+      [2, 6, 8, 8],
+    ],
+    1,
+    3,
+    7,
+    8,
+  ),
 );
 
 console.log(
-    solution(
-        [
-            [1, 1, 8, 4],
-            [2, 2, 4, 9],
-            [3, 6, 9, 8],
-            [6, 3, 7, 7],
-        ],
-        9,
-        7,
-        6,
-        1
-    )
+  solution(
+    [
+      [1, 1, 8, 4],
+      [2, 2, 4, 9],
+      [3, 6, 9, 8],
+      [6, 3, 7, 7],
+    ],
+    9,
+    7,
+    6,
+    1,
+  ),
 );
 console.log(solution([[1, 1, 5, 7]], 1, 1, 4, 7));
 console.log(
-    solution(
-        [
-            [2, 1, 7, 5],
-            [6, 4, 10, 10],
-        ],
-        3,
-        1,
-        7,
-        10
-    )
+  solution(
+    [
+      [2, 1, 7, 5],
+      [6, 4, 10, 10],
+    ],
+    3,
+    1,
+    7,
+    10,
+  ),
 );
 console.log(
-    solution(
-        [
-            [2, 2, 5, 5],
-            [1, 3, 6, 4],
-            [3, 1, 4, 6],
-        ],
-        1,
-        4,
-        6,
-        3
-    )
+  solution(
+    [
+      [2, 2, 5, 5],
+      [1, 3, 6, 4],
+      [3, 1, 4, 6],
+    ],
+    1,
+    4,
+    6,
+    3,
+  ),
 );
 console.log(
-    solution(
-        [
-            [1, 1, 3, 7],
-            [2, 2, 7, 4],
-            [4, 3, 6, 6],
-        ],
-        1,
-        2,
-        6,
-        6
-    )
+  solution(
+    [
+      [1, 1, 3, 7],
+      [2, 2, 7, 4],
+      [4, 3, 6, 6],
+    ],
+    1,
+    2,
+    6,
+    6,
+  ),
 );
 
 console.log(
-    solution(
-        [
-            [1, 1, 4, 4],
-            [2, 2, 5, 5],
-            [3, 3, 7, 8],
-        ],
-        1,
-        1,
-        5,
-        3
-    )
+  solution(
+    [
+      [1, 1, 4, 4],
+      [2, 2, 5, 5],
+      [3, 3, 7, 8],
+    ],
+    1,
+    1,
+    5,
+    3,
+  ),
 );
 ```
 

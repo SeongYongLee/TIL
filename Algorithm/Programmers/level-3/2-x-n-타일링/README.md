@@ -2,18 +2,18 @@
 
 [연습문제 > 2 x n 타일링](https://programmers.co.kr/learn/courses/30/lessons/12900)
 
-``` js
+```js
 function solution(n) {
-    let historyAnswer = 0;
-    let answer = 1;
+  let historyAnswer = 0;
+  let answer = 1;
 
-    for (let i = 1; i <= n; i++) {
-        const tempAnswer = (historyAnswer + answer) % 1000000007;
-        historyAnswer = answer;
-        answer = tempAnswer;
-    }
+  for (let i = 1; i <= n; i++) {
+    const tempAnswer = (historyAnswer + answer) % 1000000007;
+    historyAnswer = answer;
+    answer = tempAnswer;
+  }
 
-    return answer;
+  return answer;
 }
 
 console.log(solution(4));

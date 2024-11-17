@@ -2,9 +2,9 @@
 
 [연습문제 > 하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
 
-``` js
+```js
 function solution(x) {
-    return !(x % (x + '').split('').reduce((r, i) => +r + +i));
+  return !(x % (x + "").split("").reduce((r, i) => +r + +i));
 }
 
 console.log(solution(10));

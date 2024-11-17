@@ -2,11 +2,11 @@
 
 [위클리 챌린지 > 1주차 > 부족한 금액 계산하기](https://programmers.co.kr/learn/courses/30/lessons/82612)
 
-``` js
+```js
 function solution(price, money, count) {
-    const answer = price * (count + 1) * (count / 2) - money;
+  const answer = price * (count + 1) * (count / 2) - money;
 
-    return answer > 0 ? answer : 0;
+  return answer > 0 ? answer : 0;
 }
 
 console.log(solution(3, 20, 4));
